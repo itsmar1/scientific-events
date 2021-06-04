@@ -15,6 +15,8 @@ class CreateCommitteeMembersTable extends Migration
     {
         Schema::create('committee_members', function (Blueprint $table) {
             $table->id();
+            $table->string('firstName');
+            $table->string('lastName');
             $table->timestamps();
         });
     }
