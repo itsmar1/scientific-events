@@ -22,7 +22,9 @@ class PresentationFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->title(),
+            'startHour' => $this->faker->numberBetween(10, 14),
+            'endHour' => $this->faker->numberBetween(15, 18),
         ];
     }
 }

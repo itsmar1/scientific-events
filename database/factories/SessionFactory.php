@@ -22,7 +22,18 @@ class SessionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->title(),
+            'type' => function() {
+                $arr = array( "a"=>"Orale", "b"=>"Poster");
+
+                // Use array_rand function to returns random key
+                $key = array_rand($arr);
+
+                // Display the random array element
+                return $arr[$key];
+            },
+            'date' => $this->faker->dateTimeBetween('now', '2 years'),
+            'hour' => $this->faker->numberBetween(1, 24),
         ];
     }
 }
