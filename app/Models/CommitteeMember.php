@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class CommitteeMember extends Model
 {
     use HasFactory;
+
+
+    protected $fillable = [
+        'firstName',
+        'lastName',
+    ];
+
+
+    public function committee()
+    {
+        return $this->belongsTo(Committee::class);
+    }
 }

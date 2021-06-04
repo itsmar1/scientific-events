@@ -8,4 +8,22 @@ use Illuminate\Database\Eloquent\Model;
 class Session extends Model
 {
     use HasFactory;
+
+
+    protected $fillable = [
+        'title',
+        'type',
+        'date',
+        'hour',
+    ];
+
+    public function event()
+    {
+        return $this->belongsTo(Event::class);
+    }
+
+    public function presentations()
+    {
+        return $this->hasMany(Presentation::class);
+    }
 }
