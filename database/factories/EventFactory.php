@@ -24,7 +24,7 @@ class EventFactory extends Factory
         return [
 
             'name' => $this->faker->company,
-            'description' => $this->faker->paragraphs(7),
+            'description' => $this->faker->paragraph(7),
             'startDate' => $this->faker->dateTimeBetween('-2 years', 'now'),
             'endDate' => $this->faker->dateTimeBetween('now', '2 years'),
             'type' => function() {
