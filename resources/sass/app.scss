@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
-@import 'variables';
+@import './helpers/variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -14,8 +14,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+// import PAGES
+@import './pages/main';
 
-body {
-    background-color: #ccc;
-}
+
+
 

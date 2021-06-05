@@ -1,0 +1,41 @@
+.navbar
+{
+    padding: 1rem 7rem;
+    background-color: #fff;
+    .elite {
+            text-transform: capitalize;
+            color: $blue;
+            font-size: 3rem;
+            font-weight: 700;
+    }
+
+
+    .corp
+    {
+        color: $red;
+        font-size: 3rem;
+    }
+
+    .collapse .nav-item
+    {
+        a
+        {
+            color: $blue;
+            text-transform: uppercase;
+            margin-left: 1.3rem;
+            font-weight: 700;
+        }
+
+        a:hover
+        {
+            color: $red;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+}
+
+
