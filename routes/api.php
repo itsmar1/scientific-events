@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CommitteeMemberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,6 @@ Route::group(['prefix' => 'user', 'middleware' => ['auth:sanctum', 'user']], fun
     Route::get('contacts', [ContactController::class, 'index']);
     // Route::post('logout', [AuthController::class, 'logout']);
 });
+
+
+Route::resource('committee_member', CommitteeMemberController::class);

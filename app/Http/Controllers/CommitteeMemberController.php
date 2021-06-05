@@ -15,6 +15,7 @@ class CommitteeMemberController extends Controller
     public function index()
     {
         //
+        return CommitteeMember::all();
     }
 
     /**
@@ -35,7 +36,17 @@ class CommitteeMemberController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $fields = $request->validate([
+            'committee_id',
+            'firstName' => 'required|string',
+            'lastName' => 'required|string'
+        ]);
+
+        $member = new CommitteeMember();
+        $member->committee_id = $fields['committee_id'] ?? null;
+        $member->firstName = $fields['firstName'];
+        $member->lastName = $fields['lastName'];
+        $member->save();
     }
 
     /**
@@ -70,6 +81,7 @@ class CommitteeMemberController extends Controller
     public function update(Request $request, CommitteeMember $committeeMember)
     {
         //
+        return CommitteeMember::update($request->all());
     }
 
     /**
@@ -80,6 +92,6 @@ class CommitteeMemberController extends Controller
      */
     public function destroy(CommitteeMember $committeeMember)
     {
-        //
+        return CommitteeMember::destroy($committeeMember->id);
     }
 }
