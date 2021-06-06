@@ -15,6 +15,8 @@ class EventController extends Controller
     public function index()
     {
         //
+        return Event::all();
+
     }
 
     /**
@@ -81,5 +83,23 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         //
+    }
+
+    public function search(Request $request)
+    {
+        // $event = Event::find($request->id);
+
+        // $event->sessions()->where('event_id', $request->id)->get;
+
+        // return $event;
+
+        return Event::join('sessions', 'events.id', '=', 'sessions.event_id')
+            ->join('presentations', 'sessions.id', '=', 'presentations.session_id')->get();
+
+    }
+
+    public function preview(Request $request)
+    {
+        return Event::join('images', 'events.id', '=', 'images.event_id')->get();
     }
 }

@@ -6,7 +6,8 @@ export default {
     namespaced: true,
     state() {
         return {
-
+            events: [],
+            number: 1,
         }
     },
     mutations,

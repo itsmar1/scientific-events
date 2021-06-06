@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CommitteeMemberController;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+
+// Fetch the events for public users
+Route::get('events', [EventController::class, 'preview']);
+
+
+// Route::get('event', [EventController::class, 'index']);
+// Route::get('events', [EventController::class, 'search']);
 
 // 'prefix' => 'admin',
 
