@@ -35,7 +35,17 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $fields = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'message' => 'required|string'
+        ]);
+
+        $contact = new Contact();
+        $contact->name = $fields['name'];
+        $contact->email = $fields['email'];
+        $contact->message = $fields['message'];
+        $contact->save();
     }
 
     /**
@@ -81,5 +91,6 @@ class ContactController extends Controller
     public function destroy(Contact $contact)
     {
         //
+        return Contact::destroy($contact->id);
     }
 }

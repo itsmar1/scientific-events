@@ -28,15 +28,17 @@ Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanct
 
 // 'prefix' => 'admin',
 
+Route::resource('contact', ContactController::class);
+
 Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], function() {
-    Route::get('contacts', [ContactController::class, 'index']);
+    // Route::get('contacts', [ContactController::class, 'index']);
     // Route::post('logout', [AuthController::class, 'logout']);
 });
 
 // 'prefix' => 'user',
 
 Route::group(['prefix' => 'user', 'middleware' => ['auth:sanctum', 'user']], function() {
-    Route::get('contacts', [ContactController::class, 'index']);
+    // Route::get('contacts', [ContactController::class, 'index']);
     // Route::post('logout', [AuthController::class, 'logout']);
 });
 

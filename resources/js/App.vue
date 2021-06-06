@@ -1,8 +1,8 @@
 <template>
+
     <the-header></the-header>
-    <div style="margin-top: 200px"></div>
-    <the-footer></the-footer>
     <router-view></router-view>
+    <the-footer></the-footer>
 </template>
 
 <script>
