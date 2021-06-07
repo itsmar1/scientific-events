@@ -24,6 +24,8 @@ export default {
   methods: {
     async loadEvents() {
       await this.$store.dispatch("events/getEvents");
+      // test
+      await this.$store.dispatch("events/getAllSessions");
       this.events = this.$store.getters["events/events"];
     },
   },

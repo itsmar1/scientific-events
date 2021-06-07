@@ -18,6 +18,11 @@ class SessionController extends Controller
         return DB::table('sessions')->where('event_id', $id)->get();
     }
 
+    public function getAllSessions()
+    {
+        return Session::all();
+    }
+
     /**
      * Show the form for creating a new resource.
      *

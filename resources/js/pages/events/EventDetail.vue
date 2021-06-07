@@ -15,7 +15,12 @@
 </template>
 
 <script>
+
+//import SessionList from '../../components/events/SessionList.vue';
 export default {
+    // components: {
+    //     SessionList
+    // },
     props: ['id'],
     data() {
         return {
@@ -33,21 +38,21 @@ export default {
         //     this.$store.dispatch('events/getEventSessions', this.id);
         //     this.selectedSessions = this.$store.getters['events/getEventSessions'];
         // },
-        loadData() {
-            this.selectedEvent = this.$store.getters['events/events'].find(
-                (event) => event.id = this.id
-            );
-            this.$store.dispatch('events/getEventSessions', this.id);
-            this.selectedSessions = this.$store.getters['events/getEventSessions']
-        }
-    },
-    created() {
-        // this.selectedEvent = this.$store.getters['events/events'].find(
-        //     (event) => event.id = this.id
-        // );
-        // this.loadSessions();
+        async loadData() {
 
-        this.loadData();
+            // this.$store.dispatch('events/getEventSessions', this.id);
+            // this.selectedSessions = this.$store.getters['events/getEventSessions']
+
+
+            // context.commit('getEventSessions', sessions);
+            }
+    },
+    async created() {
+        // await this.loadData();
+        this.selectedEvent = await this.$store.getters['events/events'].find(
+            (event) => event.id === this.id
+        );
+
 
     }
 

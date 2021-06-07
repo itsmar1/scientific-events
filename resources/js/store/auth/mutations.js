@@ -10,6 +10,7 @@ export default {
         localStorage.setItem('userId', payload.user.id);
         localStorage.setItem('role', payload.user.role);
         localStorage.setItem('token', payload.token);
+        localStorage.setItem('isAuth', 'true');
     },
     loginUser(state, payload)
     {
@@ -22,6 +23,7 @@ export default {
         localStorage.setItem('userId', payload.user.id);
         localStorage.setItem('role', payload.user.role);
         localStorage.setItem('token', payload.token);
+        localStorage.setItem('isAuth', 'true');
         console.log(payload.user);
         console.log(payload.token);
     },
@@ -36,5 +38,6 @@ export default {
         localStorage.removeItem('userId');
         localStorage.removeItem('role');
         localStorage.removeItem('token');
+        localStorage.setItem('isAuth', 'false');
     }
 }

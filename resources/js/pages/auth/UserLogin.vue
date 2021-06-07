@@ -31,14 +31,15 @@ export default {
         logout(){
             // const token = localStorage.getItem('token');
             this.$store.dispatch('logout');
+            this.$router.replace('/');
         },
         userRole() {
             const role = localStorage.getItem('role');
             if( role === 'admin'){
-                this.$router.push('/admin/dashboard');
+                this.$router.replace('/admin');
             }
             else if( role === 'user'){
-                this.$router.push('/admin/dashboard');
+                this.$router.replace('/admin');
             }
         }
     }

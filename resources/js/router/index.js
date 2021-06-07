@@ -13,7 +13,10 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: HomePage },
-        { path: '/events', component: EventsList },
+        {
+            path: '/events',
+            component: EventsList,
+        },
         {
             path: '/events/:id',
             component: EventDetail,
@@ -22,7 +25,13 @@ const router = createRouter({
         { path: '/contact', component: ContactUs },
         { path: '/login', component: UserLogin },
         { path: '/register', component: UserRegister },
-        { path: '/admin/dasboard', component: AdminDashboard },
+        {
+            path: '/admin',
+            component: AdminDashboard,
+            children: [
+                { path: 'events', component: ContactUs }
+            ]
+        },
         { path: '/:catchAll(.*)', component: NotFound }
     ]
 });

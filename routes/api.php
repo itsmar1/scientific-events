@@ -32,6 +32,8 @@ Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanct
 Route::get('events', [EventController::class, 'preview']);
 Route::get('eventSession/{id}', [SessionController::class, 'eventSession']);
 Route::get('sessions/{id}', [SessionController::class, 'index']);
+Route::get('sessions', [SessionController::class, 'getAllSessions']);
+
 
 // Route::get('event', [EventController::class, 'index']);
 // Route::get('events', [EventController::class, 'search']);

@@ -6,8 +6,9 @@ export default {
     namespaced: true,
     state() {
         return {
-            events: null,
-            eventSessions: null,
+            events: [],
+            eventSessions: [],
+            sessions: []
         }
     },
     mutations,

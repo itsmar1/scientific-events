@@ -5,7 +5,14 @@ export default {
     },
     getEventSessions(state)
     {
-        console.log(state.eventSessions);
+        // console.log(state.eventSessions);
         return state.eventSessions;
+    },
+    getEventSession(state, id)
+    {
+        return state.sessions.filter( (session) => {
+            session.event_id = id;
+        })
     }
+
 }

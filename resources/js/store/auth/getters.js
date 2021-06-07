@@ -17,7 +17,6 @@ export default {
     },
     isAuthenticated(state)
     {
-        console.log(state.isAuthenticated);
         return state.isAuthenticated;
     }
 }

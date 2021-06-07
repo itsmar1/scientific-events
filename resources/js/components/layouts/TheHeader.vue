@@ -46,6 +46,9 @@ export default {
         isAuthenticated() {
             return this.$store.getters.isAuthenticated;
         }
+        // isAuthenticated() {
+        //     return localStorage.getItem('isAuth');
+        // }
 
     }
 

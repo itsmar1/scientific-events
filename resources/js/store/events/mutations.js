@@ -8,6 +8,10 @@ export default {
     getEventSessions(state, payload)
     {
         state.eventSessions = payload;
+    },
+    getAllSessions(state, payload)
+    {
+        state.sessions = payload;
     }
 
 }
