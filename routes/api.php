@@ -64,6 +64,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], f
     Route::post('postUsers', [UserController::class, 'postUsers']);
     Route::put('putUsers/{id}', [UserController::class, 'putUsers']);
     Route::delete('deleteUsers/{id}', [Usercontroller::class, 'deleteUsers']);
+
+    // Contacts GET & DELETE
+    Route::get('contacts', [ContactController::class, 'index']);
+    Route::delete('contacts/{id}', [ContactController::class, 'destroy']);
+
+    // GET & UPDATE current authenticated user
+    Route::get('user', [UserController::class, 'getUser']);
+    Route::put('user', [UserController::class, 'updateUser']);
 });
 
 

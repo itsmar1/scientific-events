@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -176,6 +177,18 @@ class UserController extends Controller
     public function deleteUsers(Request $request)
     {
         return User::find($request->id)->delete();
+    }
+
+
+    // GET & UPDATE current authenticated user
+    public function getUser()
+    {
+        return auth()->user();
+    }
+
+    public function updateUser(Request $request)
+    {
+        return auth()->user()->update($request->all());
     }
 
 

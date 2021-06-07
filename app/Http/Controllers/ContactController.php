@@ -88,9 +88,9 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Contact $contact)
+    public function destroy(Request $request)
     {
         //
-        return Contact::destroy($contact->id);
+        return Contact::find($request->id)->delete();
     }
 }
