@@ -7,6 +7,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CommitteeMemberController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
@@ -35,24 +35,73 @@ Route::get('sessions/{id}', [SessionController::class, 'index']);
 Route::get('sessions', [SessionController::class, 'getAllSessions']);
 
 
-// Route::get('event', [EventController::class, 'index']);
-// Route::get('events', [EventController::class, 'search']);
 
-// 'prefix' => 'admin',
 
 Route::resource('contact', ContactController::class);
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], function() {
-    // Route::get('contacts', [ContactController::class, 'index']);
-    // Route::post('logout', [AuthController::class, 'logout']);
+    // Events Admins APIs
+    Route::get('getEventAdmins', [UserController::class, 'getEventAdmins']);
+    Route::post('postEventAdmins', [UserController::class, 'postEventAdmins']);
+    Route::put('putEventAdmins/{id}', [UserController::class, 'putEventAdmins']);
+    Route::delete('deleteEventAdmins/{id}', [Usercontroller::class, 'deleteEventAdmins']);
+
+    // Responsable APIs
+    Route::get('getResponsable', [UserController::class, 'getResponsable']);
+    Route::post('postResponsable', [UserController::class, 'postResponsable']);
+    Route::put('putResponsable/{id}', [UserController::class, 'putResponsable']);
+    Route::delete('deleteResponsable/{id}', [Usercontroller::class, 'deleteResponsable']);
+
+    // Session Admin APIs
+    Route::get('getSessionAdmins', [UserController::class, 'getSessionAdmins']);
+    Route::post('postSessionAdmins', [UserController::class, 'postSessionAdmins']);
+    Route::put('putSessionAdmins/{id}', [UserController::class, 'putSessionAdmins']);
+    Route::delete('deleteSessionAdmins/{id}', [Usercontroller::class, 'deleteSessionAdmins']);
+
+
+    // User APIs
+    Route::get('getUsers', [UserController::class, 'getUsers']);
+    Route::post('postUsers', [UserController::class, 'postUsers']);
+    Route::put('putUsers/{id}', [UserController::class, 'putUsers']);
+    Route::delete('deleteUsers/{id}', [Usercontroller::class, 'deleteUsers']);
 });
 
-// 'prefix' => 'user',
+
+Route::group(['prefix' => 'eventadmin', 'middleware' => ['auth:sanctum', 'event_admin']], function() {
+
+});
+
+
+Route::group(['prefix' => 'responsable', 'middleware' => ['auth:sanctum', 'responsable']], function() {
+
+
+});
+
+
+Route::group(['prefix' => 'sessionadmin', 'middleware' => ['auth:sanctum', 'session_admin']], function() {
+
+});
+
 
 Route::group(['prefix' => 'user', 'middleware' => ['auth:sanctum', 'user']], function() {
-    // Route::get('contacts', [ContactController::class, 'index']);
-    // Route::post('logout', [AuthController::class, 'logout']);
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::resource('committee_member', CommitteeMemberController::class);
