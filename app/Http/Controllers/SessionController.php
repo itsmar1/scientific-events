@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SessionController extends Controller
 {
@@ -12,9 +13,9 @@ class SessionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
+        return DB::table('sessions')->where('event_id', $id)->get();
     }
 
     /**
@@ -81,5 +82,17 @@ class SessionController extends Controller
     public function destroy(Session $session)
     {
         //
+    }
+
+    public function eventSession($id)
+    {
+        // return Session::join('presentations', 'sessions.id', '=', 'presentations.session_id')
+        //             ->where('sessions.event_id', $id)->get();
+
+        return DB::table('sessions')
+            ->select('sessions.id','event_id', 'sessions.title as sessionTitle', 'type', 'date', 'hour', 'presentations.title as presentationTitle'
+                , 'startHour', 'endHour')
+            ->join('presentations', 'sessions.id', '=', 'presentations.session_id')
+            ->where('sessions.event_id', $id)->get();
     }
 }

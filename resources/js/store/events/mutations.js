@@ -4,6 +4,10 @@ export default {
         state.events = payload;
 
 
+    },
+    getEventSessions(state, payload)
+    {
+        state.eventSessions = payload;
     }
 
 }

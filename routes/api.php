@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CommitteeMemberController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,8 @@ Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanct
 
 // Fetch the events for public users
 Route::get('events', [EventController::class, 'preview']);
-
+Route::get('eventSession/{id}', [SessionController::class, 'eventSession']);
+Route::get('sessions/{id}', [SessionController::class, 'index']);
 
 // Route::get('event', [EventController::class, 'index']);
 // Route::get('events', [EventController::class, 'search']);

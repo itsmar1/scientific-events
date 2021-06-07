@@ -12,7 +12,7 @@
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     <div class="action">
-                        <button class="btn btn-outline-primary">Show Details</button>
+                        <router-link class="btn btn-outline-primary" :to="eventDetailsLink">Show Details</router-link>
                     </div>
                 </div>
             </div>
@@ -22,10 +22,13 @@
 
 <script>
 export default {
-    props: ['image', 'name', 'description'],
+    props: ['id', 'image', 'name', 'description'],
     computed: {
         imageSource() {
             return 'images/' + this.image;
+        },
+        eventDetailsLink() {
+            return this.$route.path + '/' + this.id;
         }
     }
 

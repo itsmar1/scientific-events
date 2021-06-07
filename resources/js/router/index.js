@@ -5,6 +5,7 @@ import NotFound from '../pages/NotFound.vue';
 import HomePage from '../pages/Home/HomePage.vue';
 import ContactUs from '../pages/contact/ContactUs.vue';
 import EventsList from '../pages/events/EventsList.vue';
+import EventDetail from '../pages/events/EventDetail.vue';
 
 
 const router = createRouter({
@@ -12,6 +13,11 @@ const router = createRouter({
     routes: [
         { path: '/', component: HomePage },
         { path: '/events', component: EventsList },
+        {
+            path: '/events/:id',
+            component: EventDetail,
+            props: true
+        },
         { path: '/contact', component: ContactUs },
         { path: '/login', component: UserLogin },
         { path: '/register', component: UserRegister },

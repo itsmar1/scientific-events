@@ -6,7 +6,7 @@ const store = createStore({
     modules: {
         events: eventsModule,
         auth: authModule
-    },
+    }
 
 });
 
