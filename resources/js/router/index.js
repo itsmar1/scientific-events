@@ -6,6 +6,7 @@ import HomePage from '../pages/Home/HomePage.vue';
 import ContactUs from '../pages/contact/ContactUs.vue';
 import EventsList from '../pages/events/EventsList.vue';
 import EventDetail from '../pages/events/EventDetail.vue';
+import AdminDashboard from '../pages/dashboards/admin/AdminDashboard.vue';
 
 
 const router = createRouter({
@@ -21,6 +22,7 @@ const router = createRouter({
         { path: '/contact', component: ContactUs },
         { path: '/login', component: UserLogin },
         { path: '/register', component: UserRegister },
+        { path: '/admin/dasboard', component: AdminDashboard },
         { path: '/:catchAll(.*)', component: NotFound }
     ]
 });

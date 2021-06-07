@@ -1,4 +1,5 @@
 <template>
+<section v-if="!isAuthenticated">
 <div class="footer">
       <div class="container">
         <div class="row">
@@ -60,10 +61,18 @@
         </div>
       </div>
     </div>
+
+</section>
 </template>
 
 <script>
 export default {
+    computed: {
+        isAuthenticated() {
+            return this.$store.getters.isAuthenticated;
+        }
+
+    }
 
 }
 </script>

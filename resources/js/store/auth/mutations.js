@@ -1,4 +1,16 @@
 export default {
+    registerUser(state, payload)
+    {
+        state.user = payload.user;
+        state.userId = payload.user.id;
+        state.token = payload.token;
+        state.role = payload.user.role;
+        state.isAuthenticated = true;
+
+        localStorage.setItem('userId', payload.user.id);
+        localStorage.setItem('role', payload.user.role);
+        localStorage.setItem('token', payload.token);
+    },
     loginUser(state, payload)
     {
         state.user = payload.user;

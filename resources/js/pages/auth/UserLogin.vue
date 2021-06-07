@@ -35,7 +35,10 @@ export default {
         userRole() {
             const role = localStorage.getItem('role');
             if( role === 'admin'){
-                this.$router.replace('/contact');
+                this.$router.push('/admin/dashboard');
+            }
+            else if( role === 'user'){
+                this.$router.push('/admin/dashboard');
             }
         }
     }

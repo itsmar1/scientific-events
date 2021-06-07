@@ -14,5 +14,10 @@ export default {
     role(state)
     {
         return state.token;
+    },
+    isAuthenticated(state)
+    {
+        console.log(state.isAuthenticated);
+        return state.isAuthenticated;
     }
 }

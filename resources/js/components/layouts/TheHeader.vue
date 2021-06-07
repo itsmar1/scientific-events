@@ -1,5 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <section v-if="!isAuthenticated">
+        <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <router-link class="navbar-brand" to="/"><span class="elite">Science</span><span class="corp">Events</span></router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +31,7 @@
         </div>
         </div>
     </nav>
+    </section>
 </template>
 
 <script>
@@ -39,6 +41,12 @@ import BaseLang from '../ui/BaseLang.vue';
 export default {
     components: {
         BaseLang
+    },
+    computed: {
+        isAuthenticated() {
+            return this.$store.getters.isAuthenticated;
+        }
+
     }
 
 }

@@ -2,6 +2,12 @@
 
 
 export default {
+    async registerUser(context, payload)
+    {
+        await axios.post('api/register', payload)
+            .then( (res) => context.commit('registerUser', res.data))
+            .catch( (err) => console.log(err) );
+    },
     async loginUser(context, payload)
     {
         // const { data } = await axios.post('api/login', payload);

@@ -14,7 +14,20 @@ export default {
     components: {
         TheHeader,
         TheFooter
-    }
+    },
+    // data() {
+    //     return {
+    //         isAuthenticated: false,
+    //     }
+    // },
+    // methods: {
+    //     setIsAuthenticated() {
+    //         this.isAuthenticated = this.$store.getters.isAuthenticated;
+    //     }
+    // },
+    // mounted() {
+    //     this.setIsAuthenticated();
+    // }
 
 }
 </script>
