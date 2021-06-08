@@ -44,7 +44,7 @@
             <!-- main -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <router-view></router-view>
-                <h3>candidated</h3>
+                <!-- <h3>candidated</h3>
                 <hr>
                 <div class="table-responsive">
                     <table class="table table-sm table-dark">
@@ -76,7 +76,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </main>
         </div>
     </div>
