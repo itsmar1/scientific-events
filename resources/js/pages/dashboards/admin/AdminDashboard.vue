@@ -3,7 +3,7 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0"  href="#">Scientific Events</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a href="#" class="nav-link">Logout</a>
+                <button class="nav-link logout-btn" @click="logout">Logout</button>
             </li>
         </ul>
     </nav>
@@ -12,18 +12,30 @@
             <!-- sidebar -->
             <div class="col-md-2 bg-light d-none d-md-block sidebar">
                 <div class="left-sidebar">
-                    <ul class="nav flex-column sidebar-nav">
+                    <ul class="nav flex-column sidebar-nav mt-5">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
+                            <router-link class="nav-link active" to="events">Events</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/admin/events">Events</router-link>
+                            <router-link class="nav-link" to="eventadmins">Event Admins</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <router-link class="nav-link" to="responsables">Organization Responsables</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <router-link class="nav-link" to="sessions">Sessions Admins</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="sessions">Regular Users</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="contact">Messages</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="settings">Account</router-link>
+                        </li>
+                        <li class="nav-item mt-5">
+                            <button class="btn logout-btn" @click="logout">Logout</button>
                         </li>
                     </ul>
                 </div>
@@ -72,8 +84,19 @@
 
 <script>
 export default {
+    data() {
+        return {
 
-}
+        }
+    },
+    methods: {
+        async logout() {
+            await this.$store.dispatch('admin/logout');
+            this.$route.replace('/');
+        }
+        }
+    }
+
 </script>
 
 <style scoped>

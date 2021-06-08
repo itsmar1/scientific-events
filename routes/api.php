@@ -34,32 +34,36 @@ Route::get('eventSession/{id}', [SessionController::class, 'eventSession']);
 Route::get('sessions/{id}', [SessionController::class, 'index']);
 Route::get('sessions', [SessionController::class, 'getAllSessions']);
 
+Route::get('getEvent/{id}', [EventController::class, 'getEvent']);
+
+Route::get('contacts', [ContactController::class, 'index']);
+
 
 
 
 Route::resource('contact', ContactController::class);
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], function() {
-    // Events Admins APIs
+    // Events CRUD Admins APIs
     Route::get('getEventAdmins', [UserController::class, 'getEventAdmins']);
     Route::post('postEventAdmins', [UserController::class, 'postEventAdmins']);
     Route::put('putEventAdmins/{id}', [UserController::class, 'putEventAdmins']);
     Route::delete('deleteEventAdmins/{id}', [Usercontroller::class, 'deleteEventAdmins']);
 
-    // Responsable APIs
+    // Responsable CRUD APIs
     Route::get('getResponsable', [UserController::class, 'getResponsable']);
     Route::post('postResponsable', [UserController::class, 'postResponsable']);
     Route::put('putResponsable/{id}', [UserController::class, 'putResponsable']);
     Route::delete('deleteResponsable/{id}', [Usercontroller::class, 'deleteResponsable']);
 
-    // Session Admin APIs
+    // Session CRUD Admin APIs
     Route::get('getSessionAdmins', [UserController::class, 'getSessionAdmins']);
     Route::post('postSessionAdmins', [UserController::class, 'postSessionAdmins']);
     Route::put('putSessionAdmins/{id}', [UserController::class, 'putSessionAdmins']);
     Route::delete('deleteSessionAdmins/{id}', [Usercontroller::class, 'deleteSessionAdmins']);
 
 
-    // User APIs
+    // User CRUD APIs
     Route::get('getUsers', [UserController::class, 'getUsers']);
     Route::post('postUsers', [UserController::class, 'postUsers']);
     Route::put('putUsers/{id}', [UserController::class, 'putUsers']);
@@ -72,6 +76,17 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], f
     // GET & UPDATE current authenticated user
     Route::get('user', [UserController::class, 'getUser']);
     Route::put('user', [UserController::class, 'updateUser']);
+
+    // Events
+    Route::get('events', [EventController::class, 'preview']);
+    Route::get('getEvent/{id}', [EventController::class, 'getEvent']);
+    Route::post('postEvent', [EventController::class, 'store']);
+    Route::put('putEvent/{id}', [EventController::class, 'update']);
+
+    // Logout
+    Route::post('logout', [AuthController::class, 'logout']);
+
+
 });
 
 

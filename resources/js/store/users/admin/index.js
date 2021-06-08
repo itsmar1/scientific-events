@@ -6,7 +6,16 @@ export default {
     namespaced: true,
     state() {
         return {
-
+            events: null,
+            selectedEvent: null,
+            selectedEventSessions: null,
+            selectedEventCommittees: null,
+            contacts: null,
+            eventAdmins: null,
+            responsables: null,
+            sessionAdmins: null,
+            users: null,
+            user: null,
         }
     },
     mutations,

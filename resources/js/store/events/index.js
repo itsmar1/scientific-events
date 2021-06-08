@@ -7,8 +7,9 @@ export default {
     state() {
         return {
             events: [],
-            eventSessions: [],
-            sessions: []
+            event: [],
+            sessions: [],
+            committees: [],
         }
     },
     mutations,

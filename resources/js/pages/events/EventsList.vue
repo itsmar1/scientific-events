@@ -19,18 +19,20 @@ export default {
   data() {
     return {
       events: [],
+      //testing
     };
   },
   methods: {
     async loadEvents() {
       await this.$store.dispatch("events/getEvents");
       // test
-      await this.$store.dispatch("events/getAllSessions");
+      // await this.$store.dispatch("events/getAllSessions");
       this.events = this.$store.getters["events/events"];
     },
   },
   created() {
     this.loadEvents();
+    // testing
   },
 };
 </script>

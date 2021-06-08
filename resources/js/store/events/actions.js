@@ -68,6 +68,43 @@ export default {
     {
         const { data } = await axios.get('api/getAllSessions');
         context.commit('getAllSessions', data);
+    },
+
+
+
+    async getEvent(_, id)
+    {
+        const response = await axios.get(`api/getEvent/${id}`);
+        console.log(response);
+        // context.commit('getEvent', data);
+
+
+        // const response = await fetch(
+        //     `api/getEvent/${id}`
+        //   );
+        //   const responseData = await response.json();
+        //   console.log(responseData);
+
+        //   if (!response.ok) {
+        //     const error = new Error(responseData.message || 'Failed to fetch!');
+        //     throw error;
+        //   }
+
+        //   const events = [];
+        //   const sessions = [];
+        //   const committees = [];
+
+        //   for (const key in responseData) {
+        //     const event = {
+        //       id: key,
+        //       name: responseData[key].name,
+        //       image: responseData[key].image,
+        //       description: responseData[key].description
+        //     };
+        //     events.push(event);
+        //   }
+
+        //   context.commit('getEvents', events);
     }
 
 }

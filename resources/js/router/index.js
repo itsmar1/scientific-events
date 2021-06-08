@@ -7,7 +7,13 @@ import ContactUs from '../pages/contact/ContactUs.vue';
 import EventsList from '../pages/events/EventsList.vue';
 import EventDetail from '../pages/events/EventDetail.vue';
 import AdminDashboard from '../pages/dashboards/admin/AdminDashboard.vue';
+// Admin routes
 import EventsListAdmin from '../pages/dashboards/admin/EventsList.vue';
+import ContactMessage from '../pages/dashboards/admin/ContactMessage.vue';
+import EventAdmin from '../pages/dashboards/admin/EventAdmin.vue';
+import EventResponsable from '../pages/dashboards/admin/EventResponsable.vue';
+import SessionAdmin from '../pages/dashboards/admin/SessionAdmin.vue';
+import UserAccount from '../pages/dashboards/admin/UserAccount.vue';
 
 
 const router = createRouter({
@@ -30,7 +36,12 @@ const router = createRouter({
             path: '/admin',
             component: AdminDashboard,
             children: [
-                { path: 'events', component: EventsListAdmin }
+                { path: 'events', component: EventsListAdmin },
+                { path: 'contact', component: ContactMessage },
+                { path: 'eventadmins', component: EventAdmin },
+                { path: 'responsables', component: EventResponsable },
+                { path: 'sessions', component: SessionAdmin },
+                { path: 'settings', component: UserAccount }
             ]
         },
         { path: '/:catchAll(.*)', component: NotFound }

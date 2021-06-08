@@ -24,8 +24,8 @@ export default {
     props: ['id'],
     data() {
         return {
-            selectedEvent: null,
-            selectedSessions: null
+            selectedEvent: {},
+            selectedSessions: {}
         }
     },
     computed: {
@@ -34,24 +34,24 @@ export default {
         }
     },
     methods: {
-        // loadSessions() {
-        //     this.$store.dispatch('events/getEventSessions', this.id);
-        //     this.selectedSessions = this.$store.getters['events/getEventSessions'];
         // },
-        async loadData() {
+        loadData() {
+            this.$store.dispatch('events/getEvent', this.id);
+            // await axios.get(`api/getEvent/${this.id}`)
+            // .then( (res) => {
+            //     this.selectedEvent = res.data.events;
+            //     console.log(res.data.events);
+            //     this.selectedSessions = res.data.sessions;
+            // })
+            // .catch( (error) => console.log(error));
 
-            // this.$store.dispatch('events/getEventSessions', this.id);
-            // this.selectedSessions = this.$store.getters['events/getEventSessions']
-
-
-            // context.commit('getEventSessions', sessions);
-            }
+        }
     },
-    async created() {
-        // await this.loadData();
-        this.selectedEvent = await this.$store.getters['events/events'].find(
-            (event) => event.id === this.id
-        );
+    created() {
+        this.loadData();
+        // this.selectedEvent = await this.$store.getters['events/events'].find(
+        //     (event) => event.id === this.id
+        // );
 
 
     }
