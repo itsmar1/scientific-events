@@ -16415,3 +16415,51 @@ readers do not read off random characters that represent icons */
   color: #ec1c23;
   text-decoration: none;
 }
+
+.header-nav .navbar {
+  background-color: #abc1d5;
+  padding: 1rem;
+}
+.header-nav .navbar a .science {
+  text-transform: capitalize;
+  color: #08526D;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header-nav .navbar a .events {
+  text-transform: capitalize;
+  color: #ec1c23;
+  font-size: 2rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 70px 0 0 10px;
+  border-right: 1px solid #d3d3d3;
+  background: url(/images/sidebar.jpg?eff7d0e631585214eaae857c629e03a1) no-repeat scroll 0px 100%/cover transparent;
+  color: #fff;
+}
+.sidebar .left-sidebar {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 70px);
+  z-index: 3;
+}
+.sidebar .sidebar-nav li .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+.sidebar .sidebar-nav li .nav-link:hover {
+  color: black;
+}
+.sidebar .sidebar-nav hr {
+  color: #fff;
+}
+
+main {
+  padding-top: 90px;
+}

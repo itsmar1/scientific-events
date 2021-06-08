@@ -1,0 +1,82 @@
+.header-nav {
+    .navbar {
+        background-color: #abc1d5;
+        padding: 1rem;
+        a {
+            .science {
+                text-transform: capitalize;
+                color: $blue;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .events {
+                text-transform: capitalize;
+                color: $red;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 70px 0 0 10px;
+    border-right: 1px solid #d3d3d3;
+    background: url("/images/sidebar.jpg") no-repeat scroll 0px 100% / cover transparent;
+    color: #fff;
+    // .sidebar-image {
+    //     background-image: url("https://picsum.photos/200/300");
+
+    //     /* Add the blur effect */
+    //     filter: blur(8px);
+    //     -webkit-filter: blur(8px);
+
+    //     /* Full height */
+    //     height: 100%;
+
+    //     /* Center and scale the image nicely */
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+    // .sidebar-overlay {
+    //     background-color: rgb(0,0,0); /* Fallback color */
+    //     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    //     color: white;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 2;
+    // }
+    .left-sidebar {
+        position: sticky;
+        top: 0;
+        height: calc(100vh - 70px);
+        z-index: 3;
+    }
+
+    .sidebar-nav {
+        li {
+            .nav-link {
+                color: #fff;
+                font-weight: 500;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        hr {
+            color: #fff;
+        }
+    }
+
+}
+
+
+main {
+    padding-top: 90px;
+}

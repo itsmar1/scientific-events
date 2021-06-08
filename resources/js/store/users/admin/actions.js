@@ -237,7 +237,7 @@ export default {
     // Logout user
     async logout(_)
     {
-        const response = await axios.post('api/admin/logout', null, {
+        const response = await axios.post('/api/admin/logout', null, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }

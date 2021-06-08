@@ -1,18 +1,28 @@
 <template>
-    <nav class="navbar navbar-dark bg-primary fixed-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0"  href="#">Scientific Events</a>
+    <div class="header-nav">
+        <nav class="navbar navbar-dark fixed-top flex-md-nowrap shadow">
+        <router-link class="navbar-brand col-sm-3 col-md-2 mr-0"  :to="headerLink"><span class="science">Science</span><span class="events">Events</span></router-link>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <button class="nav-link logout-btn" @click="logout">Logout</button>
+                <!-- <a class="nav-link logout-btn" @click="logout">Logout</button> -->
+                <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> Logout</button>
             </li>
         </ul>
-    </nav>
+        </nav>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <!-- sidebar -->
             <div class="col-md-2 bg-light d-none d-md-block sidebar">
+                <!-- <div class="sidebar-image"></div>
+                <div class="sidebar-overlay"></div> -->
                 <div class="left-sidebar">
                     <ul class="nav flex-column sidebar-nav mt-5">
+                        <div class="role-dashboard text-center">
+                            <i class="fas fa-user fa-3x rounded-circle"></i>
+                            <h5 class="mt-2">Admin Dashboard</h5>
+                            <hr>
+                        </div>
                         <li class="nav-item">
                             <router-link class="nav-link active" to="events">Events</router-link>
                         </li>
@@ -35,7 +45,7 @@
                             <router-link class="nav-link" to="settings">Account</router-link>
                         </li>
                         <li class="nav-item mt-5">
-                            <button class="btn logout-btn" @click="logout">Logout</button>
+                            <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> Logout</button>
                         </li>
                     </ul>
                 </div>
@@ -89,10 +99,19 @@ export default {
 
         }
     },
+    computed: {
+        role() {
+            return localStorage.getItem('role');
+        },
+        headerLink()
+        {
+            return '/' + this.role + '/events';
+        }
+    },
     methods: {
         async logout() {
             await this.$store.dispatch('admin/logout');
-            this.$route.replace('/');
+            this.$router.replace('/');
         }
         }
     }
@@ -100,29 +119,5 @@ export default {
 </script>
 
 <style scoped>
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
-    padding: 70px 0 0 10px;
-    border-right: 1px solid #d3d3d3;
 
-}
-
-.left-sidebar {
-    position: sticky;
-    top: 0;
-    height: calc(100vh - 70px);
-}
-
-.sidebar-nav li .nav-link {
-    color: #333;
-    font-weight: 500;
-}
-
-main {
-    padding-top: 90px;
-}
 </style>
