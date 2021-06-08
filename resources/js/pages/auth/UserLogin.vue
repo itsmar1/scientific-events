@@ -61,8 +61,20 @@ export default {
             if( role === 'admin'){
                 this.$router.replace('/admin/events');
             }
+            else if (role === 'event_admin')
+            {
+                this.$router.replace('/eventadmin/events');
+            }
+            else if( role === 'responsable')
+            {
+                this.$router.replace('/responsable/events');
+            }
+            else if(role === 'session_admin')
+            {
+                this.$router.replace('/sessionadmin/events');
+            }
             else if( role === 'user'){
-                this.$router.replace('/admin');
+                this.$router.replace('/user/events');
             }
         }
     }

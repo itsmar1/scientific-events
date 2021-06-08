@@ -16341,3 +16341,77 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   cursor: pointer;
 }
+
+.contact-page .contact-help {
+  padding: 4rem 7rem;
+  background-color: #fff;
+}
+.contact-page .contact-help h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+.contact-page .contact-help h1 .help {
+  color: #ec1c23;
+  font-weight: bold;
+}
+.contact-page .contact-help h5 {
+  margin: 2rem;
+}
+.contact-page .contact-help h5 a {
+  text-decoration: none;
+  color: #ec1c23;
+  cursor: pointer;
+}
+.contact-page .contact-form {
+  padding: 5rem 0;
+}
+.contact-page .contact-form h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.contact-page .contact-form p {
+  color: #8B999F;
+  margin: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.contact-page .contact-us {
+  background-color: #fff;
+  margin: 4.5rem 0;
+  padding: 5rem 0;
+}
+.contact-page .contact-us i {
+  color: #fff;
+  background-color: #ec1c23;
+  display: inline-block;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-page .contact-us h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.contact-page .contact-us .para {
+  color: #8B999F;
+  margin: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.contact-page .contact-us h3 {
+  text-transform: capitalize;
+  color: #08526D;
+}
+.contact-page .contact-us p {
+  color: #8B999F;
+  margin-bottom: 2rem;
+}
+.contact-page .contact-us a {
+  color: #ec1c23;
+  text-decoration: none;
+}

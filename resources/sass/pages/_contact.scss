@@ -1,0 +1,78 @@
+.contact-page {
+
+    .contact-help {
+        padding: 4rem 7rem;
+        background-color: #fff;
+        h1 {
+            text-transform: capitalize;
+            letter-spacing: .4rem;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            .help {
+                color: $red;
+                font-weight: bold;
+            }
+        }
+        h5 {
+            margin: 2rem;
+            a {
+                text-decoration: none;
+                color: $red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contact-form {
+        padding: 5rem 0;
+        h4 {
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: #8B999F;
+            margin: 3rem;
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+    }
+
+    .contact-us {
+        background-color: #fff;
+        margin: 4.5rem 0;
+        padding: 5rem 0;
+        i {
+            color: #fff;
+            background-color: $red;
+            display: inline-block;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+        }
+        .para {
+            color: #8B999F;
+            margin: 3rem;
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+        h3 {
+            text-transform: capitalize;
+            color: $blue;
+        }
+        p {
+            color: #8B999F;
+            margin-bottom: 2rem;
+        }
+        a {
+            color: $red;
+            text-decoration: none;
+        }
+    }
+}

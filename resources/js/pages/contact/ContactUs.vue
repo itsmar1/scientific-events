@@ -1,7 +1,8 @@
 <template>
+    <div class="contact-page">
     <div class="contact-help">
         <div class="container mx-auto text-center">
-            <h1>How can we <span>Help</span>?</h1>
+            <h1>How can we <span class="help">Help</span>?</h1>
             <input type="text" class="form-control" placeholder="Ask us a question">
             <h5>Alternatively, you can browse our <router-link to="/events">Events</router-link></h5>
         </div>
@@ -9,48 +10,42 @@
 
     <div class="contact-form">
         <div class="container">
-            <h4>Contact an event organiser</h4>
-            <p>If you have a question about an event, we can send your request directly to the event organiser.</p>
+            <h4 class="text-center mb-2">Contact an event organiser</h4>
+            <p class="text-center">If you have a question about an event, we can send your request directly to the event organiser.</p>
             <form @submit.prevent="submitForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" class="form-control" v-model.trim="name">
+                <div class="form-inline">
+                    <input type="text" name="name" class="form-control mr-3" v-model.trim="name" placeholder="Enter your name">
+                    <input type="email" name="email" id="email" class="form-control mr-3" v-model.trim="email" placeholder="Ente email">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" v-model.trim="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" rows="5" class="form-control" v-model.trim="message"></textarea>
-                </div>
+                <textarea name="message" rows="5" class="form-control my-4" v-model.trim="message" placeholder="Ask your question"></textarea>
                 <input type="submit" value="Send message" class="btn btn-primary">
             </form>
         </div>
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us text-center">
         <div class="container">
-            <h4>Contact Us</h4>
-            <p>If you're unable to find the answers to your questions, please get in touch.</p>
-            <div class="row">
-                <div class="col-sm-4">
-                    <i class="fas fa-envelope"></i>
-                    <p>Send us an email</p>
-                    <a href="mailto:support@events.com">support@events.com</a>
+            <h4 class="h2">Contact Us</h4>
+            <p class="para">If you're unable to find the answers to your questions, please get in touch.</p>
+            <div class="row mt-3">
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-envelope fa-3x rounded-circle"></i>
+                    <h3>Send us an email</h3>
+                    <a href="mailto:support@fsa.ac.ma">support@events.com</a>
                 </div>
-                <div class="col-sm-4">
-                    <i class="fas fa-phone"></i>
-                    <p>Call TicketSource</p>
-                    <a href="tel:0123456789">0-123-456789</a>
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-phone fa-flip-horizontal  fa-3x rounded-circle"></i>
+                    <h3>Call ScienceEvents</h3>
+                    <a href="tel:0123456789">0-(123)-456789</a>
                 </div>
-                <div class="col-sm-4">
-                    <i class="fas fa-envelope"></i>
-                    <p>Drop us a line</p>
-                    <p>Off Edge, Station Approach, Penarth CF64 3EE</p>
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-building fa-3x rounded-circle"></i>
+                    <h3>Drop us a line</h3>
+                    <p>B.P 8106, Agadir 80000</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </template>
 
@@ -71,7 +66,9 @@ export default {
                 message: this.message
             });
 
-            console.log(response);
+            this.name = '',
+            this.email = '',
+            this.message = ''
         }
     }
 
