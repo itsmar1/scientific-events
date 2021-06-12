@@ -1,7 +1,8 @@
 <template>
     <div class="header-nav">
-        <nav class="navbar navbar-dark fixed-top flex-md-nowrap shadow">
-        <router-link class="navbar-brand col-sm-3 col-md-2 mr-0"  :to="headerLink"><span class="science">Science</span><span class="events">Events</span></router-link>
+        <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap shadow">
+        <!-- <router-link class="navbar-brand col-sm-3 col-md-2 mr-0"  :to="headerLink"><span class="science">Science</span><span class="events">Events</span></router-link> -->
+        <router-link class="navbar-brand col-sm-3 col-md-2 mr-0"  :to="headerLink"></router-link>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <!-- <a class="nav-link logout-btn" @click="logout">Logout</button> -->
@@ -107,6 +108,7 @@ export default {
         {
             return '/' + this.role + '/events';
         }
+
     },
     methods: {
         async logout() {

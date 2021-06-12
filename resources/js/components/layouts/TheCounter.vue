@@ -1,25 +1,27 @@
 <template>
+    <base-card>
     <section class="counter">
         <div class="counter-group text-center">
-            {{  displayDays }}
+            <span class="counter-value">{{  displayDays }}</span>
             <div class="counter-name">days</div>
         </div>
         <span class="dots">:</span>
         <div class="counter-group text-center">
-            {{  displayHours }}
+            <span class="counter-value">{{  displayHours }}</span>
             <div class="counter-name">hours</div>
         </div>
         <span class="dots">:</span>
         <div class="counter-group text-center">
-            {{  displayMinutes }}
+            <span class="counter-value">{{  displayMinutes }}</span>
             <div class="counter-name">minutes</div>
         </div>
-        <span class="dots">:</span>
+        <!-- <span class="dots">:</span>
         <div class="counter-group text-center">
             {{  displaySeconds }}
             <div class="counter-name">seconds</div>
-        </div>
+        </div> -->
     </section>
+    </base-card>
 </template>
 
 <script>
@@ -30,14 +32,12 @@ export default {
             displayDays: 0,
             displayHours: 0,
             displayMinutes: 0,
-            displaySeconds: 0
+            // displaySeconds: 0
         }
     },
     computed: {
         // _secondes: () => 1000,
-        _secondes() {
-            return 1000;
-        },
+        _secondes: () => 1000,
         _minutes() {
             return this._secondes * 60;
         },
@@ -58,9 +58,6 @@ export default {
                 this.millisecond
             );
         },
-        now() {
-            return new Date();
-        }
     },
     mounted() {
         this.showRemaining();
@@ -69,15 +66,14 @@ export default {
         showRemaining() {
 
             const timer = setInterval(() => {
+
                 // const now = new Date();
-                // const end = new Date(2022, 6, 23, 10, 10, 10, 10);
+                // const distance = this.end.getTime() - now.getTime();
+                const distance = this.end.getTime() - new Date().getTime();
 
-                // const that = this;
-
-                // const now = new Date;
+                // const distance = (this.end).getTime() - (this.now).getTime();
 
 
-                const distance = (this.end).getTime() - (this.now).getTime();
                 // const distance = Math.round((this.end.getTime() - (new Date()).getTime()) / 100);
 
                 if(distance < 0)

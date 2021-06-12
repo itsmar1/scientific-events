@@ -24,10 +24,13 @@ export default {
 
           for (const key in responseData) {
             const event = {
-              id: key,
+              id: responseData[key].id,
               name: responseData[key].name,
               image: responseData[key].image,
-              description: responseData[key].description
+              description: responseData[key].description,
+              city: responseData[key].city,
+              country: responseData[key].country,
+              type: responseData[key].type
             };
             events.push(event);
           }

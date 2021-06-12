@@ -16305,6 +16305,89 @@ readers do not read off random characters that represent icons */
   text-transform: capitalize;
   font-weight: bold;
 }
+.counter .counter-group .counter-value {
+  letter-spacing: 0.4rem;
+  display: block;
+  font-size: 1.5rem;
+}
+.counter .counter-group .counter-name {
+  font-size: 1.2rem;
+}
+.counter .dots {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.event-item {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  list-style: none;
+}
+.event-item li {
+  list-style: none;
+}
+.event-item .card .card-body {
+  padding: 0.8rem;
+}
+.event-item .card .card-body h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #08526D;
+}
+.event-item .card .card-body h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+}
+.event-item .card .card-body h3 i {
+  color: #ec1c23;
+}
+.badge {
+  background-color: #ccc;
+  color: #252525;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.conference {
+  background-color: #3d008d;
+  color: white;
+}
+
+.atelier {
+  background-color: #71008d;
+  color: white;
+}
+
+.formation {
+  background-color: #8d006e;
+  color: white;
+}
+
+.base-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 2rem auto;
+  background-color: #fff;
+}
+
+.filter-option {
+  margin-left: 3rem;
+}
+.filter-option input {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.filter-option label {
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+
 .form .form-container {
   border: 1px solid black;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -16462,4 +16545,40 @@ readers do not read off random characters that represent icons */
 
 main {
   padding-top: 90px;
+}
+
+.how-it-works {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.how-it-works .how {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  color: #08526D;
+}
+.how-it-works h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #1a0d34;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+.how-it-works .description {
+  font-weight: 300;
+  text-align: center;
+  color: #1a0d34;
+  margin-bottom: 3.5rem;
+  font-size: 1.1rem;
+}
+.how-it-works h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem;
 }

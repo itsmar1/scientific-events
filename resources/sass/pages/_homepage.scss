@@ -1,0 +1,35 @@
+.how-it-works {
+    background-color: #fff;
+    padding: 5rem 0;
+    .how {
+        font-family: 'Lato',sans-serif;
+        text-align: center;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 22px;
+        color: $blue;
+    }
+    h2 {
+        font-family: 'Lato',sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #1a0d34;
+        font-size: 42px;
+        margin-bottom: 2rem;
+    }
+    .description {
+        font-weight: 300;
+        text-align: center;
+        color: #1a0d34;
+        margin-bottom: 3.5rem;
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 1rem;
+    }
+}
