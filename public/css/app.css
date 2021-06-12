@@ -16578,10 +16578,13 @@ main {
   margin-bottom: 3.5rem;
   font-size: 1.1rem;
 }
-.how-it-works h3 {
+.how-it-works .features img {
+  height: 200px;
+}
+.how-it-works .features h3 {
   font-size: 1.4rem;
   font-weight: 700;
-  margin: 1rem;
+  margin: 2rem 0;
 }
 
 /* Start How it works section */
@@ -16623,3 +16626,31 @@ main {
 }
 
 /* End types events section */
+/* Start types of roles section */
+.types-of-roles {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+.types-of-roles p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.4rem;
+  color: #08526D;
+}
+.types-of-roles h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.types-of-roles img {
+  height: 200px;
+}
+.types-of-roles h3 {
+  text-transform: capitalize;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* End types of roles section */

@@ -8,18 +8,22 @@
             <div class="row features">
                 <div class="col-sm-6 col-md-3">
                     <img class="img-fluid" src="/images/homepage/Create_profile2x.jpg" alt="">
+                    <h3>Sign up and create your profile</h3>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <img class="img-fluid" src="/images/homepage/fill_event_data2x.jpg" alt="">
+                    <h3>Fill in the event data</h3>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <img class="img-fluid" src="/images/homepage/launch2x.jpg" alt="">
+                    <h3>Launch the event</h3>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <img class="img-fluid" src="/images/homepage/observe_magic2x.jpg" alt="">
+                    <h3>Let the magic happen</h3>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <h3>Sign up and create your profile</h3>
                 </div>
@@ -32,7 +36,7 @@
                 <div class="col-sm-6 col-md-3">
                     <h3>Let the magic happen</h3>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -102,6 +106,34 @@
     </div>
 
     <!-- End Types events section -->
+
+
+    <!-- Start types of roles section -->
+    <div class="types-of-roles">
+        <div class="container">
+            <p class="text-center">types of roles</p>
+            <h2 class="text-center">ScienceEvents empowers different types of event management roles</h2>
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="/images/homepage/roles/seniorAdmin.jpg" alt="senior administrator">
+                    <h3>senior administrators</h3>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="/images/homepage/roles/eventAdmin.jpg" alt="Event Admin">
+                    <h3>event administrators</h3>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="/images/homepage/roles/organisationResponsables.jpg" alt="Organisation Responsables">
+                    <h3>organisation responsables</h3>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="/images/homepage/roles/sessionAdmin.jpg" alt="Session Admin">
+                    <h3>session administrators</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End types of roles section -->
 
 
 
