@@ -1,3 +1,5 @@
+/* Start How it works section */
+
 .how-it-works {
     background-color: #fff;
     padding: 5rem 0;
@@ -33,3 +35,51 @@
         margin: 1rem;
     }
 }
+
+/* Start How it works section */
+
+
+
+/* Start types events section */
+.types-events {
+    padding: 7rem;
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #1a0d34;
+        font-size: 42px;
+        margin-bottom: 2rem;
+    }
+    .types-desc {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        margin: 3rem 0 5rem;
+        font-weight: 500;
+    }
+    img {
+
+    }
+    .slider-section {
+        p {
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            color: $blue;
+        }
+        h3 {
+            font-weight: 700;
+            letter-spacing: .1rem;
+            padding-right: 3rem;
+        }
+        .fa-check {
+            color: $blue;
+            background: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+
+}
+/* End types events section */

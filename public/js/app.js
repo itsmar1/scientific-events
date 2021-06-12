@@ -21474,11 +21474,103 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"how-it-works\"><div class=\"container text-center\"><p class=\"how\">How It Works</p><h2>Online Event Planning and Management. Simplified.</h2><p class=\"description\">Our <span class=\"font-weight-bold\">event planning platform</span> gives you the tools to design memorable experiences and run<br> <span class=\"font-weight-bold\">successful online events.</span></p><div class=\"row features\"><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/Create_profile2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/fill_event_data2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/launch2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/observe_magic2x.jpg\" alt=\"\"></div></div><div class=\"row\"><div class=\"col-sm-6 col-md-3\"><h3>Sign up and create your profile</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Fill in the event data</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Launch the event</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Let the magic happen</h3></div></div></div></div>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"how-it-works\"><div class=\"container text-center\"><p class=\"how\">How It Works</p><h2>Online Event Planning and Management. Simplified.</h2><p class=\"description\">Our <span class=\"font-weight-bold\">event planning platform</span> gives you the tools to design memorable experiences and run<br> <span class=\"font-weight-bold\">successful events.</span></p><div class=\"row features\"><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/Create_profile2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/fill_event_data2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/launch2x.jpg\" alt=\"\"></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/observe_magic2x.jpg\" alt=\"\"></div></div><div class=\"row\"><div class=\"col-sm-6 col-md-3\"><h3>Sign up and create your profile</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Fill in the event data</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Launch the event</h3></div><div class=\"col-sm-6 col-md-3\"><h3>Let the magic happen</h3></div></div></div></div>", 1);
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "types-events"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "container"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "text-center"
+}, "Plan Many Types of Events Online"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "types-desc text-center"
+}, "ScienceEvents can help you manage different kind of scientific events"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "row"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "col-sm-12 col-md-6"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  id: "carouselExampleControls",
+  "class": "carousel slide",
+  "data-ride": "carousel"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "carousel-inner"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "carousel-item active"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: "/images/homepage/eventTypes/conference.jpg",
+  "class": "d-block w-100",
+  alt: "conference"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "carousel-item"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: "/images/homepage/eventTypes/workshop.jpg",
+  "class": "d-block w-100",
+  alt: "workshop"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "carousel-item"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: "/images/homepage/eventTypes/training.jpg",
+  "class": "d-block w-100",
+  alt: "training"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  "class": "carousel-control-prev",
+  href: "#carouselExampleControls",
+  role: "button",
+  "data-slide": "prev"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "carousel-control-prev-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "sr-only"
+}, "Previous")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  "class": "carousel-control-next",
+  href: "#carouselExampleControls",
+  role: "button",
+  "data-slide": "next"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "carousel-control-next-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "sr-only"
+}, "Next")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "col-sm-12 col-md-6 slider-section"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "TYPES OF EVENTS"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "ScienceEvents works for several types of events"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "d-flex"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-end"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "event-type"
+}, "Conference")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "d-flex"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-end"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "event-type"
+}, "Workshop")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "d-flex"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-end"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "event-type"
+}, "Training")])])])])])], -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" How it works secion "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <the-counter :year=\"2021\" :month=\"6\"  :date=\"6\" :hour=\"19\" :minute=\"30\" :second=\"32\" :millisecond=\"31\"></the-counter>\n    <event-list></event-list> ")], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" How it works secion "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Types events section "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Types events section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <the-counter :year=\"2021\" :month=\"6\"  :date=\"6\" :hour=\"19\" :minute=\"30\" :second=\"32\" :millisecond=\"31\"></the-counter>\n    <event-list></event-list> ")], 64
+  /* STABLE_FRAGMENT */
   );
 }
 

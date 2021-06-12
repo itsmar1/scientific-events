@@ -16547,6 +16547,7 @@ main {
   padding-top: 90px;
 }
 
+/* Start How it works section */
 .how-it-works {
   background-color: #fff;
   padding: 5rem 0;
@@ -16582,3 +16583,43 @@ main {
   font-weight: 700;
   margin: 1rem;
 }
+
+/* Start How it works section */
+/* Start types events section */
+.types-events {
+  padding: 7rem;
+}
+.types-events h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #1a0d34;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+.types-events .types-desc {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin: 3rem 0 5rem;
+  font-weight: 500;
+}
+.types-events .slider-section p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #08526D;
+}
+.types-events .slider-section h3 {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  padding-right: 3rem;
+}
+.types-events .slider-section .fa-check {
+  color: #08526D;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* End types events section */
