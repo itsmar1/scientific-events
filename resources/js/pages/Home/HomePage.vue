@@ -136,6 +136,25 @@
     <!-- End types of roles section -->
 
 
+    <!-- Start Event plateform section -->
+    <div class="events-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h1>scientific events management platform</h1>
+                    <h2>for people who like to work smarter</h2>
+                    <p>Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.</p>
+                    <router-link class="btn btn-outline-primary" to="/events">get started</router-link>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid" src="/images/homepage/event_management_platform.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Event plateform section -->
+
+
 
 
     <!-- <the-counter :year="2021" :month="6"  :date="6" :hour="19" :minute="30" :second="32" :millisecond="31"></the-counter>

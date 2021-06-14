@@ -47,7 +47,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 text-left">
-            <p>COPYRIGHT 2021 ELITECORP &copy; ALL RIGHTS RESERVED</p>
+            <p>COPYRIGHT 2021 ScienceEvents &copy; ALL RIGHTS RESERVED</p>
           </div>
           <div class="col-sm-6 text-right">
             <ul>

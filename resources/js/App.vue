@@ -1,5 +1,6 @@
 <template>
-  <the-header v-if="1 == 2"></the-header>
+  <!-- <the-header v-if="1 == 2"></the-header> -->
+  <the-header v-if="!isAuthenticated"></the-header>
   <router-view></router-view>
   <!-- <div class="row">
       <div class="col-sm-4 text-center">
@@ -14,7 +15,8 @@
             ></the-counter>
       </div>
   </div> -->
-  <the-footer v-if="1 == 2"></the-footer>
+  <!-- <the-footer v-if="1 == 2"></the-footer> -->
+  <the-footer v-if="!isAuthenticated"></the-footer>
 </template>
 
 <script>
@@ -33,7 +35,7 @@ export default {
   },
   computed: {
     isAuthenticated() {
-      return this.$store.isAuthenticated;
+      return localStorage.getItem('token');
     },
   },
   // data() {
@@ -50,6 +52,7 @@ export default {
   //     this.setIsAuthenticated();
   // }
 };
+
 </script>
 
 <style>

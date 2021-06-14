@@ -42,7 +42,7 @@ class EventController extends Controller
         $fields = $request->validate([
             'name' => 'required|string',
             'description' => 'required|string',
-            'image' => 'required|string',
+            // 'image' => 'image',
             'startDate' => 'string',
             'endDate' => 'string',
             'type' => 'required|string',
@@ -68,10 +68,22 @@ class EventController extends Controller
         $event->email = $fields['email'];
         $event->save();
 
-        $eventImage = new Image();
-        $eventImage->event_id = $event->id;
-        $eventImage->image = $fields['image'];
-        $eventImage->save();
+        // $eventImage = new Image();
+        // $eventImage->event_id = $event->id;
+        // $eventImage->image = $fields['image'];
+        // $eventImage->save();
+
+
+        $image = request()->file('image');
+        $imageName = $image->getClientOriginalName();
+
+        $image->move(public_path('/images'), $imageName);
+
+        $img = new Image();
+        $img->event_id = $event->id;
+        $img->image = $imageName;
+        $img->save();
+
     }
 
     /**
