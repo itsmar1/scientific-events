@@ -15,10 +15,9 @@ export default {
     // },
     getEvent(state, payload)
     {
-        state.event = payload.events;
-        console.log(payload.events);
+        // console.log(payload.event);
+        state.event = payload.event;
         state.sessions = payload.sessions;
-        console.log(payload.committees);
         state.committees = payload.committees;
     }
 

@@ -75,10 +75,24 @@ export default {
 
 
 
-    async getEvent(_, id)
+    async getEvent(context, id)
     {
-        const response = await axios.get(`api/getEvent/${id}`);
-        console.log(response);
+        await axios.get(`/api/getEvent/${id}`)
+        .then((res) => {
+            const event = JSON.parse(JSON.stringify(res.data.events));
+            // console.log(event);
+            const sessions = JSON.parse(JSON.stringify(res.data.sessions));
+            // console.log(sessions);
+            const committees = JSON.parse(JSON.stringify(res.data.committees));
+            // console.log(committees);
+            context.commit('getEvent', {
+                event,
+                sessions,
+                committees
+            });
+
+        });
+
         // context.commit('getEvent', data);
 
 

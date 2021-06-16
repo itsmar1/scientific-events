@@ -56,7 +56,7 @@ export default {
     },
     async deleteContacts(_, id)
     {
-        await axios.post(`/api/admin/contacts/${id}`, null, {
+        await axios.delete(`/api/admin/contacts/${id}`, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
@@ -82,9 +82,11 @@ export default {
             }
         });
     },
-    async putEventAdmins(_, payload, id)
+    async putEventAdmins(_, payload)
     {
-        await axios.put(`/api/admin/putEventAdmins/${id}`, payload, {
+        console.log(payload.id);
+        console.log(payload);
+        await axios.put(`/api/admin/putEventAdmins/${payload.id}`, payload.user, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
@@ -119,9 +121,9 @@ export default {
             }
         });
     },
-    async putResponsable(_, payload, id)
+    async putResponsable(_, payload)
     {
-        await axios.put(`/api/admin/putResponsable/${id}`, payload, {
+        await axios.put(`/api/admin/putResponsable/${payload.id}`, payload.user, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }

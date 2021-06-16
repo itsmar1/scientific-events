@@ -16353,18 +16353,23 @@ readers do not read off random characters that represent icons */
   margin-right: 0.5rem;
 }
 
-.conference {
+.conference, .user, .session_admin {
   background-color: #3d008d;
   color: white;
 }
 
-.atelier {
+.atelier, .event_admin {
   background-color: #71008d;
   color: white;
 }
 
-.formation {
+.formation, .responsable {
   background-color: #8d006e;
+  color: white;
+}
+
+.admin {
+  background-color: #ec1c23;
   color: white;
 }
 
@@ -16386,6 +16391,24 @@ readers do not read off random characters that represent icons */
 .filter-option label {
   font-size: 1.5rem;
   line-height: 1.9;
+}
+
+.user-item-desc .user-key {
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  color: #08526D;
+}
+.user-item-desc .user-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.user-item-desc .buttons-action {
+  float: right;
 }
 
 .form .form-container {
@@ -16676,3 +16699,65 @@ main {
   margin-top: 2rem;
 }
 /* End homepage events intro */
+.event-detail {
+  margin-bottom: 15rem;
+}
+.event-detail h1 {
+  color: #08526D;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.event-detail img {
+  display: block;
+  margin-bottom: 4rem;
+  border: 10px solid #08526D;
+}
+.event-detail h3 {
+  color: #08526D;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.event-detail h3 i {
+  color: #ec1c23;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+.event-detail h4 {
+  color: #08526D;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.event-detail h4 i {
+  color: #ec1c23;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+.event-detail p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin: 3rem;
+}
+.event-detail h2 {
+  color: #08526D;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.event-detail .card .venue-key {
+  color: #08526D;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-right: 3rem;
+}
+.event-detail .card .venue-value {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+.event-detail .committee-name {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
