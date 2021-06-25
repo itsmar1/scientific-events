@@ -14,6 +14,7 @@ import EventAdmin from '../pages/dashboards/admin/EventAdmin.vue';
 import EventResponsable from '../pages/dashboards/admin/EventResponsable.vue';
 import SessionAdmin from '../pages/dashboards/admin/SessionAdmin.vue';
 import UserAccount from '../pages/dashboards/admin/UserAccount.vue';
+import RegularUser from '../pages/dashboards/admin/RegularUser.vue';
 
 
 const router = createRouter({
@@ -36,11 +37,22 @@ const router = createRouter({
             path: '/admin',
             component: AdminDashboard,
             children: [
-                { path: 'events', component: EventsListAdmin },
+                {
+                    path: 'events',
+                    component: EventsListAdmin,
+                    children: [
+                        {
+                            path: ':id',
+                            component: EventDetail,
+                            props: true
+                        }
+                    ]
+                },
                 { path: 'contact', component: ContactMessage },
                 { path: 'eventadmins', component: EventAdmin },
                 { path: 'responsables', component: EventResponsable },
                 { path: 'sessions', component: SessionAdmin },
+                { path: 'users', component: RegularUser },
                 { path: 'settings', component: UserAccount }
             ]
         },

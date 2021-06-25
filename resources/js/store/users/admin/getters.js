@@ -1,6 +1,7 @@
 export default {
     events(state)
     {
+        // console.log(state.events);
         return state.events;
     },
     selectedEvent(state)

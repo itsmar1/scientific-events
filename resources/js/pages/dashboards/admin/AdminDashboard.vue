@@ -37,7 +37,7 @@
                             <router-link class="nav-link" to="sessions">Sessions Admins</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="sessions">Regular Users</router-link>
+                            <router-link class="nav-link" to="users">Regular Users</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="contact">Messages</router-link>

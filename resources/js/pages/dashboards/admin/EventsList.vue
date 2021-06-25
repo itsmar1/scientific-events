@@ -38,6 +38,8 @@
                         :city="event.city"
                         :country="event.country"
                         :type="event.type"
+                        @delete-event="deleteEvent"
+                        @update-event="updateEvent"
                         ></event-item>
                     <!-- </ul> -->
                 </div>
@@ -59,26 +61,27 @@
                                 <label for="title">Title</label>
                                 <input type="text" name="title" class="form-control" v-model.trim="event.name">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label for="description">Description</label>
                                 <textarea name="description" rows="8" class="form-control" v-model="event.description"></textarea>
                             </div>
-                            <!-- Image upload -->
+                            <!-- Start Image upload -->
                             <div class="custom-file form-group">
-                                <input type="file" @change="imageSelected" class="custom-file-input" id="customFile">
+                                <input type="file" @change="imageSelected" class="custom-file-input" name="customFile">
                                 <label class="custom-file-label form-control" for="customFile">Choose an image</label>
                             </div>
                             <div v-if="imagepreview" class="mt-3">
                                 <img :src="imagepreview" class="figure-img img-fluid rounded"  style="max-height:100px;">
                             </div>
-                            <!-- Image upload -->
-                            <form class="form-inline mb-3">
+                            <!-- End Image upload -->
+                            <hr/>
+                            <form class="form-inline mb-3 mt-5">
                                 <label for="startDate">Start Date </label><br>
-                                <input type="date" name="startDate" class="form-control" v-model="event.startDate">
+                                <input type="date" name="startDate" class="form-control ml-5" v-model="event.startDate">
                             </form>
                             <form class="form-inline mb-3">
                                 <label for="endDate">End Date </label><br>
-                                <input type="date" name="endDate" class="form-control" v-model="event.endDate">
+                                <input type="date" name="endDate" class="form-control ml-5" v-model="event.endDate">
                             </form>
                             <div class="form-group">
                                 <label for="category">Event Type</label>
@@ -126,7 +129,8 @@
 </template>
 
 <script>
-import EventItem from "../../../components/events/EventItem.vue";
+// import EventItem from "../../../components/events/EventItem.vue";
+import EventItem from './EventItem.vue';
 import EventFilter from '../../../components/events/EventFilter.vue';
 import TheCounter from '../../../components/layouts/TheCounter.vue';
 
@@ -163,7 +167,7 @@ export default {
   },
   computed: {
       events(){
-          const events = this.$store.getters["admin/events"];
+          const events = this.$store.getters['admin/events'];
           return events.filter( (event) => {
               if(this.activeFilters.conference && event.type === 'conference')
               {
@@ -184,7 +188,7 @@ export default {
   },
   methods: {
     async loadEvents() {
-      await this.$store.dispatch("admin/events");
+      await this.$store.dispatch('admin/events');
       // test
       // await this.$store.dispatch("events/getAllSessions");
       // this.events = this.$store.getters["admin/events"];
@@ -212,9 +216,17 @@ export default {
             //     console.log(response);
             // }).catch(()=>{
             // })
+    },
+    deleteEvent(id)
+    {
+        this.$store.dispatch('admin/deleteEvent', id);
+    },
+    updateEvent(payload)
+    {
+        this.$store.dispatch('admin/putEvent', payload);
     }
   },
-  mounted() {
+  created() {
     this.loadEvents();
   },
 };

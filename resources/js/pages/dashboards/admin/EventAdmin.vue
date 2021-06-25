@@ -61,7 +61,7 @@
                     </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-dismiss="modal" @click="addUser">Add user</button>
+                        <button class="btn btn-primary" data-dismiss="modal" @click="addUser">Add Event Admin</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ export default {
     eventAdmins() {
       return this.$store.getters["admin/eventAdmins"];
     },
-    
+
   },
   methods: {
     async getEventAdmins() {

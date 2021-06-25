@@ -82,6 +82,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'admin']], f
     Route::get('getEvent/{id}', [EventController::class, 'getEvent']);
     Route::post('postEvent', [EventController::class, 'store']);
     Route::put('putEvent/{id}', [EventController::class, 'update']);
+    Route::delete('deleteEvent/{id}', [EventController::class, 'destroy']);
 
     // Logout
     Route::post('logout', [AuthController::class, 'logout']);

@@ -11,7 +11,8 @@ export default {
             }
         })
         .then( (res) => {
-            context.commit('events', res.data);
+            const events = JSON.parse(JSON.stringify(res.data));
+            context.commit('events', events);
         });
     },
     async getEvent(context, id)
@@ -33,9 +34,17 @@ export default {
             }
         });
     },
-    async putEvent(_, payload, id)
+    async putEvent(_, payload)
     {
-        await axios.put(`/api/admin/putEvent/${id}`, payload, {
+        await axios.put(`/api/admin/putEvent/${payload.id}`, payload, {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        });
+    },
+    async deleteEvent(_, id)
+    {
+        await axios.delete(`/api/admin/deleteEvent/${id}`, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
@@ -159,9 +168,9 @@ export default {
             }
         });
     },
-    async putSessionAdmins(_, payload, id)
+    async putSessionAdmins(_, payload)
     {
-        await axios.put(`/api/admin/putSessionAdmins/${id}`, payload, {
+        await axios.put(`/api/admin/putSessionAdmins/${payload.id}`, payload.user, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
@@ -188,7 +197,7 @@ export default {
             context.commit('users', res.data);
         });
     },
-    async postSessionAdmins(_, payload)
+    async postUsers(_, payload)
     {
         await axios.post('/api/admin/postUsers', payload, {
             headers: {
@@ -196,7 +205,7 @@ export default {
             }
         });
     },
-    async putSessionAdmins(_, payload, id)
+    async putUsers(_, payload)
     {
         await axios.put(`/api/admin/putUsers/${id}`, payload, {
             headers: {
@@ -221,7 +230,10 @@ export default {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
         }).then( (res) => {
-            context.commit('user', res.data);
+            const user = [];
+            user.push(res.data);
+            console.log(user);
+            context.commit('user', user);
         });
     },
     async putUser(_, payload)

@@ -16,6 +16,7 @@ export default {
             sessionAdmins: null,
             users: null,
             user: null,
+            // events: null,
             events: [
                 {
                     "id": 1,

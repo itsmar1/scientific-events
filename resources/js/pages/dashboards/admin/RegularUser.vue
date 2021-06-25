@@ -3,14 +3,14 @@
     <div class="container">
       <div class="row my-5">
         <div class="col-sm-3">
-            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#addUser"><i class="fas fa-plus ml-auto"></i>   Create New Session Admin</button>
+            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#addUser"><i class="fas fa-plus ml-auto"></i>   Create New User</button>
         </div>
       </div>
       <hr>
       <base-card>
         <div class="row">
           <div class="col-sm-12">
-            <ul v-for="user in sessionAdmins" :key="user" class="list-unstyled">
+            <ul v-for="user in users" :key="user" class="list-unstyled">
                 <base-card>
               <user-item
                 :id="user.id"
@@ -31,7 +31,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-success text-white">
-                        <h5 class="modal-title">Add Session Admin</h5>
+                        <h5 class="modal-title">Add User</h5>
                         <button class="close" data-dismiss="modal">
                             <span>&times;</span>
                         </button>
@@ -61,7 +61,7 @@
                     </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-success" data-dismiss="modal" @click="addUser">Add Session Admin</button>
+                        <button class="btn btn-success" data-dismiss="modal" @click="addUser">Add User</button>
                     </div>
                 </div>
             </div>
@@ -90,30 +90,30 @@ export default {
       }
   },
   computed: {
-    sessionAdmins() {
-      return this.$store.getters["admin/sessionAdmins"];
+    users() {
+      return this.$store.getters["admin/users"];
     },
 
   },
   methods: {
-    async getSessionAdmins() {
-      await this.$store.dispatch('admin/getSessionAdmins');
+    async getUsers() {
+      await this.$store.dispatch('admin/getUsers');
     },
     updateUser(payload){
-        this.$store.dispatch('admin/putSessionAdmins', {
+        this.$store.dispatch('admin/postUsers', {
             user: payload,
             id: payload.id
         });
     },
     deleteUser(id) {
-        this.$store.dispatch('admin/deleteSessionAdmins', id);
+        this.$store.dispatch('admin/deleteUsers', id);
     },
     async addUser() {
-        await this.$store.dispatch('admin/postSessionAdmins', this.user);
+        await this.$store.dispatch('admin/postUsers', this.user);
     }
   },
   mounted() {
-    this.getSessionAdmins();
+    this.getUsers();
   },
 };
 </script>

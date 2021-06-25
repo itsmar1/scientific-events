@@ -26,7 +26,7 @@
         <div class="modal fade" id="updateUser">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-primary text-white">
+                    <div class="modal-header bg-warning text-white">
                         <h5 class="modal-title">Update User</h5>
                         <button class="close" data-dismiss="modal">
                             <span>&times;</span>
@@ -53,7 +53,7 @@
                     </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-dismiss="modal" @click="submitForm(user)">Update user</button>
+                        <button class="btn btn-warning" data-dismiss="modal" @click="submitForm(user)">Update user</button>
                     </div>
                 </div>
             </div>

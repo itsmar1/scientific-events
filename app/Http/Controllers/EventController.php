@@ -127,10 +127,10 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
-    {
-        //
-    }
+    // public function destroy(Event $event)
+    // {
+    //     //
+    // }
 
     public function search(Request $request)
     {
@@ -166,5 +166,10 @@ class EventController extends Controller
             'sessions' => $sessions,
             'committees' => $committees
         ];
+    }
+
+    public function destroy(Request $request)
+    {
+        return Event::find($request->id)->delete();
     }
 }
