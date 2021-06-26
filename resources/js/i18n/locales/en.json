@@ -95,5 +95,15 @@
         "login": "Login",
         "not": "Not registered?",
         "create": "Create an account"
+    },
+    "register": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "password": "Password",
+        "password_confirmation": "Confirm Password",
+        "register": "Register",
+        "already": "Already have an account?",
+        "sign-in": "Sign in"
     }
 }

@@ -52,5 +52,58 @@
             "start": "lancez-vous"
         }
 
+    },
+    "events": {
+        "filter": {
+            "title": "Trouvez événement",
+            "conference": "Conférence",
+            "formation": "Formation",
+            "atelier": "Atelier"
+        },
+        "item": {
+            "show": "Afficher Détails"
+        },
+        "counter": {
+            "days": "jours",
+            "hours": "heures",
+            "minutes": "minutes"
+        }
+    },
+    "contact": {
+        "help": {
+            "how": "Comment pouvons nous",
+            "help": "Aider",
+            "alt": "Alternativement, vous pouvez parcourir nos",
+            "events": "Événements"
+        },
+        "form": {
+            "title": "Contactez un organisateur d'événement",
+            "subtitle": "Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l'organisateur de l'événement.",
+            "submit": "Envoyer message"
+        },
+        "infos": {
+            "title": "Nous Contacter",
+            "subtitle": "Si vous ne trouvez pas les réponses à vos questions, contactez-nous.",
+            "send": "Envoyez-nous un e-mail",
+            "call": "Appel ScienceEvents",
+            "line": "Écrivez-nous"
+        }
+    },
+    "login": {
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "login": "Connexion",
+        "not": "Non enregistré?",
+        "create": "Créer un compte"
+    },
+    "register": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "password_confirmation": "Confirmez Mot de passe",
+        "register": "S'inscrire",
+        "already": "Vous avez déjà un compte?",
+        "sign-in": "S'identifier"
     }
 }

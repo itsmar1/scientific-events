@@ -6,7 +6,7 @@
                     <h5><span class="science">Science</span><span class="events">Events</span></h5>
                     <form @submit.prevent="submitForm">
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ $t('login.email') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -15,7 +15,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">{{ $t('login.password') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
@@ -25,10 +25,10 @@
                         </div>
                         <hr>
                         <!-- <input class="btn btn-outline-primary float-right" type="submit" value="Submit"> -->
-                        <button class="btn btn-outline-primary float-right mt-2" type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        <button class="btn btn-outline-primary float-right mt-2" type="submit"><i class="fas fa-sign-in-alt"></i> {{ $t('login.login') }}</button>
                         <br><br>
                     </form>
-                    <p class="register mt-3">Not registered? <router-link to="/register">Create an acount</router-link></p>
+                    <p class="register mt-3">{{ $t('login.not') }} <router-link to="/register">{{ $t('login.create') }}</router-link></p>
                 </div>
             </div>
         </div>

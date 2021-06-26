@@ -6,7 +6,7 @@
                     <h5><span class="science">Science</span><span class="events">Events</span></h5>
                     <form @submit.prevent="submitForm">
                         <div class="form-group">
-                            <label for="firstName">First Name</label>
+                            <label for="firstName">{{ $t('register.firstName') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -15,7 +15,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="lastName">Last Name</label>
+                            <label for="lastName">{{ $t('register.lastName') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-male"></i></span>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ $t('register.email') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">{{ $t('register.password') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="password_confirmation">Confirm Password</label>
+                            <label for="password_confirmation">{{ $t('register.password_confirmation') }}</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
@@ -52,10 +52,10 @@
                         </div>
                         <hr>
                         <!-- <input class="btn btn-outline-primary float-right" type="submit" value="Submit"> -->
-                        <button class="btn btn-outline-primary float-right mt-2" type="submit"><i class="fas fa-user"></i> Register</button>
+                        <button class="btn btn-outline-primary float-right mt-2" type="submit"><i class="fas fa-user"></i> {{ $t('register.register') }}</button>
                         <br><br>
                     </form>
-                    <p class="register mt-3">Already have an account? <router-link to="/login">Sign in</router-link></p>
+                    <p class="register mt-3">{{ $t('register.already') }} <router-link to="/login">{{ $t('register.sign-in') }}</router-link></p>
                 </div>
             </div>
         </div>

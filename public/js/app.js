@@ -23039,13 +23039,9 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_6 = {
   "class": "form-group"
 };
-
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_7 = {
   "for": "email"
-}, "Email", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_8 = {
   "class": "input-group"
 };
@@ -23063,13 +23059,9 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_10 = {
   "class": "form-group"
 };
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_11 = {
   "for": "password"
-}, "Password", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_12 = {
   "class": "input-group"
 };
@@ -23088,16 +23080,14 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_15 = {
   "class": "btn btn-outline-primary float-right mt-2",
   type: "submit"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "fas fa-sign-in-alt"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Login")], -1
-/* HOISTED */
-);
+};
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-sign-in-alt"
+}, null, -1
 /* HOISTED */
 );
 
@@ -23105,13 +23095,13 @@ var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_18 = {
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_19 = {
   "class": "register mt-3"
 };
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Not registered? ");
-
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Create an acount");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -23122,7 +23112,9 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     onSubmit: _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.submitForm && $options.submitForm.apply($options, arguments);
     }, ["prevent"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('login.email')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "email",
     name: "email",
     "class": "form-control",
@@ -23134,7 +23126,9 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.email, void 0, {
     trim: true
-  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('login.password')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "password",
     name: "password",
     "class": "form-control",
@@ -23144,13 +23138,19 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password]])])]), _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <input class=\"btn btn-outline-primary float-right\" type=\"submit\" value=\"Submit\"> "), _hoisted_15, _hoisted_16, _hoisted_17], 32
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password]])])]), _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <input class=\"btn btn-outline-primary float-right\" type=\"submit\" value=\"Submit\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('login.login')), 1
+  /* TEXT */
+  )]), _hoisted_17, _hoisted_18], 32
   /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('login.not')) + " ", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/register"
   }, {
     "default": _withId(function () {
-      return [_hoisted_20];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('login.create')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
@@ -23199,13 +23199,9 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_6 = {
   "class": "form-group"
 };
-
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_7 = {
   "for": "firstName"
-}, "First Name", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_8 = {
   "class": "input-group"
 };
@@ -23223,13 +23219,9 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_10 = {
   "class": "form-group"
 };
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_11 = {
   "for": "lastName"
-}, "Last Name", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_12 = {
   "class": "input-group"
 };
@@ -23247,13 +23239,9 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 var _hoisted_14 = {
   "class": "form-group"
 };
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_15 = {
   "for": "email"
-}, "Email", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_16 = {
   "class": "input-group"
 };
@@ -23271,13 +23259,9 @@ var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 var _hoisted_18 = {
   "class": "form-group"
 };
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_19 = {
   "for": "password"
-}, "Password", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_20 = {
   "class": "input-group"
 };
@@ -23295,13 +23279,9 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 var _hoisted_22 = {
   "class": "form-group"
 };
-
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_23 = {
   "for": "password_confirmation"
-}, "Confirm Password", -1
-/* HOISTED */
-);
-
+};
 var _hoisted_24 = {
   "class": "input-group"
 };
@@ -23320,16 +23300,14 @@ var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_27 = {
   "class": "btn btn-outline-primary float-right mt-2",
   type: "submit"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "fas fa-user"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Register")], -1
-/* HOISTED */
-);
+};
 
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-user"
+}, null, -1
 /* HOISTED */
 );
 
@@ -23337,14 +23315,13 @@ var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_30 = {
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_31 = {
   "class": "register mt-3"
 };
-
-var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Already have an account? ");
-
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Sign in");
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
@@ -23352,7 +23329,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onSubmit: _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.submitForm && $options.submitForm.apply($options, arguments);
     }, ["prevent"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.firstName')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     name: "firstName",
     "class": "form-control",
@@ -23364,7 +23343,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.firstName, void 0, {
     trim: true
-  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.lastName')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     name: "lastName",
     "class": "form-control",
@@ -23376,7 +23357,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.lastName, void 0, {
     trim: true
-  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.email')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "email",
     name: "email",
     "class": "form-control",
@@ -23388,7 +23371,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.email, void 0, {
     trim: true
-  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.password')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "password",
     name: "password",
     "class": "form-control",
@@ -23398,7 +23383,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.password_confirmation')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "password",
     name: "password_confirmation",
     "class": "form-control",
@@ -23408,13 +23395,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password_confirmation]])])]), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <input class=\"btn btn-outline-primary float-right\" type=\"submit\" value=\"Submit\"> "), _hoisted_27, _hoisted_28, _hoisted_29], 32
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password_confirmation]])])]), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <input class=\"btn btn-outline-primary float-right\" type=\"submit\" value=\"Submit\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.register')), 1
+  /* TEXT */
+  )]), _hoisted_29, _hoisted_30], 32
   /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_30, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.already')) + " ", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/login"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_32];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('register.sign-in')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
@@ -73165,7 +73158,7 @@ var index = {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"}}');
+module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"},"register":{"firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password","register":"Register","already":"Already have an account?","sign-in":"Sign in"}}');
 
 /***/ }),
 
@@ -73187,7 +73180,7 @@ module.exports = {};
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}}}');
+module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}},"events":{"filter":{"title":"Trouvez événement","conference":"Conférence","formation":"Formation","atelier":"Atelier"},"item":{"show":"Afficher Détails"},"counter":{"days":"jours","hours":"heures","minutes":"minutes"}},"contact":{"help":{"how":"Comment pouvons nous","help":"Aider","alt":"Alternativement, vous pouvez parcourir nos","events":"Événements"},"form":{"title":"Contactez un organisateur d\'événement","subtitle":"Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l\'organisateur de l\'événement.","submit":"Envoyer message"},"infos":{"title":"Nous Contacter","subtitle":"Si vous ne trouvez pas les réponses à vos questions, contactez-nous.","send":"Envoyez-nous un e-mail","call":"Appel ScienceEvents","line":"Écrivez-nous"}},"login":{"email":"E-mail","password":"Mot de passe","login":"Connexion","not":"Non enregistré?","create":"Créer un compte"},"register":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe","register":"S\'inscrire","already":"Vous avez déjà un compte?","sign-in":"S\'identifier"}}');
 
 /***/ })
 
