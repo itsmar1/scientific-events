@@ -25,7 +25,15 @@ class UserFactory extends Factory
         return [
             'firstName' => $this->faker->firstName,
             'lastName' => $this->faker->lastName,
-            'role' => 'user',
+            'role' => function() {
+                $arr = array( "a"=>"user", "b"=>"event_admin", "c"=>"responsable", "d"=>"session_admin");
+
+                // Use array_rand function to returns random key
+                $key = array_rand($arr);
+
+                // Display the random array element
+                return $arr[$key];
+            },
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

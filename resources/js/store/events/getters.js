@@ -1,7 +1,6 @@
 export default {
     events(state)
     {
-        console.log(state.events);
         return state.events;
     },
     getEventSessions(state)
@@ -19,7 +18,6 @@ export default {
     {
         // console.log({...state.event});
         // const event = JSON.parse(JSON.stringify(state.event));
-        console.log(state.event);
         return state.event;
     },
     sessions(state)

@@ -2,24 +2,24 @@
   <base-card>
     <div class="row">
         <div class="col-sm-3">
-            <h2 class="my-2"><i class="fas fa-filter mr-2"></i>  Find Your Event</h2>
+            <h2 class="my-2"><i class="fas fa-filter mr-2"></i>  {{ $t('events.filter.title') }}</h2>
         </div>
         <div class="col-sm-3 ml-auto">
             <span class="filter-option">
                 <input type="checkbox" id="conference" class="filter-input" checked @change="setFilter" />
-                <label for="conference">Conference</label>
+                <label for="conference">{{ $t('events.filter.conference') }}</label>
             </span>
         </div>
         <div class="col-sm-3 ml-auto">
             <span class="filter-option">
                 <input type="checkbox" id="formation" class="filter-input" checked @change="setFilter" />
-                <label for="formation">Formation</label>
+                <label for="formation">{{ $t('events.filter.formation') }}</label>
             </span>
         </div>
         <div class="col-sm-3 ml-auto">
             <span class="filter-option">
                 <input type="checkbox" id="atelier" class="filter-input" checked @change="setFilter" />
-                <label for="atelier">Atelier</label>
+                <label for="atelier">{{ $t('events.filter.atelier') }}</label>
             </span>
         </div>
     </div>

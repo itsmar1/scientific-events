@@ -52,5 +52,21 @@
             "start": "get started"
         }
 
+    },
+    "events": {
+        "filter": {
+            "title": "Find Your Event",
+            "conference": "Conference",
+            "formation": "Training",
+            "atelier": "Workshop"
+        },
+        "item": {
+            "show": "Show Event Details"
+        },
+        "counter": {
+            "days": "days",
+            "hours": "hours",
+            "minutes": "minutes"
+        }
     }
 }

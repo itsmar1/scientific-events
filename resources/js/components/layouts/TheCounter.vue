@@ -3,17 +3,17 @@
     <section class="counter">
         <div class="counter-group text-center">
             <span class="counter-value">{{  displayDays }}</span>
-            <div class="counter-name">days</div>
+            <div class="counter-name">{{ $t('events.counter.days') }}</div>
         </div>
         <span class="dots">:</span>
         <div class="counter-group text-center">
             <span class="counter-value">{{  displayHours }}</span>
-            <div class="counter-name">hours</div>
+            <div class="counter-name">{{ $t('events.counter.hours') }}</div>
         </div>
         <span class="dots">:</span>
         <div class="counter-group text-center">
             <span class="counter-value">{{  displayMinutes }}</span>
-            <div class="counter-name">minutes</div>
+            <div class="counter-name">{{ $t('events.counter.minutes') }}</div>
         </div>
         <!-- <span class="dots">:</span>
         <div class="counter-group text-center">

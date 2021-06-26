@@ -15,7 +15,7 @@
                     </div>
                     <base-badge :type="type" :title="type"></base-badge>
                     <div class="action">
-                        <router-link class="btn btn-outline-primary float-right ml-auto" :to="eventDetailsLink">Show Event Details <i class="fas fa-chevron-circle-right"></i></router-link>
+                        <router-link class="btn btn-outline-primary float-right ml-auto" :to="eventDetailsLink">{{ $t('events.item.show') }} <i class="fas fa-chevron-circle-right"></i></router-link>
                     </div>
                 </div>
             </div>

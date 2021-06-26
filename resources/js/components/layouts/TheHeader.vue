@@ -21,7 +21,7 @@
             <li class="nav-item">
                 <base-lang></base-lang>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ml-5">
               <router-link class="nav-link btn btn-outline-primary" to="/login">{{ $t('header.login') }}</router-link>
             </li>
             <li class="nav-item">
