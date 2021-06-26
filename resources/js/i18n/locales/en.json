@@ -68,5 +68,32 @@
             "hours": "hours",
             "minutes": "minutes"
         }
+    },
+    "contact": {
+        "help": {
+            "how": "How can we",
+            "help": "Help",
+            "alt": "Alternatively, you can browse our",
+            "events": "Events"
+        },
+        "form": {
+            "title": "Contact an event organiser",
+            "subtitle": "If you have a question about an event, we can send your request directly to the event organiser.",
+            "submit": "Send message"
+        },
+        "infos": {
+            "title": "Contact Us",
+            "subtitle": "If you're unable to find the answers to your questions, please get in touch.",
+            "send": "Send us an email",
+            "call": "Call ScienceEvents",
+            "line": "Drop us a line"
+        }
+    },
+    "login": {
+        "email": "Email",
+        "password": "Password",
+        "login": "Login",
+        "not": "Not registered?",
+        "create": "Create an account"
     }
 }

@@ -23446,14 +23446,13 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "container mx-auto text-center"
 };
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("How can we "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+var _hoisted_4 = {
   "class": "help"
-}, "Help"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("?")], -1
-/* HOISTED */
-);
+};
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("?");
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
   type: "text",
   "class": "form-control",
   placeholder: "Ask us a question"
@@ -23461,60 +23460,115 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Alternatively, you can browse our ");
-
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Events");
-
-var _hoisted_8 = {
+var _hoisted_7 = {
   "class": "contact-form"
 };
-var _hoisted_9 = {
+var _hoisted_8 = {
   "class": "container"
 };
-
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", {
+var _hoisted_9 = {
   "class": "text-center mb-2"
-}, "Contact an event organiser", -1
-/* HOISTED */
-);
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+};
+var _hoisted_10 = {
   "class": "text-center"
-}, "If you have a question about an event, we can send your request directly to the event organiser.", -1
-/* HOISTED */
-);
-
-var _hoisted_12 = {
+};
+var _hoisted_11 = {
   "class": "form-inline"
 };
-
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+var _hoisted_12 = {
   type: "submit",
-  value: "Send message",
   "class": "btn btn-primary"
+};
+var _hoisted_13 = {
+  "class": "contact-us text-center"
+};
+var _hoisted_14 = {
+  "class": "container"
+};
+var _hoisted_15 = {
+  "class": "h2"
+};
+var _hoisted_16 = {
+  "class": "para"
+};
+var _hoisted_17 = {
+  "class": "row mt-3"
+};
+var _hoisted_18 = {
+  "class": "col-sm-6 col-lg-4"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-envelope fa-3x rounded-circle"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"contact-us text-center\"><div class=\"container\"><h4 class=\"h2\">Contact Us</h4><p class=\"para\">If you&#39;re unable to find the answers to your questions, please get in touch.</p><div class=\"row mt-3\"><div class=\"col-sm-6 col-lg-4\"><i class=\"fas fa-envelope fa-3x rounded-circle\"></i><h3>Send us an email</h3><a href=\"mailto:support@fsa.ac.ma\">support@events.com</a></div><div class=\"col-sm-6 col-lg-4\"><i class=\"fas fa-phone fa-flip-horizontal  fa-3x rounded-circle\"></i><h3>Call ScienceEvents</h3><a href=\"tel:0123456789\">0-(123)-456789</a></div><div class=\"col-sm-6 col-lg-4\"><i class=\"fas fa-building fa-3x rounded-circle\"></i><h3>Drop us a line</h3><p>B.P 8106, Agadir 80000</p></div></div></div></div>", 1);
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  href: "mailto:support@fsa.ac.ma"
+}, "support@events.com", -1
+/* HOISTED */
+);
+
+var _hoisted_21 = {
+  "class": "col-sm-6 col-lg-4"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-phone fa-flip-horizontal  fa-3x rounded-circle"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  href: "tel:0123456789"
+}, "0-(123)-456789", -1
+/* HOISTED */
+);
+
+var _hoisted_24 = {
+  "class": "col-sm-6 col-lg-4"
+};
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-building fa-3x rounded-circle"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "B.P 8106, Agadir 80000", -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", null, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.help.how')) + " ", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.help.help')), 1
+  /* TEXT */
+  ), _hoisted_5]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.help.alt')) + " ", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/events"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_7];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.help.events')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [_hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.form.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.form.subtitle')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
     onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.submitForm && $options.submitForm.apply($options, arguments);
     }, ["prevent"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     name: "name",
     "class": "form-control mr-3",
@@ -23551,9 +23605,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.message, void 0, {
     trim: true
-  }]]), _hoisted_13], 32
+  }]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <input type=\"submit\" value=\"Send message\" class=\"btn btn-primary\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.form.submit')), 1
+  /* TEXT */
+  )], 32
   /* HYDRATE_EVENTS */
-  )])]), _hoisted_14]);
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.infos.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.infos.subtitle')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.infos.send')), 1
+  /* TEXT */
+  ), _hoisted_20]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.infos.call')), 1
+  /* TEXT */
+  ), _hoisted_23]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('contact.infos.line')), 1
+  /* TEXT */
+  ), _hoisted_26])])])])]);
 }
 
 /***/ }),
@@ -73099,7 +73165,7 @@ var index = {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}}}');
+module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"}}');
 
 /***/ }),
 
