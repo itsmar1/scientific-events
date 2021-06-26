@@ -16192,12 +16192,6 @@ readers do not read off random characters that represent icons */
   color: #08526D;
 }
 
-.footer .read-more::before {
-  font-family: "FontAwesome";
-  content: "";
-  margin-right: 0.5rem;
-}
-
 .footer .read-more:hover {
   color: #ec1c23;
   transition: all 0.3s ease-in-out;
@@ -16222,12 +16216,6 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   cursor: pointer;
   font-weight: 400;
-}
-
-.footer ul li::before {
-  font-family: "FontAwesome";
-  content: "";
-  margin-right: 0.3rem;
 }
 
 .footer ul li a:hover {
@@ -16703,6 +16691,35 @@ main {
   margin-top: 2rem;
 }
 /* End homepage events intro */
+/* Start Get Started */
+.get-started {
+  background-color: #ec1c23;
+  color: #fff;
+  padding: 7rem 0;
+}
+.get-started p {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  margin-right: 1rem;
+}
+.get-started a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+}
+.get-started a:hover {
+  background-color: #08526D;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Get Started */
 .event-detail {
   margin-bottom: 15rem;
 }

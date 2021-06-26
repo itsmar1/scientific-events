@@ -1,3 +1,56 @@
 {
-    "hello": "Hello"
+    "header": {
+        "home": "Home",
+        "events": "Events",
+        "contact": "Contact",
+        "login": "Login",
+        "register": "Register"
+    },
+    "footer": {
+
+    },
+    "homepage": {
+        "how-it-works": {
+            "how": "How It Works",
+            "title": "Online Event Planning and Management. Simplified.",
+            "description": {
+                "our": "Our",
+                "event": "event planning platform",
+                "gives": "gives you the tools to design memorable experiences and run",
+                "success": "successful events."
+            },
+            "sign-up": "Sign up and create your profile",
+            "fill": "Fill in the event data",
+            "launch": "Launch the event",
+            "let": "Let the magic happen"
+        },
+        "types-events": {
+            "title": "Plan Many Types of Events Online",
+            "description": "ScienceEvents can help you manage different kind of scientific events",
+            "types": "TYPES OF EVENTS",
+            "sub-title": "ScienceEvents works for several types of events",
+            "conference": "Conference",
+            "workshop": "Workshop",
+            "training": "Training"
+        },
+        "types-of-roles": {
+            "desc": "types of roles",
+            "title": "ScienceEvents empowers different types of event management roles",
+            "admin": "senior administrators",
+            "event-admin": "event administrators",
+            "responsable": "organisation responsables",
+            "session-admin": "session administrators"
+        },
+        "events-intro": {
+            "title": "scientific events management platform",
+            "subtitle": "for people who like to work smarter",
+            "do-you": "Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.",
+            "start": "get started"
+        },
+        "get-started": {
+            "ready": "Ready to get started?",
+            "start": "get started"
+        }
+
+    }
 }

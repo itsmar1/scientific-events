@@ -1,3 +1,56 @@
 {
-    "hello": "Bonjour"
+    "header": {
+        "home": "Accueil",
+        "events": "Événements",
+        "contact": "Contact",
+        "login": "Connexion",
+        "register": "S'inscrire"
+    },
+    "footer": {
+
+    },
+    "homepage": {
+        "how-it-works": {
+            "how": "COMMENT ÇA MARCHE",
+            "title": "Planification et gestion d'événements. Simplifiées.",
+            "description": {
+                "our": "Notre",
+                "event": "plateforme de gestion d'événements",
+                "gives": "vous offre une puissante série d'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?",
+                "success": "Voyez comment ça marche"
+            },
+            "sign-up": "Connectez-vous et créez votre profil",
+            "fill": "Complétez les données",
+            "launch": "Lancez l’événement",
+            "let": "Laissez la magie opérer"
+        },
+        "types-events": {
+            "title": "Planifiez de Nombreux Types d'Événements en Ligne",
+            "description": "ScienceEvents peut vous aider à gérer différents types d'événements scientifiques",
+            "types": "TYPES D'ÉVÉNEMENTS",
+            "sub-title": "ScienceEvents s'adapte à différents types d'événements",
+            "conference": "Conférence",
+            "workshop": "Atelier",
+            "training": "Formation"
+        },
+        "types-of-roles": {
+            "desc": "types de roles",
+            "title": "ScienceEvents soutient different types de rôles professionnels",
+            "admin": "Superviseur",
+            "event-admin": "administrateurs d'événements",
+            "responsable": "organisation responsables",
+            "session-admin": "administrateurs de session"
+        },
+        "events-intro": {
+            "title": "Plateforme de gestion d'événements scientifiques",
+            "subtitle": "pour travailler plus intelligemment",
+            "do-you": "Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.",
+            "start": "lancez-vous"
+        },
+        "get-started": {
+            "ready": "Prêt à vous lancer?",
+            "start": "lancez-vous"
+        }
+
+    }
 }

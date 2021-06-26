@@ -21862,13 +21862,15 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   "class": "read-more",
   href: "#"
-}, "Read more", -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-chevron-circle-right mr-1"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Read more")], -1
 /* HOISTED */
 );
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 col-sm-6\"><h4>Helpful Links</h4><div class=\"row\"><div class=\"col-6\"><ul><li><a href=\"#\">About</a></li><li><a href=\"#\">Portfolio</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">Pricing</a></li><li><a href=\"#\">Privacy Policy</a></li></ul></div><div class=\"col-6\"><ul class=\"list-unstyled\"><li><a href=\"#\">FAQ</a></li><li><a href=\"#\">Blog</a></li><li><a href=\"#\">How It Works</a></li><li><a href=\"#\">Benefits</a></li><li><a href=\"#\">Pricing</a></li></ul></div></div></div><div class=\"col-md-3 col-sm-12 contact-us-f\"><h4>contact us</h4><p class=\"f-contact\">54958 Levo Road Near Red Fort, U.S</p><a href=\"tel:012-345-678\"><i class=\"fa fa-phone\"></i><span> Phone: </span>012-12345678</a><a href=\"mailto:info@elitecorp.info\"><i class=\"fa fa-envelope-o\"></i><span> Email: </span>012-12345678</a></div>", 2);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 col-sm-6\"><h4>Helpful Links</h4><div class=\"row\"><div class=\"col-6\"><ul><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> About</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Portfolio</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Team</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Pricing</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Privacy Policy</a></li></ul></div><div class=\"col-6\"><ul class=\"list-unstyled\"><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> FAQ</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Blog</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> How It Works</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Benefits</a></li><li><a href=\"#\"><i class=\"fas fa-chevron-right mr-1\"></i> Pricing</a></li></ul></div></div></div><div class=\"col-md-3 col-sm-12 contact-us-f\"><h4>contact us</h4><p class=\"f-contact\">54958 Levo Road Near Red Fort, U.S</p><a href=\"tel:012-345-678\"><i class=\"fa fa-phone fa-flip-horizontal mr-1\"></i><span> Phone: </span>012-12345678</a><a href=\"mailto:info@elitecorp.info\"><i class=\"fas fa-envelope mr-1\"></i><span> Email: </span>support@scientevents.com</a></div>", 2);
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"copyright\"><div class=\"container\"><div class=\"row\"><div class=\"col-sm-6 text-left\"><p>COPYRIGHT 2021 ScienceEvents © ALL RIGHTS RESERVED</p></div><div class=\"col-sm-6 text-right\"><ul><li><a href=\"#\"><i class=\"fab fa-facebook-f\"></i></a></li><li><a href=\"#\"><i class=\"fab fa-twitter\"></i></a></li><li><a href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a></li><li><a href=\"#\"><i class=\"fab fa-instagram\"></i></a></li><li><a href=\"#\"><i class=\"fab fa-pinterest-p\"></i></a></li></ul></div></div></div></div>", 1);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"copyright\"><div class=\"container\"><div class=\"row\"><div class=\"col-sm-6 text-left\"><p>COPYRIGHT 2021 ScienceEvents © ALL RIGHTS RESERVED</p></div><div class=\"col-sm-6 text-right\"><ul><li><a href=\"https://www.facebook.com/\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a></li><li><a href=\"https://twitter.com/\" target=\"_blank\"><i class=\"fab fa-twitter\"></i></a></li><li><a href=\"https://www.linkedin.com/\" target=\"_blank\"><i class=\"fab fa-linkedin-in\"></i></a></li><li><a href=\"https://www.instagram.com/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a></li><li><a href=\"https://www.pinterest.com/\" target=\"_blank\"><i class=\"fab fa-pinterest-p\"></i></a></li></ul></div></div></div></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
@@ -21948,41 +21950,27 @@ var _hoisted_9 = {
   "class": "nav-item active"
 };
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Home ");
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
   "class": "sr-only"
 }, "(current)", -1
 /* HOISTED */
 );
 
+var _hoisted_11 = {
+  "class": "nav-item"
+};
 var _hoisted_12 = {
   "class": "nav-item"
 };
-
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Events");
-
+var _hoisted_13 = {
+  "class": "nav-item"
+};
 var _hoisted_14 = {
   "class": "nav-item"
 };
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Contact");
-
-var _hoisted_16 = {
+var _hoisted_15 = {
   "class": "nav-item"
 };
-var _hoisted_17 = {
-  "class": "nav-item"
-};
-
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Login");
-
-var _hoisted_19 = {
-  "class": "nav-item"
-};
-
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Register");
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
@@ -22003,47 +21991,57 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     to: "/"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_10, _hoisted_11];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('header.home')) + " ", 1
+      /* TEXT */
+      ), _hoisted_10];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nav-link",
+    to: "/events"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('header.events')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "nav-link",
-    to: "/events"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_13];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "nav-link",
     to: "/contact"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_15];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('header.contact')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_lang)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_lang)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "nav-link btn btn-outline-primary",
     to: "/login"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_18];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('header.login')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "nav-link",
     to: "/register"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_20];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('header.register')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
@@ -22135,7 +22133,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
   value: "fr"
-}, "Frensh", -1
+}, "Français", -1
 /* HOISTED */
 );
 
@@ -22600,20 +22598,99 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "how-it-works"
+};
+var _hoisted_2 = {
+  "class": "container text-center"
+};
+var _hoisted_3 = {
+  "class": "how"
+};
+var _hoisted_4 = {
+  "class": "description"
+};
+var _hoisted_5 = {
+  "class": "font-weight-bold"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"how-it-works\"><div class=\"container text-center\"><p class=\"how\">How It Works</p><h2>Online Event Planning and Management. Simplified.</h2><p class=\"description\">Our <span class=\"font-weight-bold\">event planning platform</span> gives you the tools to design memorable experiences and run<br> <span class=\"font-weight-bold\">successful events.</span></p><div class=\"row features\"><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/Create_profile2x.jpg\" alt=\"\"><h3>Sign up and create your profile</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/fill_event_data2x.jpg\" alt=\"\"><h3>Fill in the event data</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/launch2x.jpg\" alt=\"\"><h3>Launch the event</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/observe_magic2x.jpg\" alt=\"\"><h3>Let the magic happen</h3></div></div><!-- &lt;div class=&quot;row&quot;&gt;\n                &lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;\n                    &lt;h3&gt;Sign up and create your profile&lt;/h3&gt;\n                &lt;/div&gt;\n                &lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;\n                    &lt;h3&gt;Fill in the event data&lt;/h3&gt;\n                &lt;/div&gt;\n                &lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;\n                    &lt;h3&gt;Launch the event&lt;/h3&gt;\n                &lt;/div&gt;\n                &lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;\n                    &lt;h3&gt;Let the magic happen&lt;/h3&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --></div></div>", 1);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+/* HOISTED */
+);
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+
+var _hoisted_8 = {
+  "class": "font-weight-bold"
+};
+var _hoisted_9 = {
+  "class": "row features"
+};
+var _hoisted_10 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/Create_profile2x.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_12 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/fill_event_data2x.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_14 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/launch2x.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/observe_magic2x.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_18 = {
   "class": "types-events"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+var _hoisted_19 = {
   "class": "container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+};
+var _hoisted_20 = {
   "class": "text-center"
-}, "Plan Many Types of Events Online"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+};
+var _hoisted_21 = {
   "class": "types-desc text-center"
-}, "ScienceEvents can help you manage different kind of scientific events"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+var _hoisted_22 = {
   "class": "row"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+};
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "col-sm-12 col-md-6"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   id: "carouselExampleControls",
@@ -22659,72 +22736,144 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "aria-hidden": "true"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
   "class": "sr-only"
-}, "Next")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-sm-12 col-md-6 slider-section"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "TYPES OF EVENTS"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "ScienceEvents works for several types of events"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "d-flex"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-start"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "fas fa-check fa-2x"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-end"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "event-type"
-}, "Conference")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "d-flex"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-start"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "fas fa-check fa-2x"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-end"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "event-type"
-}, "Workshop")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "d-flex"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-start"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "fas fa-check fa-2x"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4 align-self-end"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "event-type"
-}, "Training")])])])])])], -1
+}, "Next")])])], -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"types-of-roles\"><div class=\"container\"><p class=\"text-center\">types of roles</p><h2 class=\"text-center\">ScienceEvents empowers different types of event management roles</h2><div class=\"row text-center\"><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/roles/seniorAdmin.jpg\" alt=\"senior administrator\"><h3>senior administrators</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/roles/eventAdmin.jpg\" alt=\"Event Admin\"><h3>event administrators</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/roles/organisationResponsables.jpg\" alt=\"Organisation Responsables\"><h3>organisation responsables</h3></div><div class=\"col-sm-6 col-md-3\"><img class=\"img-fluid\" src=\"/images/homepage/roles/sessionAdmin.jpg\" alt=\"Session Admin\"><h3>session administrators</h3></div></div></div></div>", 1);
-
-var _hoisted_4 = {
-  "class": "events-intro"
+var _hoisted_24 = {
+  "class": "col-sm-12 col-md-6 slider-section"
 };
-var _hoisted_5 = {
+var _hoisted_25 = {
+  "class": "d-flex"
+};
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_27 = {
+  "class": "p-4 align-self-end"
+};
+var _hoisted_28 = {
+  "class": "event-type"
+};
+var _hoisted_29 = {
+  "class": "d-flex"
+};
+
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_31 = {
+  "class": "p-4 align-self-end"
+};
+var _hoisted_32 = {
+  "class": "event-type"
+};
+var _hoisted_33 = {
+  "class": "d-flex"
+};
+
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-4 align-self-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-check fa-2x"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_35 = {
+  "class": "p-4 align-self-end"
+};
+var _hoisted_36 = {
+  "class": "event-type"
+};
+var _hoisted_37 = {
+  "class": "types-of-roles"
+};
+var _hoisted_38 = {
   "class": "container"
 };
-var _hoisted_6 = {
+var _hoisted_39 = {
+  "class": "text-center"
+};
+var _hoisted_40 = {
+  "class": "text-center"
+};
+var _hoisted_41 = {
+  "class": "row text-center"
+};
+var _hoisted_42 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/roles/seniorAdmin.jpg",
+  alt: "senior administrator"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_44 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/roles/eventAdmin.jpg",
+  alt: "Event Admin"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_46 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/roles/organisationResponsables.jpg",
+  alt: "Organisation Responsables"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_48 = {
+  "class": "col-sm-6 col-md-3"
+};
+
+var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "img-fluid",
+  src: "/images/homepage/roles/sessionAdmin.jpg",
+  alt: "Session Admin"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_50 = {
+  "class": "events-intro"
+};
+var _hoisted_51 = {
+  "class": "container"
+};
+var _hoisted_52 = {
   "class": "row"
 };
-var _hoisted_7 = {
+var _hoisted_53 = {
   "class": "col-sm-12 col-md-6"
 };
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "scientific events management platform", -1
-/* HOISTED */
-);
-
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "for people who like to work smarter", -1
-/* HOISTED */
-);
-
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.", -1
-/* HOISTED */
-);
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("get started");
-
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "col-sm-12 col-md-6"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   "class": "img-fluid",
@@ -22734,20 +22883,102 @@ var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
+var _hoisted_55 = {
+  "class": "get-started"
+};
+var _hoisted_56 = {
+  "class": "container"
+};
+var _hoisted_57 = {
+  "class": "row"
+};
+var _hoisted_58 = {
+  "class": "col-md-8 text-right"
+};
+var _hoisted_59 = {
+  "class": "col-md-4 text-left"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" How it works secion "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Types events section "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Types events section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start types of roles section "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End types of roles section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Event plateform section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, _hoisted_9, _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" How it works secion "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.how')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.our')) + " ", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_5, "e" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.event')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.gives')), 1
+  /* TEXT */
+  ), _hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.success')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.sign-up')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.fill')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.launch')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.let')), 1
+  /* TEXT */
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"row\">\n                <div class=\"col-sm-6 col-md-3\">\n                    <h3>Sign up and create your profile</h3>\n                </div>\n                <div class=\"col-sm-6 col-md-3\">\n                    <h3>Fill in the event data</h3>\n                </div>\n                <div class=\"col-sm-6 col-md-3\">\n                    <h3>Launch the event</h3>\n                </div>\n                <div class=\"col-sm-6 col-md-3\">\n                    <h3>Let the magic happen</h3>\n                </div>\n            </div> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Types events section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.description')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.types')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.sub-title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.conference')), 1
+  /* TEXT */
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.workshop')), 1
+  /* TEXT */
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-events.training')), 1
+  /* TEXT */
+  )])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Types events section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start types of roles section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_39, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.desc')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", _hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_42, [_hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.admin')) + "s", 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_44, [_hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.event-admin')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_46, [_hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.responsable')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_48, [_hoisted_49, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.types-of-roles.session-admin')), 1
+  /* TEXT */
+  )])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End types of roles section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Event plateform section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.events-intro.title')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.events-intro.subtitle')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.events-intro.do-you')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     "class": "btn btn-outline-primary",
     to: "/events"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_11];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.events-intro.start')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })]), _hoisted_12])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Event plateform section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <the-counter :year=\"2021\" :month=\"6\"  :date=\"6\" :hour=\"19\" :minute=\"30\" :second=\"32\" :millisecond=\"31\"></the-counter>\n    <event-list></event-list> ")], 64
+  })]), _hoisted_54])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Event plateform section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Get Started "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.get-started.ready')), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_59, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/events"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.get-started.start')), 1
+      /* TEXT */
+      )];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Get Started "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <the-counter :year=\"2021\" :month=\"6\"  :date=\"6\" :hour=\"19\" :minute=\"30\" :second=\"32\" :millisecond=\"31\"></the-counter>\n    <event-list></event-list> ")], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -72875,7 +73106,7 @@ var index = {
 /***/ ((module) => {
 
 "use strict";
-module.exports = {"hello":"Hello"};
+module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}}}');
 
 /***/ }),
 
@@ -72897,7 +73128,7 @@ module.exports = {};
 /***/ ((module) => {
 
 "use strict";
-module.exports = {"hello":"Bonjour"};
+module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}}}');
 
 /***/ })
 

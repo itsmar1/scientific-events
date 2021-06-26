@@ -145,3 +145,37 @@
     }
 }
 /* End homepage events intro */
+
+
+/* Start Get Started */
+.get-started {
+    background-color: #ec1c23;
+    color: #fff;
+    padding: 7rem 0;
+    p {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        margin-right: 1rem;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: 1px solid #fff;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        line-height: 2.5;
+        letter-spacing: .1rem;
+        &:hover {
+            background-color: #08526D;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+    }
+}
+/* End Get Started */

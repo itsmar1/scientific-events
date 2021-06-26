@@ -1,7 +1,7 @@
 <template>
     <select class="custom-select" v-model="lang" @change="handleEvent($event)">
         <option value="en">English</option>
-        <option value="fr">Frensh</option>
+        <option value="fr">Français</option>
         <option value="es">Español</option>
     </select>
 
