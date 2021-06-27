@@ -3,17 +3,17 @@
         <div class="card">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    <span class="user-key">From: </span> <span class="user-value">{{ name }}</span>
+                    <span class="user-key">{{ $t('dashboard.messages.from') }}: </span> <span class="user-value">{{ name }}</span>
                 </li>
                 <li class="list-group-item">
-                    <span class="user-key">Email: </span> <span class="user-value">{{ email }}</span>
+                    <span class="user-key">{{ $t('dashboard.messages.email') }}: </span> <span class="user-value">{{ email }}</span>
                 </li>
                 <li class="list-group-item">
-                    <p class="user-key">Message: </p> <p class="user-value">{{ message }}</p>
+                    <p class="user-key">{{ $t('dashboard.messages.message') }}: </p> <p class="user-value">{{ message }}</p>
                 </li>
                 <li class="list-group-item">
                     <div class="buttons-action">
-                        <button class="btn btn-danger ml-3" @click="deleteMessage">Delete</button>
+                        <button class="btn btn-danger ml-3" @click="deleteMessage">{{ $t('dashboard.messages.delete') }}</button>
                     </div>
                 </li>
             </ul>

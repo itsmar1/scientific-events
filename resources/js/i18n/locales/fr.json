@@ -105,5 +105,122 @@
         "register": "S'inscrire",
         "already": "Vous avez déjà un compte?",
         "sign-in": "S'identifier"
+    },
+    "dashboard": {
+        "nav": {
+            "logout": "Déconnexion",
+            "type": "Admin Tableau de bord",
+            "events": "Événements",
+            "eventadmins": "Admins d'événement",
+            "responsables": "Organization Responsables",
+            "sessions": "Admins de Sessions",
+            "users": "Utilisateurs",
+            "messages": "Messages",
+            "settings": "Paramètres"
+        },
+        "events": {
+            "item": {
+                "update": "Modifier",
+                "delete": "Supprimer",
+                "show": "Afficher détails",
+                "update-event": "Modifier Événement",
+                "title": "Titre",
+                "description": "Description",
+                "image": "Choisissez une image",
+                "startDate": "Date de début",
+                "endDate": "Date de fin",
+                "type": "Type d'événement",
+                "type1": "Conférence",
+                "type2": "Atelier",
+                "type3": "Formation",
+                "country": "Pays",
+                "city": "Ville",
+                "address": "Adresse",
+                "venueName": "Nom du lieu",
+                "venuePhone": "Numéro de téléphone du lieu",
+                "venueEmail": "Email du lieu"
+            },
+            "list": {
+                "create": "Créer Nouvel Événement",
+                "add-event": "Ajouter Événement",
+                "title": "Titre",
+                "description": "Description",
+                "image": "Choisissez une image",
+                "startDate": "Date de début",
+                "endDate": "Date de fin",
+                "type": "Type d'événement",
+                "type1": "Conférence",
+                "type2": "Atelier",
+                "type3": "Formation",
+                "country": "Pays",
+                "city": "Ville",
+                "address": "Adresse",
+                "venueName": "Nom du lieu",
+                "venuePhone": "Numéro de téléphone du lieu",
+                "venueEmail": "Email du lieu"
+            }
+        },
+        "userItem": {
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "role": "Type d'utilisateur",
+            "password": "Mot de passe",
+            "update": "Modifier",
+            "delete": "Supprimer",
+            "update-user": "Modifier Utilisateur"
+        },
+        "eventadmin": {
+            "create": "Créer Nouvel Administrateur d'Événement",
+            "add": "Ajouter Administrateur d'Événement",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "password": "Mot de passe",
+            "password_confirmation":"Confirmez Mot de passe"
+        },
+        "responsable": {
+            "create": "Créer Nouvel Organisation Responsable",
+            "add": "Ajouter Organisation Responsable",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "password": "Mot de passe",
+            "password_confirmation":"Confirmez Mot de passe"
+        },
+        "sessionadmin": {
+            "create": "Créer Nouvel Admin Session",
+            "add": "Ajouter Admin Session",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "password": "Mot de passe",
+            "password_confirmation":"Confirmez Mot de passe"
+        },
+        "regularuser": {
+            "create": "Créer Nouvel Utilisateur",
+            "add": "Ajouter Utilisateur",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "password": "Mot de passe",
+            "password_confirmation":"Confirmez Mot de passe"
+        },
+        "messages": {
+            "title": "Messages",
+            "from": "De",
+            "email": "E-mail",
+            "message": "Message",
+            "delete": "Supprimer"
+        },
+        "account": {
+            "update": "Modifier Compte",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "email": "E-mail",
+            "role": "Type d'Utilisateur",
+            "password": "Mot de passe",
+            "password_confirmation":"Confirmez Mot de passe"
+        }
     }
 }

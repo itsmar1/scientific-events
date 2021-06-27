@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <h1>Messages</h1>
+            <h1>{{ $t('dashboard.messages.title') }}</h1>
         </div>
         <hr>
         <base-card>

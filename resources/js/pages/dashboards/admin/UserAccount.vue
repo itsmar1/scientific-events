@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row my-5">
         <div class="col-sm-3">
-            <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#updateAccount"><i class="fas fa-user-edit"></i>   Update Account</button>
+            <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#updateAccount"><i class="fas fa-user-edit"></i>   {{ $t('dashboard.account.update') }}</button>
         </div>
       </div>
       <hr>
@@ -29,7 +29,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-warning text-white">
-                        <h5 class="modal-title">Update Account</h5>
+                        <h5 class="modal-title">{{ $t('dashboard.account.update') }}</h5>
                         <button class="close" data-dismiss="modal">
                             <span>&times;</span>
                         </button>
@@ -37,29 +37,29 @@
                     <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="firstName">First Name</label>
+                            <label for="firstName">{{ $t('dashboard.account.firstName') }}</label>
                             <input type="text" name="firstName" class="form-control" v-model.trim="user.firstName">
                         </div>
                         <div class="form-group">
-                            <label for="lastName">Last Name</label>
+                            <label for="lastName">{{ $t('dashboard.account.lastName') }}</label>
                             <input type="text" name="lastName" class="form-control" v-model.trim="user.lastName">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ $t('dashboard.account.email') }}</label>
                             <input type="email" name="email" class="form-control" v-model.trim="user.email">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">{{ $t('dashboard.account.password') }}</label>
                             <input type="password" name="password" class="form-control" v-model.trim="user.password">
                         </div>
                         <div class="form-group">
-                            <label for="password_confirmation">Password Confirmation</label>
+                            <label for="password_confirmation">{{ $t('dashboard.account.password_confirmation') }}</label>
                             <input type="password" name="password_confirmation" class="form-control" v-model.trim="user.password_confirmation">
                         </div>
                     </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-warning" data-dismiss="modal" @click="updateAccount">Update Account</button>
+                        <button class="btn btn-warning" data-dismiss="modal" @click="updateAccount">{{ $t('dashboard.account.update') }}</button>
                     </div>
                 </div>
             </div>

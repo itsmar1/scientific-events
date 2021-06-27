@@ -3,16 +3,16 @@
         <div class="card">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    <span class="user-key">First Name: </span> <span class="user-value">{{ firstName }}</span>
+                    <span class="user-key">{{ $t('dashboard.account.firstName') }}: </span> <span class="user-value">{{ firstName }}</span>
                 </li>
                 <li class="list-group-item">
-                    <span class="user-key">Last Name: </span> <span class="user-value">{{ lastName }}</span>
+                    <span class="user-key">{{ $t('dashboard.account.lastName') }}: </span> <span class="user-value">{{ lastName }}</span>
                 </li>
                 <li class="list-group-item">
-                    <span class="user-key">Email: </span> <span class="user-value">{{ email }}</span>
+                    <span class="user-key">{{ $t('dashboard.account.email') }}: </span> <span class="user-value">{{ email }}</span>
                 </li>
                 <li class="list-group-item">
-                    <span class="user-key">User Role: </span> <base-badge :title="userRole" :type="role"></base-badge>
+                    <span class="user-key">{{ $t('dashboard.account.role') }}: </span> <base-badge :title="userRole" :type="role"></base-badge>
                 </li>
             </ul>
         </div>

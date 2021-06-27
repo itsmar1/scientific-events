@@ -105,5 +105,122 @@
         "register": "Register",
         "already": "Already have an account?",
         "sign-in": "Sign in"
+    },
+    "dashboard": {
+        "nav": {
+            "logout": "Logout",
+            "type": "Admin Dashboard",
+            "events": "Events",
+            "eventadmins": "Event Admins",
+            "responsables": "Organization Responsables",
+            "sessions": "Sessions Admins",
+            "users": "Regular Users",
+            "messages": "Messages",
+            "settings": "Account"
+        },
+        "events": {
+            "item": {
+                "update": "Update",
+                "delete": "Delete",
+                "show": "Show Event Details",
+                "update-event": "Update Event",
+                "title": "Title",
+                "description": "Description",
+                "image": "Choose an image",
+                "startDate": "Start Date",
+                "endDate": "End Date",
+                "type": "Event Type",
+                "type1": "Conference",
+                "type2": "Workshop",
+                "type3": "Training",
+                "country": "Country",
+                "city": "City",
+                "address": "Address",
+                "venueName": "Venue Name",
+                "venuePhone": "Venue Phone Number",
+                "venueEmail": "Venue Email"
+            },
+            "list": {
+                "create": "Create New Event",
+                "add-event": "Add Event",
+                "title": "Title",
+                "description": "Description",
+                "image": "Choose an image",
+                "startDate": "Start Date",
+                "endDate": "End Date",
+                "type": "Event Type",
+                "type1": "Conference",
+                "type2": "Workshop",
+                "type3": "Training",
+                "country": "Country",
+                "city": "City",
+                "address": "Address",
+                "venueName": "Venue Name",
+                "venuePhone": "Venue Phone Number",
+                "venueEmail": "Venue Email"
+            }
+        },
+        "userItem": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "role": "User Role",
+            "password": "Password",
+            "update": "Update",
+            "delete": "Delete",
+            "update-user": "Update User"
+        },
+        "eventadmin": {
+            "create": "Create New Event Admin",
+            "add": "Add Event Admin",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "password_confirmation":"Confirm Password"
+        },
+        "responsable": {
+            "create": "Create New Organisation Responsable",
+            "add": "Add Organisation Responsable",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "password_confirmation":"Confirm Password"
+        },
+        "sessionadmin": {
+            "create": "Create New Session Admin",
+            "add": "Add Session Admin",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "password_confirmation":"Confirm Password"
+        },
+        "regularuser": {
+            "create": "Create New User",
+            "add": "Add User",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "password_confirmation":"Confirm Password"
+        },
+        "messages": {
+            "title": "Messages",
+            "from": "From",
+            "email": "Email",
+            "message": "Message",
+            "delete": "Delete"
+        },
+        "account": {
+            "update": "Update Account",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "role": "User Role",
+            "password": "Password",
+            "password_confirmation":"Confirm Password"
+        }
     }
 }

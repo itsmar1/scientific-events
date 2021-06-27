@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <button class="btn btn-success btn-block" data-toggle="modal" data-target="#addEvent"><i class="fas fa-plus ml-auto"></i>   Create New Event</button>
+                    <button class="btn btn-success btn-block" data-toggle="modal" data-target="#addEvent"><i class="fas fa-plus ml-auto"></i>   {{ $t('dashboard.events.list.create') }}</button>
                 </div>
             </div>
             <hr>
@@ -50,7 +50,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-primary text-white">
-                            <h5 class="modal-title">Add Event</h5>
+                            <h5 class="modal-title">{{ $t('dashboard.events.list.add-event') }}</h5>
                             <button class="close" data-dismiss="modal">
                                 <span>&times;</span>
                             </button>
@@ -58,17 +58,17 @@
                         <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="title">Title</label>
+                                <label for="title">{{ $t('dashboard.events.list.title') }}</label>
                                 <input type="text" name="title" class="form-control" v-model.trim="event.name">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="description">Description</label>
+                                <label for="description">{{ $t('dashboard.events.list.description') }}</label>
                                 <textarea name="description" rows="8" class="form-control" v-model="event.description"></textarea>
                             </div>
                             <!-- Start Image upload -->
                             <div class="custom-file form-group">
                                 <input type="file" @change="imageSelected" class="custom-file-input" name="customFile">
-                                <label class="custom-file-label form-control" for="customFile">Choose an image</label>
+                                <label class="custom-file-label form-control" for="customFile">{{ $t('dashboard.events.list.image') }}</label>
                             </div>
                             <div v-if="imagepreview" class="mt-3">
                                 <img :src="imagepreview" class="figure-img img-fluid rounded"  style="max-height:100px;">
@@ -76,49 +76,49 @@
                             <!-- End Image upload -->
                             <hr/>
                             <form class="form-inline mb-3 mt-5">
-                                <label for="startDate">Start Date </label><br>
+                                <label for="startDate">{{ $t('dashboard.events.list.startDate') }} </label><br>
                                 <input type="date" name="startDate" class="form-control ml-5" v-model="event.startDate">
                             </form>
                             <form class="form-inline mb-3">
-                                <label for="endDate">End Date </label><br>
+                                <label for="endDate">{{ $t('dashboard.events.list.endDate') }} </label><br>
                                 <input type="date" name="endDate" class="form-control ml-5" v-model="event.endDate">
                             </form>
                             <div class="form-group">
-                                <label for="category">Event Type</label>
+                                <label for="category">{{ $t('dashboard.events.list.type') }}</label>
                                 <select class="form-control" v-model="event.type">
-                                    <option value="conference">Conference</option>
-                                    <option value="atelier">Workshop</option>
-                                    <option value="formation">Training</option>
+                                    <option value="conference">{{ $t('dashboard.events.list.type1') }}</option>
+                                    <option value="atelier">{{ $t('dashboard.events.list.type2') }}</option>
+                                    <option value="formation">{{ $t('dashboard.events.list.type3') }}</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="country">Country</label>
+                                <label for="country">{{ $t('dashboard.events.list.country') }}</label>
                                 <input type="text" name="country" class="form-control" v-model.trim="event.country">
                             </div>
                             <div class="form-group">
-                                <label for="city">City</label>
+                                <label for="city">{{ $t('dashboard.events.list.city') }}</label>
                                 <input type="text" name="city" class="form-control" v-model.trim="event.city">
                             </div>
                             <div class="form-group">
-                                <label for="address">Address</label>
+                                <label for="address">{{ $t('dashboard.events.list.address') }}</label>
                                 <input type="text" name="address" class="form-control" v-model.trim="event.address">
                             </div>
                             <div class="form-group">
-                                <label for="venueName">Venue Name</label>
+                                <label for="venueName">{{ $t('dashboard.events.list.venueName') }}</label>
                                 <input type="text" name="venueName" class="form-control" v-model.trim="event.venueName">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Venue Phone Number</label>
+                                <label for="phone">{{ $t('dashboard.events.list.venuePhone') }}</label>
                                 <input type="text" name="phone" class="form-control" v-model.trim="event.phone">
                             </div>
                             <div class="form-group">
-                                <label for="email">Venue Email</label>
+                                <label for="email">{{ $t('dashboard.events.list.venueEmail') }}</label>
                                 <input type="email" name="email" class="form-control" v-model.trim="event.email">
                             </div>
                         </form>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-primary" data-dismiss="modal" @click="submitForm">Add Event</button>
+                            <button class="btn btn-primary" data-dismiss="modal" @click="submitForm">{{ $t('dashboard.events.list.add-event') }}</button>
                         </div>
                     </div>
                 </div>

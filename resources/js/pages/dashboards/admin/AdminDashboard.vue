@@ -6,7 +6,7 @@
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <!-- <a class="nav-link logout-btn" @click="logout">Logout</button> -->
-                <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> Logout</button>
+                <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> {{ $t('dashboard.nav.logout') }}</button>
             </li>
         </ul>
         </nav>
@@ -21,32 +21,32 @@
                     <ul class="nav flex-column sidebar-nav mt-5">
                         <div class="role-dashboard text-center">
                             <i class="fas fa-user fa-3x rounded-circle"></i>
-                            <h5 class="mt-2">Admin Dashboard</h5>
+                            <h5 class="mt-2">{{ $t('dashboard.nav.type') }}</h5>
                             <hr>
                         </div>
                         <li class="nav-item">
-                            <router-link class="nav-link active" to="events">Events</router-link>
+                            <router-link class="nav-link active" to="events">{{ $t('dashboard.nav.events') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="eventadmins">Event Admins</router-link>
+                            <router-link class="nav-link" to="eventadmins">{{ $t('dashboard.nav.eventadmins') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="responsables">Organization Responsables</router-link>
+                            <router-link class="nav-link" to="responsables">{{ $t('dashboard.nav.responsables') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="sessions">Sessions Admins</router-link>
+                            <router-link class="nav-link" to="sessions">{{ $t('dashboard.nav.sessions') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="users">Regular Users</router-link>
+                            <router-link class="nav-link" to="users">{{ $t('dashboard.nav.users') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="contact">Messages</router-link>
+                            <router-link class="nav-link" to="contact">{{ $t('dashboard.nav.messages') }}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="settings">Account</router-link>
+                            <router-link class="nav-link" to="settings">{{ $t('dashboard.nav.settings') }}</router-link>
                         </li>
                         <li class="nav-item mt-5">
-                            <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> Logout</button>
+                            <button class="btn btn-outline-light logout-btn" @click="logout"><i class="fas fa-power-off"></i> {{ $t('dashboard.nav.logout') }}</button>
                         </li>
                     </ul>
                 </div>
