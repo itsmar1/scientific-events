@@ -25,6 +25,14 @@ import SessionAdminEventAdmin from '../pages/dashboards/eventadmin/SessionAdmin.
 import RegularUserEventAdmin from '../pages/dashboards/eventadmin/RegularUser.vue';
 import UserAccountEventAdmin from '../pages/dashboards/eventadmin/UserAccount.vue';
 
+// Organisation Responsable routes
+import ResponsableDashboard from '../pages/dashboards/responsable/ResponsableDashboard.vue';
+import EventsListResponsable from '../pages/dashboards/responsable/EventsList.vue';
+import SessionAdminResponsable from '../pages/dashboards/responsable/SessionAdmin.vue';
+import RegularUserResponsable from '../pages/dashboards/responsable/RegularUser.vue';
+import UserAccountResponsable from '../pages/dashboards/responsable/UserAccount.vue';
+
+
 
 const router = createRouter({
     history: createWebHistory(),
@@ -87,7 +95,28 @@ const router = createRouter({
                 { path: 'users', component: RegularUserEventAdmin },
                 { path: 'settings', component: UserAccountEventAdmin }
             ]
-        },        
+        },
+        // Organisation Responsable Dashboard
+        {
+            path: '/responsable',
+            component: ResponsableDashboard,
+            children: [
+                {
+                    path: 'events',
+                    component: EventsListResponsable,
+                    children: [
+                        {
+                            path: ':id',
+                            component: EventDetail,
+                            props: true
+                        }
+                    ]
+                },
+                { path: 'sessions', component: SessionAdminResponsable },
+                { path: 'users', component: RegularUserResponsable },
+                { path: 'settings', component: UserAccountResponsable }
+            ]
+        },         
         { path: '/:catchAll(.*)', component: NotFound }
     ]
 });
