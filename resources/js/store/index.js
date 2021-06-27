@@ -4,6 +4,7 @@ import authModule from './auth/index.js';
 import adminModule from './users/admin/index.js';
 import eventAdminModule from './users/eventadmin/index.js';
 import responsableModule from './users/responsable/index.js';
+import sessionAdminModule from './users/sessionadmin/index.js';
 
 const store = createStore({
     modules: {
@@ -11,7 +12,8 @@ const store = createStore({
         auth: authModule,
         admin: adminModule,
         eventadmin: eventAdminModule,
-        responsable: responsableModule
+        responsable: responsableModule,
+        sessionadmin: sessionAdminModule
     }
 
 });

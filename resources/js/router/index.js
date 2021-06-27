@@ -32,6 +32,12 @@ import SessionAdminResponsable from '../pages/dashboards/responsable/SessionAdmi
 import RegularUserResponsable from '../pages/dashboards/responsable/RegularUser.vue';
 import UserAccountResponsable from '../pages/dashboards/responsable/UserAccount.vue';
 
+// Session Admin routes
+import SessionAdminDashboard from '../pages/dashboards/sessionadmin/SessionAdminDashboard.vue';
+import EventsListSessionAdmin from '../pages/dashboards/sessionadmin/EventsList.vue';
+import RegularUserSessionAdmin from '../pages/dashboards/sessionadmin/RegularUser.vue';
+import UserAccountSessionAdmin from '../pages/dashboards/sessionadmin/UserAccount.vue';
+
 
 
 const router = createRouter({
@@ -116,7 +122,27 @@ const router = createRouter({
                 { path: 'users', component: RegularUserResponsable },
                 { path: 'settings', component: UserAccountResponsable }
             ]
-        },         
+        },
+        // Session Admin Dashboard
+        {
+            path: '/sessionadmin',
+            component: SessionAdminDashboard,
+            children: [
+                {
+                    path: 'events',
+                    component: EventsListSessionAdmin,
+                    children: [
+                        {
+                            path: ':id',
+                            component: EventDetail,
+                            props: true
+                        }
+                    ]
+                },
+                { path: 'users', component: RegularUserSessionAdmin },
+                { path: 'settings', component: UserAccountSessionAdmin }
+            ]
+        },          
         { path: '/:catchAll(.*)', component: NotFound }
     ]
 });
