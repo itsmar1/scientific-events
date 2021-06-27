@@ -109,7 +109,13 @@
     "dashboard": {
         "nav": {
             "logout": "Déconnexion",
-            "type": "Admin Tableau de bord",
+            "type": {
+                "admin": "Admin Tableau de bord",
+                "eventadmin": "Admin d'Événements Tableau de bord",
+                "responsable": "Organisation Responsable Tableau de bord",
+                "sessionadmin": "Admin Session Tableau de bord",
+                "user": "Utilisateur Tableau de bord"
+            },
             "events": "Événements",
             "eventadmins": "Admins d'événement",
             "responsables": "Organization Responsables",

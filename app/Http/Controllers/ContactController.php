@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class ContactController extends Controller
 {
@@ -92,5 +94,23 @@ class ContactController extends Controller
     {
         //
         return Contact::find($request->id)->delete();
+    }
+
+
+    public function contact(Request $request)
+    {
+        $fields = $request->validate([
+            'message' => 'required|string'
+        ]);
+
+        $firstName = auth()->user()->firstName;
+        $lastName = auth()->user()->lastName;
+        $email = auth()->user()->email;
+
+        $contact = new Contact();
+        $contact->name = $firstName.' '.$lastName;
+        $contact->email = $email;
+        $contact->message = $fields['message'];
+        $contact->save();
     }
 }

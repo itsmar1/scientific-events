@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
 
 class UserController extends Controller
 {
@@ -31,7 +33,7 @@ class UserController extends Controller
         $user->lastName = $fields['lastName'];
         $user->email = $fields['email'];
         $user->role = $fields['role'] ?? 'event_admin';
-        $user->password = $fields['password'];
+        $user->password = bcrypt($fields['password']);
         $user->save();
 
         $response = [
@@ -73,7 +75,7 @@ class UserController extends Controller
         $user->lastName = $fields['lastName'];
         $user->email = $fields['email'];
         $user->role = $fields['role'] ?? 'responsable';
-        $user->password = $fields['password'];
+        $user->password = bcrypt($fields['password']);
         $user->save();
 
         $response = [
@@ -116,7 +118,7 @@ class UserController extends Controller
         $user->lastName = $fields['lastName'];
         $user->email = $fields['email'];
         $user->role = $fields['role'] ?? 'session_admin';
-        $user->password = $fields['password'];
+        $user->password = bcrypt($fields['password']);
         $user->save();
 
         $response = [
@@ -159,7 +161,7 @@ class UserController extends Controller
         $user->lastName = $fields['lastName'];
         $user->email = $fields['email'];
         $user->role = $fields['role'] ?? 'user';
-        $user->password = $fields['password'];
+        $user->password = bcrypt($fields['password']);
         $user->save();
 
         $response = [

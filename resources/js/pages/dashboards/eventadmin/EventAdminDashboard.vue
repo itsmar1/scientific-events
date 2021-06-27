@@ -21,14 +21,11 @@
                     <ul class="nav flex-column sidebar-nav mt-5">
                         <div class="role-dashboard text-center">
                             <i class="fas fa-user fa-3x rounded-circle"></i>
-                            <h5 class="mt-2">{{ $t('dashboard.nav.type.admin') }}</h5>
+                            <h5 class="mt-2">{{ $t('dashboard.nav.type.eventadmin') }}</h5>
                             <hr>
                         </div>
                         <li class="nav-item">
                             <router-link class="nav-link active" to="events">{{ $t('dashboard.nav.events') }}</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="eventadmins">{{ $t('dashboard.nav.eventadmins') }}</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="responsables">{{ $t('dashboard.nav.responsables') }}</router-link>
@@ -38,9 +35,6 @@
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="users">{{ $t('dashboard.nav.users') }}</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="contact">{{ $t('dashboard.nav.messages') }}</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="settings">{{ $t('dashboard.nav.settings') }}</router-link>
@@ -112,7 +106,7 @@ export default {
     },
     methods: {
         async logout() {
-            await this.$store.dispatch('admin/logout');
+            await this.$store.dispatch('eventadmin/logout');
             this.$router.replace('/');
         }
         }

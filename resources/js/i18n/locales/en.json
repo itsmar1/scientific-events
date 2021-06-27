@@ -109,7 +109,13 @@
     "dashboard": {
         "nav": {
             "logout": "Logout",
-            "type": "Admin Dashboard",
+            "type": {
+                "admin": "Admin Dashboard",
+                "eventadmin": "Event Admin Dashboard",
+                "responsable": "Organisation Responsable Dashboard",
+                "sessionadmin": "Session Admin Dashboard",
+                "user": "User Dashboard"
+            },
             "events": "Events",
             "eventadmins": "Event Admins",
             "responsables": "Organization Responsables",
