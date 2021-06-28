@@ -38,6 +38,12 @@ import EventsListSessionAdmin from '../pages/dashboards/sessionadmin/EventsList.
 import RegularUserSessionAdmin from '../pages/dashboards/sessionadmin/RegularUser.vue';
 import UserAccountSessionAdmin from '../pages/dashboards/sessionadmin/UserAccount.vue';
 
+// Simple User routes
+import UserDashboard from '../pages/dashboards/user/UserDashboard.vue';
+import EventsListUser from '../pages/dashboards/user/EventsList.vue';
+import ContactAdmin from '../pages/dashboards/user/ContactAdmin.vue';
+import UserAccountUser from '../pages/dashboards/user/UserAccount.vue';
+
 
 
 const router = createRouter({
@@ -142,7 +148,27 @@ const router = createRouter({
                 { path: 'users', component: RegularUserSessionAdmin },
                 { path: 'settings', component: UserAccountSessionAdmin }
             ]
-        },          
+        },
+        // Session Admin Dashboard
+        {
+            path: '/user',
+            component: UserDashboard,
+            children: [
+                {
+                    path: 'events',
+                    component: EventsListUser,
+                    children: [
+                        {
+                            path: ':id',
+                            component: EventDetail,
+                            props: true
+                        }
+                    ]
+                },
+                { path: 'contact', component: ContactAdmin },
+                { path: 'settings', component: UserAccountUser }
+            ]
+        },
         { path: '/:catchAll(.*)', component: NotFound }
     ]
 });

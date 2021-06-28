@@ -102,7 +102,7 @@ Route::group(['prefix' => 'eventadmin', 'middleware' => ['auth:sanctum', 'event_
     Route::post('postEvent', [EventController::class, 'store']);
     Route::put('putEvent/{id}', [EventController::class, 'update']);
     Route::delete('deleteEvent/{id}', [EventController::class, 'destroy']);
-        
+
     // Responsable CRUD APIs
     Route::get('getResponsable', [UserController::class, 'getResponsable']);
     Route::post('postResponsable', [UserController::class, 'postResponsable']);
@@ -143,7 +143,7 @@ Route::group(['prefix' => 'responsable', 'middleware' => ['auth:sanctum', 'respo
     Route::post('postEvent', [EventController::class, 'store']);
     Route::put('putEvent/{id}', [EventController::class, 'update']);
     Route::delete('deleteEvent/{id}', [EventController::class, 'destroy']);
-        
+
 
     // Session Admin CRUD APIs
     Route::get('getSessionAdmins', [UserController::class, 'getSessionAdmins']);
@@ -195,7 +195,7 @@ Route::group(['prefix' => 'sessionadmin', 'middleware' => ['auth:sanctum', 'sess
 
     // Logout
     Route::post('logout', [AuthController::class, 'logout']);
-    
+
 
 });
 
@@ -206,9 +206,6 @@ Route::group(['prefix' => 'user', 'middleware' => ['auth:sanctum', 'user']], fun
     // Events
     Route::get('events', [EventController::class, 'preview']);
     Route::get('getEvent/{id}', [EventController::class, 'getEvent']);
-    Route::post('postEvent', [EventController::class, 'store']);
-    Route::put('putEvent/{id}', [EventController::class, 'update']);
-    Route::delete('deleteEvent/{id}', [EventController::class, 'destroy']);
 
     // Contact Admin
     Route::post('contact', [ContactController::class, 'contact']);
@@ -220,7 +217,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['auth:sanctum', 'user']], fun
 
 
     // Logout
-    Route::post('logout', [AuthController::class, 'logout']);    
+    Route::post('logout', [AuthController::class, 'logout']);
 
 });
 

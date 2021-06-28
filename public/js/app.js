@@ -22890,6 +22890,357 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      message: null
+    };
+  },
+  computed: {
+    users: function users() {
+      return this.$store.getters['user/user'];
+    }
+  },
+  methods: {
+    sendMessage: function sendMessage() {
+      this.$store.dispatch('user/sendMessage', {
+        message: this.message
+      });
+      this.message = '';
+    },
+    getUser: function getUser() {
+      this.$store.dispatch('user/user');
+    }
+  },
+  mounted: function mounted() {
+    this.getUser();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['id', 'image', 'name', 'description', 'city', 'country', 'type'],
+  data: function data() {
+    return {
+      event: {
+        id: this.id,
+        name: null,
+        description: null,
+        type: null,
+        startDate: null,
+        endDate: null,
+        city: null,
+        country: null,
+        address: null,
+        venueName: null,
+        phone: null,
+        email: null,
+        image: null
+      },
+      imagepreview: null
+    };
+  },
+  computed: {
+    imageSource: function imageSource() {
+      return '/images/' + this.image;
+    },
+    eventDetailsLink: function eventDetailsLink() {
+      return this.$route.path + '/' + this.id;
+    }
+  },
+  methods: {
+    imageSelected: function imageSelected(e) {
+      var _this = this;
+
+      this.event.image = e.target.files[0];
+      var reader = new FileReader();
+      reader.readAsDataURL(this.event.image);
+
+      reader.onload = function (e) {
+        _this.imagepreview = e.target.result;
+      };
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _EventItem_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EventItem.vue */ "./resources/js/pages/dashboards/user/EventItem.vue");
+/* harmony import */ var _components_events_EventFilter_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/events/EventFilter.vue */ "./resources/js/components/events/EventFilter.vue");
+/* harmony import */ var _components_layouts_TheCounter_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/layouts/TheCounter.vue */ "./resources/js/components/layouts/TheCounter.vue");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+// import EventItem from "../../../components/events/EventItem.vue";
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    EventItem: _EventItem_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+    EventFilter: _components_events_EventFilter_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    TheCounter: _components_layouts_TheCounter_vue__WEBPACK_IMPORTED_MODULE_3__.default
+  },
+  data: function data() {
+    return {
+      // events: [],
+      activeFilters: {
+        conference: true,
+        formation: true,
+        atelier: true
+      },
+      event: {
+        name: null,
+        description: null,
+        type: null,
+        startDate: null,
+        endDate: null,
+        city: null,
+        country: null,
+        address: null,
+        venueName: null,
+        phone: null,
+        email: null,
+        image: null
+      },
+      imagepreview: null
+    };
+  },
+  computed: {
+    events: function events() {
+      var _this = this;
+
+      var events = this.$store.getters['user/events'];
+      return events.filter(function (event) {
+        if (_this.activeFilters.conference && event.type === 'conference') {
+          return true;
+        }
+
+        if (_this.activeFilters.formation && event.type === 'formation') {
+          return true;
+        }
+
+        if (_this.activeFilters.atelier && event.type === 'atelier') {
+          return true;
+        }
+
+        return false;
+      });
+    }
+  },
+  methods: {
+    loadEvents: function loadEvents() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _this2.$store.dispatch('user/events');
+
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    // Events filter
+    setFilter: function setFilter(updatedFilters) {
+      this.activeFilters = updatedFilters;
+    },
+    imageSelected: function imageSelected(e) {
+      var _this3 = this;
+
+      this.event.image = e.target.files[0];
+      var reader = new FileReader();
+      reader.readAsDataURL(this.event.image);
+
+      reader.onload = function (e) {
+        _this3.imagepreview = e.target.result;
+      };
+    }
+  },
+  created: function created() {
+    this.loadEvents();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_users_AccountItem_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/users/AccountItem.vue */ "./resources/js/components/users/AccountItem.vue");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    AccountItem: _components_users_AccountItem_vue__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  data: function data() {
+    return {
+      user: {
+        firstName: null,
+        lastName: null,
+        email: null,
+        password: null,
+        password_confirmation: null
+      }
+    };
+  },
+  computed: {
+    users: function users() {
+      return this.$store.getters["user/user"];
+    }
+  },
+  methods: {
+    getUser: function getUser() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _this.$store.dispatch('user/user');
+
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    updateAccount: function updateAccount() {
+      this.$store.dispatch('user/putUser', this.user);
+    }
+  },
+  mounted: function mounted() {
+    this.getUser();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {};
+  },
+  computed: {
+    role: function role() {
+      return localStorage.getItem('role');
+    },
+    headerLink: function headerLink() {
+      return '/' + this.role + '/events';
+    }
+  },
+  methods: {
+    logout: function logout() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _this.$store.dispatch('user/logout');
+
+              case 2:
+                _this.$router.replace('/');
+
+              case 3:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/events/EventDetail.vue?vue&type=script&lang=js":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/events/EventDetail.vue?vue&type=script&lang=js ***!
@@ -30848,6 +31199,714 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "contact-admin"
+};
+var _hoisted_2 = {
+  "class": "container"
+};
+var _hoisted_3 = {
+  "class": "row"
+};
+var _hoisted_4 = {
+  "class": "col-sm-12"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Contact an Event Organizer", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_7 = {
+  "class": "row"
+};
+var _hoisted_8 = {
+  "class": "col-sm-12"
+};
+var _hoisted_9 = {
+  "class": "card"
+};
+var _hoisted_10 = {
+  "class": "list-group-item"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "user-key"
+}, "From: ", -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+
+var _hoisted_13 = {
+  "class": "user-value"
+};
+var _hoisted_14 = {
+  "class": "list-group-item"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "user-key"
+}, "Email: ", -1
+/* HOISTED */
+);
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+
+var _hoisted_17 = {
+  "class": "user-value"
+};
+var _hoisted_18 = {
+  "class": "list-group-item"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "user-key"
+}, "Message: ", -1
+/* HOISTED */
+);
+
+var _hoisted_20 = {
+  "class": "user-value"
+};
+var _hoisted_21 = {
+  "class": "form-group"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  type: "submit",
+  "class": "btn btn-danger mt-3"
+}, "Send Message", -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_base_card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-card");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.users, function (user) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
+      key: user,
+      "class": "list-group list-group-flush"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_10, [_hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.firstName + ' ' + user.lastName), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_14, [_hoisted_15, _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.email), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+      onSubmit: _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+        return $options.sendMessage && $options.sendMessage.apply($options, arguments);
+      }, ["prevent"]))
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
+      name: "message",
+      id: "message",
+      rows: "10",
+      "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+        return $data.message = $event;
+      }),
+      "class": "form-control"
+    }, null, 512
+    /* NEED_PATCH */
+    ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.message, void 0, {
+      trim: true
+    }]]), _hoisted_22])], 32
+    /* HYDRATE_EVENTS */
+    )])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])])])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980 ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "event-item"
+};
+var _hoisted_2 = {
+  "class": "card mb-3 flex-row flex-wrap"
+};
+var _hoisted_3 = {
+  "class": "row no-gutters"
+};
+var _hoisted_4 = {
+  "class": "col-md-4"
+};
+var _hoisted_5 = {
+  "class": "col-md-8"
+};
+var _hoisted_6 = {
+  "class": "card-body"
+};
+var _hoisted_7 = {
+  "class": "card-title"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-map-marker-alt"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "card-text"
+};
+var _hoisted_10 = {
+  "class": "action"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-chevron-circle-right"
+}, null, -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_base_badge = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-badge");
+
+  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card mb-3\" style=\"max-width: 540px;\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img class=\"img-fluid align-self-start\" :src=\"imageSource\" alt=\"image\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    "class": "card-img-left img-fluid align-self-start",
+    src: $options.imageSource,
+    alt: "image"
+  }, null, 8
+  /* PROPS */
+  , ["src"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.name), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.city) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.country), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.description), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_badge, {
+    type: $props.type,
+    title: $props.type,
+    "class": "mb-1"
+  }, null, 8
+  /* PROPS */
+  , ["type", "title"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"update-delete-event mt-auto\">\n                        <button class=\"btn btn-warning ml-auto\" data-toggle=\"modal\" data-target=\"#updateEvent\">Update</button>\n                        <button class=\"btn btn-danger ml-3\" @click=\"deleteEvent\">Delete</button>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "btn btn-outline-primary float-right ml-auto",
+    to: $options.eventDetailsLink
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.events.item.show')) + " ", 1
+      /* TEXT */
+      ), _hoisted_11];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["to"])])])])])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998 ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "event-list"
+};
+var _hoisted_2 = {
+  "class": "container"
+};
+var _hoisted_3 = {
+  "class": "row"
+};
+var _hoisted_4 = {
+  "class": "col-sm-12"
+};
+var _hoisted_5 = {
+  "class": "col-sm-3 text-center"
+};
+var _hoisted_6 = {
+  "class": "col-sm-9"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_event_filter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("event-filter");
+
+  var _component_the_counter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("the-counter");
+
+  var _component_event_item = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("event-item");
+
+  var _component_base_card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-card");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"row\">\n                <div class=\"col-sm-3\">\n                    <button class=\"btn btn-success btn-block\" data-toggle=\"modal\" data-target=\"#addEvent\"><i class=\"fas fa-plus ml-auto\"></i>   {{ $t('dashboard.events.list.create') }}</button>\n                </div>\n            </div>\n            <hr> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_event_filter, {
+    onChangeFilter: $options.setFilter
+  }, null, 8
+  /* PROPS */
+  , ["onChangeFilter"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.events, function (event) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+          "class": "row",
+          key: event.id
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{  event.type }} "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_the_counter, {
+          year: 2021,
+          month: 7,
+          date: 8,
+          hour: 10,
+          minute: 24,
+          second: 40,
+          millisecond: 10
+        })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <ul v-for=\"event in events\" :key=\"event\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_event_item, {
+          id: event.id,
+          image: event.image,
+          name: event.name,
+          description: event.description,
+          city: event.city,
+          country: event.country,
+          type: event.type
+        }, null, 8
+        /* PROPS */
+        , ["id", "image", "name", "description", "city", "country", "type"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </ul> ")])]);
+      }), 128
+      /* KEYED_FRAGMENT */
+      ))];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" start modal "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" end moadl ")])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956 ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "event-admins"
+};
+var _hoisted_2 = {
+  "class": "container"
+};
+var _hoisted_3 = {
+  "class": "row my-5"
+};
+var _hoisted_4 = {
+  "class": "col-sm-3"
+};
+var _hoisted_5 = {
+  "class": "btn btn-warning btn-block",
+  "data-toggle": "modal",
+  "data-target": "#updateAccount"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-user-edit"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "row"
+};
+var _hoisted_9 = {
+  "class": "col-sm-12"
+};
+var _hoisted_10 = {
+  "class": "modal fade",
+  id: "updateAccount"
+};
+var _hoisted_11 = {
+  "class": "modal-dialog modal-lg"
+};
+var _hoisted_12 = {
+  "class": "modal-content"
+};
+var _hoisted_13 = {
+  "class": "modal-header bg-warning text-white"
+};
+var _hoisted_14 = {
+  "class": "modal-title"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  "class": "close",
+  "data-dismiss": "modal"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "×")], -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "modal-body"
+};
+var _hoisted_17 = {
+  "class": "form-group"
+};
+var _hoisted_18 = {
+  "for": "firstName"
+};
+var _hoisted_19 = {
+  "class": "form-group"
+};
+var _hoisted_20 = {
+  "for": "lastName"
+};
+var _hoisted_21 = {
+  "class": "form-group"
+};
+var _hoisted_22 = {
+  "for": "email"
+};
+var _hoisted_23 = {
+  "class": "form-group"
+};
+var _hoisted_24 = {
+  "for": "password"
+};
+var _hoisted_25 = {
+  "class": "form-group"
+};
+var _hoisted_26 = {
+  "for": "password_confirmation"
+};
+var _hoisted_27 = {
+  "class": "modal-footer"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_account_item = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("account-item");
+
+  var _component_base_card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-card");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.update')), 1
+  /* TEXT */
+  )])])]), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.users, function (user) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
+          key: user,
+          "class": "list-unstyled"
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+          "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+            return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_account_item, {
+              id: user.id,
+              firstName: user.firstName,
+              lastName: user.lastName,
+              email: user.email,
+              role: user.role
+            }, null, 8
+            /* PROPS */
+            , ["id", "firstName", "lastName", "email", "role"])];
+          }),
+          _: 2
+          /* DYNAMIC */
+
+        }, 1024
+        /* DYNAMIC_SLOTS */
+        )]);
+      }), 128
+      /* KEYED_FRAGMENT */
+      ))])])];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" start modal "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.update')), 1
+  /* TEXT */
+  ), _hoisted_15]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.firstName')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "text",
+    name: "firstName",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+      return $data.user.firstName = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.firstName, void 0, {
+    trim: true
+  }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.lastName')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "text",
+    name: "lastName",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+      return $data.user.lastName = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.lastName, void 0, {
+    trim: true
+  }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.email')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "email",
+    name: "email",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+      return $data.user.email = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.email, void 0, {
+    trim: true
+  }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.password')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "password",
+    name: "password",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+      return $data.user.password = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password, void 0, {
+    trim: true
+  }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.password_confirmation')), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "password",
+    name: "password_confirmation",
+    "class": "form-control",
+    "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
+      return $data.user.password_confirmation = $event;
+    })
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.user.password_confirmation, void 0, {
+    trim: true
+  }]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": "btn btn-warning",
+    "data-dismiss": "modal",
+    onClick: _cache[6] || (_cache[6] = function () {
+      return $options.updateAccount && $options.updateAccount.apply($options, arguments);
+    })
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.account.update')), 1
+  /* TEXT */
+  )])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" end moadl ")])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-9336b788");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-9336b788");
+
+var _hoisted_1 = {
+  "class": "header-nav"
+};
+var _hoisted_2 = {
+  "class": "navbar navbar-dark fixed-top bg-primary flex-md-nowrap shadow"
+};
+var _hoisted_3 = {
+  "class": "navbar-nav px-3"
+};
+var _hoisted_4 = {
+  "class": "nav-item text-nowrap"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-power-off"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "container-fluid"
+};
+var _hoisted_7 = {
+  "class": "row"
+};
+var _hoisted_8 = {
+  "class": "col-md-2 bg-light d-none d-md-block sidebar"
+};
+var _hoisted_9 = {
+  "class": "left-sidebar"
+};
+var _hoisted_10 = {
+  "class": "nav flex-column sidebar-nav mt-5"
+};
+var _hoisted_11 = {
+  "class": "role-dashboard text-center"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-user fa-3x rounded-circle"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_13 = {
+  "class": "mt-2"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_15 = {
+  "class": "nav-item"
+};
+var _hoisted_16 = {
+  "class": "nav-item"
+};
+var _hoisted_17 = {
+  "class": "nav-item"
+};
+var _hoisted_18 = {
+  "class": "nav-item mt-5"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fas fa-power-off"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_20 = {
+  role: "main",
+  "class": "col-md-9 ml-sm-auto col-lg-10 px-4"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
+
+  var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <router-link class=\"navbar-brand col-sm-3 col-md-2 mr-0\"  :to=\"headerLink\"><span class=\"science\">Science</span><span class=\"events\">Events</span></router-link> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "navbar-brand col-sm-3 col-md-2 mr-0",
+    to: $options.headerLink
+  }, null, 8
+  /* PROPS */
+  , ["to"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"nav-link logout-btn\" @click=\"logout\">Logout</button> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": "btn btn-outline-light logout-btn",
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.logout && $options.logout.apply($options, arguments);
+    })
+  }, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.logout')), 1
+  /* TEXT */
+  )])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" sidebar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"sidebar-image\"></div>\n                <div class=\"sidebar-overlay\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.type.user')), 1
+  /* TEXT */
+  ), _hoisted_14]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nav-link active",
+    to: "events"
+  }, {
+    "default": _withId(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.events')), 1
+      /* TEXT */
+      )];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nav-link",
+    to: "contact"
+  }, {
+    "default": _withId(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.contact')), 1
+      /* TEXT */
+      )];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nav-link",
+    to: "settings"
+  }, {
+    "default": _withId(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.settings')), 1
+      /* TEXT */
+      )];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+    "class": "btn btn-outline-light logout-btn",
+    onClick: _cache[2] || (_cache[2] = function () {
+      return $options.logout && $options.logout.apply($options, arguments);
+    })
+  }, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.nav.logout')), 1
+  /* TEXT */
+  )])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h3>candidated</h3>\n                <hr>\n                <div class=\"table-responsive\">\n                    <table class=\"table table-sm table-dark\">\n                        <thead>\n                            <tr>\n                            <th scope=\"col\">#</th>\n                            <th scope=\"col\">First</th>\n                            <th scope=\"col\">Last</th>\n                            <th scope=\"col\">Handle</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr>\n                            <th scope=\"row\">1</th>\n                            <td>Mark</td>\n                            <td>Otto</td>\n                            <td>@mdo</td>\n                            </tr>\n                            <tr>\n                            <th scope=\"row\">2</th>\n                            <td>Jacob</td>\n                            <td>Thornton</td>\n                            <td>@fat</td>\n                            </tr>\n                            <tr>\n                            <th scope=\"row\">3</th>\n                            <td colspan=\"2\">Larry the Bird</td>\n                            <td>@twitter</td>\n                            </tr>\n                        </tbody>\n                    </table>\n                </div> ")])])])], 64
+  /* STABLE_FRAGMENT */
+  );
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/events/EventDetail.vue?vue&type=template&id=21a273c4":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/events/EventDetail.vue?vue&type=template&id=21a273c4 ***!
@@ -31372,7 +32431,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _pages_auth_UserLogin_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pages/auth/UserLogin.vue */ "./resources/js/pages/auth/UserLogin.vue");
 /* harmony import */ var _pages_auth_UserRegister_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/auth/UserRegister.vue */ "./resources/js/pages/auth/UserRegister.vue");
 /* harmony import */ var _pages_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/NotFound.vue */ "./resources/js/pages/NotFound.vue");
@@ -31403,6 +32462,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_dashboards_sessionadmin_EventsList_vue__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../pages/dashboards/sessionadmin/EventsList.vue */ "./resources/js/pages/dashboards/sessionadmin/EventsList.vue");
 /* harmony import */ var _pages_dashboards_sessionadmin_RegularUser_vue__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../pages/dashboards/sessionadmin/RegularUser.vue */ "./resources/js/pages/dashboards/sessionadmin/RegularUser.vue");
 /* harmony import */ var _pages_dashboards_sessionadmin_UserAccount_vue__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../pages/dashboards/sessionadmin/UserAccount.vue */ "./resources/js/pages/dashboards/sessionadmin/UserAccount.vue");
+/* harmony import */ var _pages_dashboards_user_UserDashboard_vue__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../pages/dashboards/user/UserDashboard.vue */ "./resources/js/pages/dashboards/user/UserDashboard.vue");
+/* harmony import */ var _pages_dashboards_user_EventsList_vue__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../pages/dashboards/user/EventsList.vue */ "./resources/js/pages/dashboards/user/EventsList.vue");
+/* harmony import */ var _pages_dashboards_user_ContactAdmin_vue__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../pages/dashboards/user/ContactAdmin.vue */ "./resources/js/pages/dashboards/user/ContactAdmin.vue");
+/* harmony import */ var _pages_dashboards_user_UserAccount_vue__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../pages/dashboards/user/UserAccount.vue */ "./resources/js/pages/dashboards/user/UserAccount.vue");
 
 
 
@@ -31437,9 +32500,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // Simple User routes
 
-var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_30__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_30__.createWebHistory)(),
+
+
+
+
+var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_34__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_34__.createWebHistory)(),
   routes: [{
     path: '/',
     component: _pages_Home_HomePage_vue__WEBPACK_IMPORTED_MODULE_3__.default
@@ -31555,6 +32623,25 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_30__.createRouter)({
     }, {
       path: 'settings',
       component: _pages_dashboards_sessionadmin_UserAccount_vue__WEBPACK_IMPORTED_MODULE_29__.default
+    }]
+  }, // Session Admin Dashboard
+  {
+    path: '/user',
+    component: _pages_dashboards_user_UserDashboard_vue__WEBPACK_IMPORTED_MODULE_30__.default,
+    children: [{
+      path: 'events',
+      component: _pages_dashboards_user_EventsList_vue__WEBPACK_IMPORTED_MODULE_31__.default,
+      children: [{
+        path: ':id',
+        component: _pages_events_EventDetail_vue__WEBPACK_IMPORTED_MODULE_6__.default,
+        props: true
+      }]
+    }, {
+      path: 'contact',
+      component: _pages_dashboards_user_ContactAdmin_vue__WEBPACK_IMPORTED_MODULE_32__.default
+    }, {
+      path: 'settings',
+      component: _pages_dashboards_user_UserAccount_vue__WEBPACK_IMPORTED_MODULE_33__.default
     }]
   }, {
     path: '/:catchAll(.*)',
@@ -32074,13 +33161,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
 /* harmony import */ var _events_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./events/index.js */ "./resources/js/store/events/index.js");
 /* harmony import */ var _auth_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth/index.js */ "./resources/js/store/auth/index.js");
 /* harmony import */ var _users_admin_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./users/admin/index.js */ "./resources/js/store/users/admin/index.js");
 /* harmony import */ var _users_eventadmin_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./users/eventadmin/index.js */ "./resources/js/store/users/eventadmin/index.js");
 /* harmony import */ var _users_responsable_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./users/responsable/index.js */ "./resources/js/store/users/responsable/index.js");
 /* harmony import */ var _users_sessionadmin_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users/sessionadmin/index.js */ "./resources/js/store/users/sessionadmin/index.js");
+/* harmony import */ var _users_user_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users/user/index.js */ "./resources/js/store/users/user/index.js");
 
 
 
@@ -32088,14 +33176,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var store = (0,vuex__WEBPACK_IMPORTED_MODULE_6__.createStore)({
+
+var store = (0,vuex__WEBPACK_IMPORTED_MODULE_7__.createStore)({
   modules: {
     events: _events_index_js__WEBPACK_IMPORTED_MODULE_0__.default,
     auth: _auth_index_js__WEBPACK_IMPORTED_MODULE_1__.default,
     admin: _users_admin_index_js__WEBPACK_IMPORTED_MODULE_2__.default,
     eventadmin: _users_eventadmin_index_js__WEBPACK_IMPORTED_MODULE_3__.default,
     responsable: _users_responsable_index_js__WEBPACK_IMPORTED_MODULE_4__.default,
-    sessionadmin: _users_sessionadmin_index_js__WEBPACK_IMPORTED_MODULE_5__.default
+    sessionadmin: _users_sessionadmin_index_js__WEBPACK_IMPORTED_MODULE_5__.default,
+    user: _users_user_index_js__WEBPACK_IMPORTED_MODULE_6__.default
   }
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
@@ -36259,6 +37349,792 @@ __webpack_require__.r(__webpack_exports__);
   },
   users: function users(state, payload) {
     state.users = payload;
+  },
+  user: function user(state, payload) {
+    state.user = payload;
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/store/users/user/actions.js":
+/*!**************************************************!*\
+  !*** ./resources/js/store/users/user/actions.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  // Events
+  events: function events(context) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/user/events', {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              }).then(function (res) {
+                var events = JSON.parse(JSON.stringify(res.data));
+                context.commit('events', events);
+              });
+
+            case 2:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  },
+  getEvent: function getEvent(context, id) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/user/getEvent/".concat(id), {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              }).then(function (res) {
+                context.commit('getEvent', res.data);
+              });
+
+            case 2:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }))();
+  },
+  // Contact Admin
+  sendMessage: function sendMessage(_, payload) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/user/contact', payload, {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              });
+
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }))();
+  },
+  // GET & UPDATE account
+  user: function user(context) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              _context4.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/user/user', {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              }).then(function (res) {
+                var user = [];
+                user.push(res.data);
+                console.log(user);
+                context.commit('user', user);
+              });
+
+            case 2:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4);
+    }))();
+  },
+  putUser: function putUser(_, payload) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+        while (1) {
+          switch (_context5.prev = _context5.next) {
+            case 0:
+              _context5.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().put('/api/user/user', payload, {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              });
+
+            case 2:
+            case "end":
+              return _context5.stop();
+          }
+        }
+      }, _callee5);
+    }))();
+  },
+  // Logout user
+  logout: function logout(_) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee6() {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee6$(_context6) {
+        while (1) {
+          switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/user/logout', null, {
+                headers: {
+                  Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+              });
+
+            case 2:
+              response = _context6.sent;
+              localStorage.removeItem('userId');
+              localStorage.removeItem('role');
+              localStorage.removeItem('token');
+              console.log(response.data.message);
+
+            case 7:
+            case "end":
+              return _context6.stop();
+          }
+        }
+      }, _callee6);
+    }))();
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/store/users/user/getters.js":
+/*!**************************************************!*\
+  !*** ./resources/js/store/users/user/getters.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  events: function events(state) {
+    // console.log(state.events);
+    return state.events;
+  },
+  selectedEvent: function selectedEvent(state) {
+    return state.selectedEvent;
+  },
+  selectedEventSessions: function selectedEventSessions(state) {
+    return state.selectedEventSessions;
+  },
+  selectedEventCommittees: function selectedEventCommittees(state) {
+    return state.selectedEventCommittees;
+  },
+  user: function user(state) {
+    return state.user;
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/store/users/user/index.js":
+/*!************************************************!*\
+  !*** ./resources/js/store/users/user/index.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mutations_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mutations.js */ "./resources/js/store/users/user/mutations.js");
+/* harmony import */ var _actions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./actions.js */ "./resources/js/store/users/user/actions.js");
+/* harmony import */ var _getters_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getters.js */ "./resources/js/store/users/user/getters.js");
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  namespaced: true,
+  state: function state() {
+    return {
+      // events: null,
+      selectedEvent: null,
+      selectedEventSessions: null,
+      selectedEventCommittees: null,
+      contacts: null,
+      eventAdmins: null,
+      responsables: null,
+      sessionAdmins: null,
+      users: null,
+      user: null,
+      // events: null,
+      events: [{
+        "id": 1,
+        "name": "Miller, Predovic and Sipes",
+        "description": "Rerum consequatur sed sequi aut pariatur. Perspiciatis et laborum laboriosam suscipit et. Est similique similique est voluptatum rerum atque. Sint voluptatem aut corporis. Atque et vitae quia et. Vitae quibusdam quisquam corporis. Natus necessitatibus eum neque modi illum sit quo. Suscipit vero assumenda quam beatae. Animi sunt et aut quam veritatis autem voluptatem enim. Est dolores omnis ut quo illum itaque suscipit.",
+        "startDate": "2019-10-30 13:32:35",
+        "endDate": "2022-06-22 02:44:07",
+        "type": "conference",
+        "city": "North Vitaburgh",
+        "country": "Seychelles",
+        "address": "38807 Luettgen Springs Apt. 378\nWest Kamilleshire, AL 23753",
+        "venueName": "Rolfson Station",
+        "phone": "+1 (989) 408-0478",
+        "email": "ymiller@gmail.com",
+        "created_at": "2021-06-10T14:44:42.000000Z",
+        "updated_at": "2021-06-10T14:44:42.000000Z",
+        "event_id": 1,
+        "image": "c4c638684789d01bf75c0bd05e979291.png"
+      }, {
+        "id": 2,
+        "name": "Turner, Murazik and Kub",
+        "description": "Nemo vitae qui omnis quasi et eos voluptates. Ut quod reprehenderit molestiae dolor ipsam vero. Amet est commodi aut aut repellat ad. Et esse recusandae facere et sed veritatis ullam. Voluptatibus est fugiat in voluptatem distinctio eum ipsam.",
+        "startDate": "2019-07-24 05:12:40",
+        "endDate": "2022-11-22 19:24:27",
+        "type": "formation",
+        "city": "Hilpertview",
+        "country": "Tuvalu",
+        "address": "65920 Abshire Village Apt. 084\nKiehnchester, DE 94021",
+        "venueName": "Elijah Branch",
+        "phone": "915.929.3558",
+        "email": "newell.turcotte@gmail.com",
+        "created_at": "2021-06-10T14:44:43.000000Z",
+        "updated_at": "2021-06-10T14:44:43.000000Z",
+        "event_id": 2,
+        "image": "0f6b1f72142e09abb489d28983402299.png"
+      }, {
+        "id": 3,
+        "name": "Reynolds-Hauck",
+        "description": "Eaque magni veniam voluptate aut. Odio est quia tempora ducimus neque doloribus cum rerum. Nobis iure hic quasi molestiae quisquam laudantium. Corporis magni error nobis placeat rerum labore aut. Omnis non tempora vel quam. Sit ut atque illo nulla fugit qui temporibus. Delectus veritatis et autem eos et odio. Adipisci quam dolorem aut molestias illum porro non saepe. Dignissimos maiores eos aliquam blanditiis odit autem vitae dolore. Illo amet eaque illum quae velit et illum.",
+        "startDate": "2020-08-21 10:08:11",
+        "endDate": "2022-11-22 06:35:49",
+        "type": "conference",
+        "city": "Carterstad",
+        "country": "Argentina",
+        "address": "4201 Kirlin Roads Apt. 204\nPaytonland, SD 50484-0125",
+        "venueName": "Kareem Expressway",
+        "phone": "+1 (308) 354-7082",
+        "email": "kuhn.aiden@hotmail.com",
+        "created_at": "2021-06-10T14:44:44.000000Z",
+        "updated_at": "2021-06-10T14:44:44.000000Z",
+        "event_id": 3,
+        "image": "30873e71396265e97ebb079158bf66bd.png"
+      }, {
+        "id": 4,
+        "name": "Dickinson-Carter",
+        "description": "Commodi voluptatum inventore repellendus qui nulla voluptatem. Magnam est doloremque consequatur quo tempora. Voluptatem voluptatem deleniti inventore eveniet odit ex sunt repellat. Perspiciatis architecto nisi asperiores repudiandae et beatae. Iste molestias ut ut aut vel excepturi inventore. Et nemo inventore occaecati suscipit minus commodi. Voluptas minima consequuntur accusantium natus incidunt doloribus est. Eius magnam et laborum harum. Provident similique ut dolor sint a veritatis consequatur deleniti.",
+        "startDate": "2020-08-25 06:42:39",
+        "endDate": "2021-09-22 10:57:48",
+        "type": "formation",
+        "city": "South Mercedesburgh",
+        "country": "Romania",
+        "address": "482 Ritchie Skyway\nEast Loma, NV 78255-6751",
+        "venueName": "Elsa Plaza",
+        "phone": "+1-628-870-5158",
+        "email": "wlangosh@yahoo.com",
+        "created_at": "2021-06-10T14:44:45.000000Z",
+        "updated_at": "2021-06-10T14:44:45.000000Z",
+        "event_id": 4,
+        "image": "e79d0a9b0ac71238c7fee29728bc58a0.png"
+      }, {
+        "id": 5,
+        "name": "Legros and Sons",
+        "description": "Non sunt non quidem quidem. Distinctio temporibus ut alias molestias. Tempore dolorem fuga deserunt quo id aperiam eaque. Enim eos quae voluptatum omnis esse occaecati. Vel libero ratione quam voluptas. Dolorem consequatur non dolor ex nemo laborum. Vel sit odit autem facere nam dicta sequi. Error architecto aut hic eaque et blanditiis autem. Odio voluptas cupiditate eveniet autem similique. Vitae repudiandae voluptatum harum voluptas.",
+        "startDate": "2021-04-09 11:54:38",
+        "endDate": "2022-06-22 00:45:31",
+        "type": "formation",
+        "city": "New Bart",
+        "country": "Heard Island and McDonald Islands",
+        "address": "442 Rebeca Land\nSouth Austyn, SD 05749-2957",
+        "venueName": "Macejkovic Fields",
+        "phone": "1-425-988-4358",
+        "email": "moen.trey@hotmail.com",
+        "created_at": "2021-06-10T14:44:46.000000Z",
+        "updated_at": "2021-06-10T14:44:46.000000Z",
+        "event_id": 5,
+        "image": "cb7e779cc4024a8a3208988017a160a4.png"
+      }, {
+        "id": 6,
+        "name": "Welch-Grimes",
+        "description": "Expedita corrupti earum ex soluta cum explicabo non. Expedita voluptatem autem voluptatem. Amet et delectus ut quam distinctio id sed. Porro et culpa nisi at expedita. Nulla autem saepe alias eaque tenetur recusandae quo. Provident et temporibus omnis qui minima.",
+        "startDate": "2020-01-11 10:41:06",
+        "endDate": "2022-07-09 14:38:18",
+        "type": "conference",
+        "city": "New Isacstad",
+        "country": "Sweden",
+        "address": "3638 O'Kon Streets Suite 819\nStephanyfurt, OR 12812-8364",
+        "venueName": "Torphy Parkway",
+        "phone": "1-574-673-9136",
+        "email": "ctreutel@hotmail.com",
+        "created_at": "2021-06-10T14:44:47.000000Z",
+        "updated_at": "2021-06-10T14:44:47.000000Z",
+        "event_id": 6,
+        "image": "171161de2dedfbead758539b4b3de384.png"
+      }, {
+        "id": 7,
+        "name": "Hilpert-Pfannerstill",
+        "description": "Totam dolore sapiente et laboriosam quos. Voluptates sapiente sit id facilis qui pariatur ad. Dolorem qui quia vero qui. Cupiditate ducimus voluptas alias omnis officiis deleniti perferendis. Dolorum aspernatur nostrum quis incidunt nobis tempore. Id tenetur consequatur animi exercitationem eveniet eaque. Dolore nulla eveniet minus labore quos voluptas maxime incidunt. Dolorem cumque non aspernatur vel atque.",
+        "startDate": "2019-12-05 16:25:39",
+        "endDate": "2022-06-05 03:50:22",
+        "type": "atelier",
+        "city": "Madonnaburgh",
+        "country": "Singapore",
+        "address": "58534 Jayne Locks\nLake Tremayneside, NC 92408-2314",
+        "venueName": "Rowe Brook",
+        "phone": "+1-703-214-4144",
+        "email": "kluettgen@gmail.com",
+        "created_at": "2021-06-10T14:44:48.000000Z",
+        "updated_at": "2021-06-10T14:44:48.000000Z",
+        "event_id": 7,
+        "image": "85b1e028e1ce5670b1f554261624664b.png"
+      }, {
+        "id": 8,
+        "name": "O'Connell-Ferry",
+        "description": "Ratione voluptatem incidunt consequatur doloremque at voluptates. Reiciendis et dolorum ducimus molestiae et. Libero quo explicabo et nostrum molestiae autem quasi. Autem molestias harum in dolor placeat officiis enim. Ipsum commodi voluptatem rerum sint consequatur et rerum. Assumenda molestiae cupiditate perferendis deserunt. Optio nihil id explicabo quae tempore dolores. Fuga unde laboriosam laboriosam qui est maxime velit.",
+        "startDate": "2019-06-15 19:29:41",
+        "endDate": "2021-10-22 00:40:03",
+        "type": "conference",
+        "city": "Luciotown",
+        "country": "Ghana",
+        "address": "777 Stokes Spurs Apt. 223\nRamonland, IL 62549",
+        "venueName": "Dixie Throughway",
+        "phone": "1-415-462-2921",
+        "email": "minnie33@yahoo.com",
+        "created_at": "2021-06-10T14:44:50.000000Z",
+        "updated_at": "2021-06-10T14:44:50.000000Z",
+        "event_id": 8,
+        "image": "5811adceffb79855091fd23f2f5f52b1.png"
+      }, {
+        "id": 9,
+        "name": "Kuhlman, Raynor and Rosenbaum",
+        "description": "Sed id odit sunt fugiat labore sequi harum assumenda. Excepturi numquam pariatur eum ipsum. Fugiat ipsam eum quibusdam incidunt rerum. Qui dolorem cumque ut sed. Quia et quod minus veritatis animi quia molestias.",
+        "startDate": "2021-03-09 08:39:21",
+        "endDate": "2022-03-01 21:03:05",
+        "type": "conference",
+        "city": "Port Jacey",
+        "country": "Oman",
+        "address": "329 Thompson Circle Suite 312\nErinbury, IN 84204-4021",
+        "venueName": "Marquardt Mountain",
+        "phone": "1-214-443-4095",
+        "email": "bhane@yahoo.com",
+        "created_at": "2021-06-10T14:44:51.000000Z",
+        "updated_at": "2021-06-10T14:44:51.000000Z",
+        "event_id": 9,
+        "image": "a0e10e6d79546b2aec8aa85ce1f8df72.png"
+      }, {
+        "id": 10,
+        "name": "O'Reilly, Watsica and Beahan",
+        "description": "Necessitatibus praesentium error harum natus quas aut perspiciatis ut. Iste dolorem aliquid quaerat quaerat aut ipsa. Vero soluta perspiciatis laborum iusto sit non. Reprehenderit recusandae nemo placeat qui placeat ipsum corporis. Explicabo ut qui iusto aut recusandae. Dolore veritatis sed mollitia omnis numquam. Id inventore eos voluptatem.",
+        "startDate": "2019-10-22 00:23:37",
+        "endDate": "2023-03-25 01:21:46",
+        "type": "formation",
+        "city": "Strosinfurt",
+        "country": "Mauritius",
+        "address": "52787 Bogan View Apt. 404\nGaylordfort, TN 42143-4782",
+        "venueName": "Alford Falls",
+        "phone": "+12525857623",
+        "email": "nmetz@hotmail.com",
+        "created_at": "2021-06-10T14:44:52.000000Z",
+        "updated_at": "2021-06-10T14:44:52.000000Z",
+        "event_id": 10,
+        "image": "e3e8cca9f9d5d8154615fa4c5090abd7.png"
+      }, {
+        "id": 11,
+        "name": "Morissette Group",
+        "description": "Amet nostrum et aut quisquam omnis similique. Eum explicabo delectus perspiciatis aut expedita occaecati aliquid. Voluptatem quasi repellat eos odio aut. Sed corporis libero quia quod fugit. Repudiandae voluptas laborum quis omnis error impedit saepe. In blanditiis repudiandae voluptate. Qui quisquam et illo libero sunt.",
+        "startDate": "2020-01-13 21:03:59",
+        "endDate": "2022-09-03 09:20:14",
+        "type": "atelier",
+        "city": "Sabinashire",
+        "country": "Niger",
+        "address": "2850 Muller Causeway\nAdolfomouth, CO 49907",
+        "venueName": "Ashlynn Orchard",
+        "phone": "947.435.8038",
+        "email": "olesch@yahoo.com",
+        "created_at": "2021-06-10T14:44:53.000000Z",
+        "updated_at": "2021-06-10T14:44:53.000000Z",
+        "event_id": 11,
+        "image": "d7f7ab958a53fa5230de6f0c16104aae.png"
+      }, {
+        "id": 12,
+        "name": "Hauck and Sons",
+        "description": "Non quas et consequatur dolore. Eveniet occaecati aut repellat illo. Voluptates explicabo nobis doloribus rerum reiciendis debitis. Odit voluptatibus accusantium quia corrupti laboriosam soluta cum at. Ullam voluptatibus omnis officiis ut nam. Qui fuga asperiores ipsum labore doloremque nemo repellat. Et amet accusantium rerum qui. Facere consequuntur optio recusandae accusamus qui ea. Ipsa aspernatur esse minus neque consequatur. Quo fugit cupiditate ut ex.",
+        "startDate": "2020-07-07 12:01:29",
+        "endDate": "2023-01-14 13:19:11",
+        "type": "conference",
+        "city": "Lake Neldaville",
+        "country": "Germany",
+        "address": "3138 Kim Ridge Suite 295\nWest Margestad, MI 32458-8107",
+        "venueName": "Manuela Dam",
+        "phone": "757.260.9650",
+        "email": "winnifred.morissette@hotmail.com",
+        "created_at": "2021-06-10T14:44:55.000000Z",
+        "updated_at": "2021-06-10T14:44:55.000000Z",
+        "event_id": 12,
+        "image": "c6f01e9218333556953bc2217fba01ad.png"
+      }, {
+        "id": 13,
+        "name": "Davis, Nitzsche and Kuphal",
+        "description": "Vel et totam perferendis laboriosam soluta possimus asperiores. Neque eligendi iure praesentium voluptas temporibus ea quaerat. Ea iste nobis dignissimos aliquam ut voluptatem est rerum. Consequatur aliquam excepturi est fugit. Aut voluptatum a soluta ut itaque tenetur dicta. Corporis aut laudantium qui et deleniti sed repellat odio. Sint consequuntur ut sunt laboriosam qui.",
+        "startDate": "2020-03-04 05:18:58",
+        "endDate": "2022-09-18 18:51:29",
+        "type": "conference",
+        "city": "Hansenport",
+        "country": "Palestinian Territories",
+        "address": "207 Macejkovic Ridge Suite 580\nEast Arielle, CO 35357-6525",
+        "venueName": "Marcus Shoals",
+        "phone": "628-564-0193",
+        "email": "hegmann.faustino@yahoo.com",
+        "created_at": "2021-06-10T14:44:55.000000Z",
+        "updated_at": "2021-06-10T14:44:55.000000Z",
+        "event_id": 13,
+        "image": "12a1ed6ae37d5df92f258a07c7f8ce09.png"
+      }, {
+        "id": 14,
+        "name": "Franecki-Fay",
+        "description": "Vitae odit odio similique qui consequatur. Fuga ratione commodi in nemo ipsum laudantium quaerat. Voluptatem et numquam eveniet sapiente est nobis velit facilis. Quas et voluptatum maiores autem. Laudantium a aperiam delectus. Nisi aspernatur vitae temporibus sint omnis sit. Consequatur quaerat recusandae eveniet sed ullam ducimus tempore. Similique explicabo sunt voluptatem magnam eos.",
+        "startDate": "2020-03-17 08:05:04",
+        "endDate": "2021-10-17 06:44:15",
+        "type": "conference",
+        "city": "Schmelerstad",
+        "country": "Finland",
+        "address": "7969 Trent Inlet Suite 447\nSouth Eladio, TN 11022-6416",
+        "venueName": "Lisa Brook",
+        "phone": "(260) 318-6390",
+        "email": "jeffry.blick@yahoo.com",
+        "created_at": "2021-06-10T14:44:56.000000Z",
+        "updated_at": "2021-06-10T14:44:56.000000Z",
+        "event_id": 14,
+        "image": "f3694e71ba9e5b02488f578f008541f9.png"
+      }, {
+        "id": 15,
+        "name": "Predovic, Grimes and Turcotte",
+        "description": "Ad modi necessitatibus iste officia nemo. Et et ipsum tenetur harum rerum. Non necessitatibus reprehenderit odit qui consequuntur assumenda. Odio illum suscipit quis est dolore autem vitae rem. Qui quidem aspernatur id odit. Suscipit tempora error officiis dolor consequatur aut. Qui qui aut molestias. Dolores illum officia quasi rem delectus consectetur. Nihil iure aut neque eum hic illum. Consectetur et qui labore provident exercitationem enim voluptatem.",
+        "startDate": "2020-03-27 19:11:35",
+        "endDate": "2022-12-16 21:24:21",
+        "type": "atelier",
+        "city": "Eulahborough",
+        "country": "United States Minor Outlying Islands",
+        "address": "3606 Rodger Lakes Apt. 932\nLake Merrittview, OR 89251",
+        "venueName": "Krystel Summit",
+        "phone": "+1.559.757.6131",
+        "email": "dayana.jenkins@hotmail.com",
+        "created_at": "2021-06-10T14:44:57.000000Z",
+        "updated_at": "2021-06-10T14:44:57.000000Z",
+        "event_id": 15,
+        "image": "4bcf467f4f4eb214ab916eaeaae29d50.png"
+      }, {
+        "id": 16,
+        "name": "Mann and Sons",
+        "description": "Itaque vel eum ea excepturi pariatur non. Aperiam dolorum suscipit magnam aut excepturi porro. Enim sint iure quae omnis debitis et ex. Ipsum ipsam et autem omnis nihil totam qui sequi. Voluptates et quam repellat delectus sunt.",
+        "startDate": "2020-01-21 01:12:47",
+        "endDate": "2021-12-28 04:33:33",
+        "type": "formation",
+        "city": "North Willa",
+        "country": "Tajikistan",
+        "address": "775 Mohamed Stream\nNew Ignatius, GA 52395",
+        "venueName": "Eliza Crossing",
+        "phone": "+1-910-243-4474",
+        "email": "abernathy.eulah@hotmail.com",
+        "created_at": "2021-06-10T14:44:58.000000Z",
+        "updated_at": "2021-06-10T14:44:58.000000Z",
+        "event_id": 16,
+        "image": "377cdfcd9a2a87fb956a83064ce00139.png"
+      }, {
+        "id": 17,
+        "name": "Schowalter-Jacobi",
+        "description": "Perspiciatis dolorem molestias deserunt rerum nihil similique omnis sunt. Sed sint molestiae omnis nobis. Omnis nihil ut deserunt libero. Eos officia sed vitae est. Aut et sit sequi quod aut quia. Distinctio quod id quod reiciendis voluptatem ab illum. Deleniti porro assumenda ut beatae illum. Corrupti dolorem quae aliquam est. Saepe modi odit provident. Modi et nisi numquam eos velit.",
+        "startDate": "2020-05-11 21:53:02",
+        "endDate": "2022-11-08 01:03:43",
+        "type": "conference",
+        "city": "Port Royce",
+        "country": "Niue",
+        "address": "965 Torphy Courts\nSouth Keira, NJ 91694-2470",
+        "venueName": "Smith Isle",
+        "phone": "(760) 270-5639",
+        "email": "jedidiah.dubuque@hotmail.com",
+        "created_at": "2021-06-10T14:45:00.000000Z",
+        "updated_at": "2021-06-10T14:45:00.000000Z",
+        "event_id": 17,
+        "image": "5a274b6911f715daa1fbccfeb04338a8.png"
+      }, {
+        "id": 18,
+        "name": "Padberg-O'Hara",
+        "description": "Repellat adipisci ullam laborum fugiat ut. Quia doloremque vitae eius molestiae et inventore odit. Ipsa quia porro provident dolores rem vel quis. Eveniet non voluptatum aut cupiditate aperiam hic. Reiciendis deleniti eum laboriosam dolor dolorem veritatis. Ut nobis officiis dolores voluptatibus nostrum voluptatem culpa. Culpa possimus ut deserunt quos optio.",
+        "startDate": "2021-01-11 21:19:03",
+        "endDate": "2022-09-13 13:34:26",
+        "type": "conference",
+        "city": "Port Marvin",
+        "country": "Faroe Islands",
+        "address": "883 Amanda Grove\nKovacekton, OK 35696-7923",
+        "venueName": "Bonnie Trail",
+        "phone": "351.717.1155",
+        "email": "erin51@yahoo.com",
+        "created_at": "2021-06-10T14:45:01.000000Z",
+        "updated_at": "2021-06-10T14:45:01.000000Z",
+        "event_id": 18,
+        "image": "e9511b01c642f1acd7396cee8f8fffd5.png"
+      }, {
+        "id": 19,
+        "name": "Nienow Group",
+        "description": "Perferendis unde commodi et quasi eum sit accusamus eum. Quasi consequuntur consectetur totam blanditiis similique. Voluptatem et enim cum tempore sequi. Dolorum delectus quos aperiam minima. Est commodi minima et asperiores nam. Adipisci molestiae enim perspiciatis. Enim distinctio qui consequatur error. Sit et laudantium nihil nostrum esse quo molestias.",
+        "startDate": "2019-06-20 06:26:53",
+        "endDate": "2022-06-02 20:12:03",
+        "type": "conference",
+        "city": "West Nyahland",
+        "country": "Latvia",
+        "address": "24930 Cummings Station\nNelsfurt, OR 72747",
+        "venueName": "Green Via",
+        "phone": "480.371.0017",
+        "email": "marks.jadyn@hotmail.com",
+        "created_at": "2021-06-10T14:45:02.000000Z",
+        "updated_at": "2021-06-10T14:45:02.000000Z",
+        "event_id": 19,
+        "image": "34aeaafd2bee65f6559cc3ba26b32511.png"
+      }, {
+        "id": 20,
+        "name": "Hettinger, Fay and Zboncak",
+        "description": "Iste in ut enim blanditiis. Velit ullam aspernatur dolores maxime. Nemo perspiciatis quidem excepturi aliquam nihil consequatur assumenda. Quas ipsam pariatur deserunt laudantium. Maxime facilis debitis fugit officia. Repudiandae iste reprehenderit officiis voluptatem dolores qui rem. Asperiores non possimus qui autem molestiae.",
+        "startDate": "2019-12-22 17:39:07",
+        "endDate": "2021-08-25 04:50:46",
+        "type": "atelier",
+        "city": "Schoenburgh",
+        "country": "Australia",
+        "address": "732 Betty River Apt. 289\nPort Jose, SD 92302",
+        "venueName": "Brannon Ville",
+        "phone": "(251) 747-8043",
+        "email": "marion.rolfson@hotmail.com",
+        "created_at": "2021-06-10T14:45:03.000000Z",
+        "updated_at": "2021-06-10T14:45:03.000000Z",
+        "event_id": 20,
+        "image": "d52a27ba995976271c6c223f630e415b.png"
+      }, {
+        "id": 21,
+        "name": "Rodriguez Ltd",
+        "description": "Vel occaecati voluptatum aut nulla eveniet nesciunt. Magnam quasi eveniet voluptas totam autem eius qui et. Placeat quibusdam iste ex ut velit totam occaecati officia. Doloribus quia rem quis doloremque. Ipsam aliquid non dicta provident fugiat commodi. Minima vero eligendi dolorum officia fugiat. Deleniti delectus minus aut nemo numquam. Ad qui quia ducimus perspiciatis eaque deleniti. Impedit modi suscipit facere fuga. Aspernatur dicta voluptatem perferendis.",
+        "startDate": "2020-09-09 14:55:30",
+        "endDate": "2022-05-16 22:37:54",
+        "type": "atelier",
+        "city": "West Malvina",
+        "country": "Mali",
+        "address": "30872 Morar Meadow\nWest Cameron, KS 71144-5679",
+        "venueName": "Everett Manors",
+        "phone": "216-817-4260",
+        "email": "gaylord.luigi@gmail.com",
+        "created_at": "2021-06-10T14:45:04.000000Z",
+        "updated_at": "2021-06-10T14:45:04.000000Z",
+        "event_id": 21,
+        "image": "7fa8b45b7c2d4663558174c519c00417.png"
+      }, {
+        "id": 22,
+        "name": "Cartwright, Larson and Auer",
+        "description": "Eaque optio ipsam officia dolorum minus soluta eaque libero. Qui sequi debitis ipsa reprehenderit hic ipsam aliquam. Qui amet ullam eius cumque sapiente assumenda nemo. Corrupti aperiam excepturi quaerat occaecati placeat hic harum. Et voluptas impedit quas dicta vel ut nulla. Sunt consequuntur unde molestias est aut officia ad ratione. Facere architecto autem dolor earum vel perferendis dolore.",
+        "startDate": "2021-02-21 22:37:45",
+        "endDate": "2023-02-28 06:38:21",
+        "type": "conference",
+        "city": "Lake Shawnfort",
+        "country": "New Zealand",
+        "address": "669 Matilde Flat\nLednerberg, KS 76606",
+        "venueName": "Blick Canyon",
+        "phone": "1-240-321-2150",
+        "email": "okuhlman@gmail.com",
+        "created_at": "2021-06-10T14:45:05.000000Z",
+        "updated_at": "2021-06-10T14:45:05.000000Z",
+        "event_id": 22,
+        "image": "a4c3ee05daed9ed41ecc0853ec02f794.png"
+      }, {
+        "id": 23,
+        "name": "Auer, Kunze and Kerluke",
+        "description": "Voluptatem blanditiis dolorem est id et minus alias voluptas. Quod aut exercitationem esse animi sit. Sit aut corrupti ut. Corporis nihil voluptatem itaque quam qui. Aspernatur odit suscipit quia explicabo dolores. A et et ut molestiae.",
+        "startDate": "2021-04-12 04:12:13",
+        "endDate": "2022-02-07 13:41:23",
+        "type": "atelier",
+        "city": "East Loma",
+        "country": "Finland",
+        "address": "950 Beahan Bridge Suite 598\nO'Connerland, SD 01860-5765",
+        "venueName": "Huels Courts",
+        "phone": "+1-678-314-2800",
+        "email": "hoyt.satterfield@hotmail.com",
+        "created_at": "2021-06-10T14:45:06.000000Z",
+        "updated_at": "2021-06-10T14:45:06.000000Z",
+        "event_id": 23,
+        "image": "3fa4a2ec58291906653c3e5832b4fd46.png"
+      }, {
+        "id": 24,
+        "name": "Rath LLC",
+        "description": "Ea delectus aut et numquam quidem. Qui sint sed necessitatibus doloribus deserunt rerum vero. Saepe optio odit dignissimos et. Quibusdam magnam adipisci quia et necessitatibus voluptates unde hic. Architecto cum debitis dolorem odit vel. Voluptas ex eos dolor voluptas molestiae at dolores. Aut excepturi voluptas animi illum doloribus. Veniam quas aut at aspernatur corporis aut dolorem.",
+        "startDate": "2019-07-29 10:44:01",
+        "endDate": "2021-10-05 08:52:41",
+        "type": "conference",
+        "city": "Lake Jerod",
+        "country": "Solomon Islands",
+        "address": "1603 Hoyt Walk\nNew Venaview, TN 15239-3203",
+        "venueName": "Murazik Junction",
+        "phone": "(629) 516-2399",
+        "email": "ziemann.heber@hotmail.com",
+        "created_at": "2021-06-10T14:45:07.000000Z",
+        "updated_at": "2021-06-10T14:45:07.000000Z",
+        "event_id": 24,
+        "image": "5bb009cb6abf53b69aae81297b1b3381.png"
+      }, {
+        "id": 25,
+        "name": "Hyatt, Marvin and Parisian",
+        "description": "Debitis neque iusto quisquam dolorem. Ducimus quam expedita impedit dolorem. Quia architecto exercitationem distinctio quo vel. Non officia provident perferendis. Vitae aut tempore vitae ut est. Enim voluptatem reprehenderit occaecati quidem numquam nihil corporis ex. Voluptatem quis aliquam nobis sunt enim. Eveniet tempore ea in odit ipsa. Sit qui impedit amet eum odio suscipit. Vel perspiciatis ut et ut voluptas.",
+        "startDate": "2020-02-14 14:07:43",
+        "endDate": "2022-06-12 11:00:51",
+        "type": "atelier",
+        "city": "Port Steve",
+        "country": "Nicaragua",
+        "address": "81322 Cortez Lane Apt. 949\nNorth Anais, RI 90086",
+        "venueName": "Friesen Prairie",
+        "phone": "(872) 390-4436",
+        "email": "njerde@hotmail.com",
+        "created_at": "2021-06-10T14:45:08.000000Z",
+        "updated_at": "2021-06-10T14:45:08.000000Z",
+        "event_id": 25,
+        "image": "90b6577ff729f66fca2545f3bbbb7f05.png"
+      }, {
+        "id": 26,
+        "name": "Harris, Keebler and Rogahn",
+        "description": "Adipisci ipsam eligendi consectetur neque voluptatem impedit nam. Quia sequi molestiae et voluptatibus. Quia aut minima repellat omnis. Nam aut eligendi aut nesciunt voluptas tempore. Minima atque animi eos et. Exercitationem est architecto voluptate hic rem dolores ipsum.",
+        "startDate": "2019-10-16 21:54:52",
+        "endDate": "2021-09-08 01:27:06",
+        "type": "atelier",
+        "city": "West Justonshire",
+        "country": "Cambodia",
+        "address": "1064 Owen Green\nWest Romaine, IL 40570-7715",
+        "venueName": "Ottis Ville",
+        "phone": "1-539-656-7447",
+        "email": "virginia.carroll@gmail.com",
+        "created_at": "2021-06-10T14:45:09.000000Z",
+        "updated_at": "2021-06-10T14:45:09.000000Z",
+        "event_id": 26,
+        "image": "dfe99d7813a11c2dc493c5d6f74208a1.png"
+      }, {
+        "id": 27,
+        "name": "Johnson Group",
+        "description": "Illum qui libero nihil nulla facilis maxime consequatur. Assumenda voluptas quisquam et numquam in nisi. Qui et nisi eos autem assumenda qui. Delectus vel accusantium dolore ut ab a et quis. Ut voluptatum deserunt enim quia laudantium est soluta dolor. Ea incidunt veritatis sed omnis eligendi in nisi sunt. Maxime praesentium deleniti cum qui magnam error. Saepe ut libero est dolorem consequatur quaerat quos.",
+        "startDate": "2020-02-08 14:49:50",
+        "endDate": "2023-04-17 07:14:08",
+        "type": "conference",
+        "city": "Bodechester",
+        "country": "Lebanon",
+        "address": "946 Gorczany Shoals Apt. 683\nNorth Mitchell, LA 32471",
+        "venueName": "Goodwin Square",
+        "phone": "+1 (872) 471-5440",
+        "email": "clowe@yahoo.com",
+        "created_at": "2021-06-10T14:45:10.000000Z",
+        "updated_at": "2021-06-10T14:45:10.000000Z",
+        "event_id": 27,
+        "image": "8573f77e5f640380f2f0ac2b04b6d71d.png"
+      }, {
+        "id": 28,
+        "name": "Stark, Gerlach and Williamson",
+        "description": "Ut beatae laudantium et earum. Sit est similique vel sit aspernatur id accusantium. Voluptas et explicabo quia ipsa similique omnis. Voluptatem quam tempora necessitatibus ipsum nisi voluptatem. Excepturi et commodi illum provident. Quia iste ea vel dolor fuga nihil quo. Et saepe animi dicta quidem et.",
+        "startDate": "2020-07-15 10:01:01",
+        "endDate": "2021-07-28 22:46:15",
+        "type": "formation",
+        "city": "West Reganhaven",
+        "country": "Portugal",
+        "address": "753 Serenity Center\nEvalynmouth, IA 29871-3229",
+        "venueName": "Jeanne Groves",
+        "phone": "+1-651-258-5204",
+        "email": "ankunding.chelsea@hotmail.com",
+        "created_at": "2021-06-10T14:45:11.000000Z",
+        "updated_at": "2021-06-10T14:45:11.000000Z",
+        "event_id": 28,
+        "image": "6c59f47759b0d10c8f637a6f4a0209c1.png"
+      }, {
+        "id": 29,
+        "name": "Waters Ltd",
+        "description": "Eum repellat aut quo corporis. Dolores eum qui odit quis sed eum sit. Veritatis hic dolor exercitationem distinctio sint cumque minus. Non non aut repellendus quasi. Ratione optio rerum est totam placeat ea. Voluptatem sint consequatur ab vel error adipisci. Dolore laboriosam ut et esse. Quasi quidem eaque ducimus dolor magni architecto rerum laudantium.",
+        "startDate": "2021-04-06 21:06:10",
+        "endDate": "2022-10-28 03:46:32",
+        "type": "formation",
+        "city": "Barrowsstad",
+        "country": "Denmark",
+        "address": "924 Lowe Falls\nDanielleton, OH 31276",
+        "venueName": "O'Hara Mission",
+        "phone": "(239) 670-8551",
+        "email": "nelda.jacobson@gmail.com",
+        "created_at": "2021-06-10T14:45:12.000000Z",
+        "updated_at": "2021-06-10T14:45:12.000000Z",
+        "event_id": 29,
+        "image": "dd670180db8b070797653e3db18945fe.png"
+      }, {
+        "id": 30,
+        "name": "Reichert Group",
+        "description": "Possimus et earum est aut veniam aut distinctio. Sit iste consequuntur illo fugiat est asperiores. Et qui eum expedita aliquam molestiae. Molestiae dolorem eveniet ut. Vel voluptatem qui quo ut fugiat tempore. Est quia totam sapiente expedita odio. Aperiam quidem qui amet recusandae distinctio eaque provident. Vel ut iusto et soluta non. Ea quasi et placeat totam.",
+        "startDate": "2021-05-17 01:16:02",
+        "endDate": "2022-01-08 04:06:58",
+        "type": "conference",
+        "city": "Cierramouth",
+        "country": "Guam",
+        "address": "2481 Price Plains\nEast Sherwoodmouth, IA 32715-4173",
+        "venueName": "Goodwin Glens",
+        "phone": "212.717.9173",
+        "email": "pkunde@gmail.com",
+        "created_at": "2021-06-10T14:45:14.000000Z",
+        "updated_at": "2021-06-10T14:45:14.000000Z",
+        "event_id": 30,
+        "image": "9f0eca033e44606e0e4b605fec0707c5.png"
+      }]
+    };
+  },
+  mutations: _mutations_js__WEBPACK_IMPORTED_MODULE_0__.default,
+  actions: _actions_js__WEBPACK_IMPORTED_MODULE_1__.default,
+  getters: _getters_js__WEBPACK_IMPORTED_MODULE_2__.default
+});
+
+/***/ }),
+
+/***/ "./resources/js/store/users/user/mutations.js":
+/*!****************************************************!*\
+  !*** ./resources/js/store/users/user/mutations.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  events: function events(state, payload) {
+    state.events = payload;
+  },
+  getEvent: function getEvent(state, payload) {
+    state.selectedEvent = payload.events;
+    state.selectedEventSessions = payload.sessions;
+    state.selectedEventCommittees = payload.committees;
   },
   user: function user(state, payload) {
     state.user = payload;
@@ -75627,6 +77503,137 @@ _UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__
 
 /***/ }),
 
+/***/ "./resources/js/pages/dashboards/user/ContactAdmin.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/ContactAdmin.vue ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ContactAdmin_vue_vue_type_template_id_51515bac__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactAdmin.vue?vue&type=template&id=51515bac */ "./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac");
+/* harmony import */ var _ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactAdmin.vue?vue&type=script&lang=js */ "./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js");
+
+
+
+_ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _ContactAdmin_vue_vue_type_template_id_51515bac__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/pages/dashboards/user/ContactAdmin.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventItem.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventItem.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _EventItem_vue_vue_type_template_id_6fed3980__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventItem.vue?vue&type=template&id=6fed3980 */ "./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980");
+/* harmony import */ var _EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EventItem.vue?vue&type=script&lang=js */ "./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js");
+
+
+
+_EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _EventItem_vue_vue_type_template_id_6fed3980__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/pages/dashboards/user/EventItem.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventsList.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventsList.vue ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _EventsList_vue_vue_type_template_id_f1563998__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventsList.vue?vue&type=template&id=f1563998 */ "./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998");
+/* harmony import */ var _EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EventsList.vue?vue&type=script&lang=js */ "./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js");
+
+
+
+_EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _EventsList_vue_vue_type_template_id_f1563998__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/pages/dashboards/user/EventsList.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserAccount.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserAccount.vue ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _UserAccount_vue_vue_type_template_id_9e8a5956__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserAccount.vue?vue&type=template&id=9e8a5956 */ "./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956");
+/* harmony import */ var _UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserAccount.vue?vue&type=script&lang=js */ "./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js");
+
+
+
+_UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _UserAccount_vue_vue_type_template_id_9e8a5956__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/pages/dashboards/user/UserAccount.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserDashboard.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserDashboard.vue ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _UserDashboard_vue_vue_type_template_id_9336b788_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserDashboard.vue?vue&type=template&id=9336b788&scoped=true */ "./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true");
+/* harmony import */ var _UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserDashboard.vue?vue&type=script&lang=js */ "./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js");
+
+
+
+_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _UserDashboard_vue_vue_type_template_id_9336b788_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-9336b788"
+/* hot reload */
+if (false) {}
+
+_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/pages/dashboards/user/UserDashboard.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/pages/events/EventDetail.vue":
 /*!***************************************************!*\
   !*** ./resources/js/pages/events/EventDetail.vue ***!
@@ -76367,6 +78374,86 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ContactAdmin_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ContactAdmin.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventItem_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./EventItem.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventsList_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./EventsList.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./UserAccount.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserDashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./UserDashboard.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/pages/events/EventDetail.vue?vue&type=script&lang=js":
 /*!***************************************************************************!*\
   !*** ./resources/js/pages/events/EventDetail.vue?vue&type=script&lang=js ***!
@@ -77099,6 +79186,86 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_template_id_632469fa__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_template_id_632469fa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./UserAccount.vue?vue&type=template&id=632469fa */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/sessionadmin/UserAccount.vue?vue&type=template&id=632469fa");
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ContactAdmin_vue_vue_type_template_id_51515bac__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ContactAdmin_vue_vue_type_template_id_51515bac__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ContactAdmin.vue?vue&type=template&id=51515bac */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/ContactAdmin.vue?vue&type=template&id=51515bac");
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980 ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventItem_vue_vue_type_template_id_6fed3980__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventItem_vue_vue_type_template_id_6fed3980__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./EventItem.vue?vue&type=template&id=6fed3980 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventItem.vue?vue&type=template&id=6fed3980");
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998 ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventsList_vue_vue_type_template_id_f1563998__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EventsList_vue_vue_type_template_id_f1563998__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./EventsList.vue?vue&type=template&id=f1563998 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/EventsList.vue?vue&type=template&id=f1563998");
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956 ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_template_id_9e8a5956__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserAccount_vue_vue_type_template_id_9e8a5956__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./UserAccount.vue?vue&type=template&id=9e8a5956 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserAccount.vue?vue&type=template&id=9e8a5956");
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true ***!
+  \********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserDashboard_vue_vue_type_template_id_9336b788_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_UserDashboard_vue_vue_type_template_id_9336b788_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./UserDashboard.vue?vue&type=template&id=9336b788&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/dashboards/user/UserDashboard.vue?vue&type=template&id=9336b788&scoped=true");
 
 
 /***/ }),
@@ -82186,7 +84353,7 @@ var index = {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"},"register":{"firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password","register":"Register","already":"Already have an account?","sign-in":"Sign in"},"dashboard":{"nav":{"logout":"Logout","type":{"admin":"Admin Dashboard","eventadmin":"Event Admin Dashboard","responsable":"Organisation Responsable Dashboard","sessionadmin":"Session Admin Dashboard","user":"User Dashboard"},"events":"Events","eventadmins":"Event Admins","responsables":"Organization Responsables","sessions":"Sessions Admins","users":"Regular Users","messages":"Messages","settings":"Account"},"events":{"item":{"update":"Update","delete":"Delete","show":"Show Event Details","update-event":"Update Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"},"list":{"create":"Create New Event","add-event":"Add Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"}},"userItem":{"firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","update":"Update","delete":"Delete","update-user":"Update User"},"eventadmin":{"create":"Create New Event Admin","add":"Add Event Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"responsable":{"create":"Create New Organisation Responsable","add":"Add Organisation Responsable","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"sessionadmin":{"create":"Create New Session Admin","add":"Add Session Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"regularuser":{"create":"Create New User","add":"Add User","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"messages":{"title":"Messages","from":"From","email":"Email","message":"Message","delete":"Delete"},"account":{"update":"Update Account","firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","password_confirmation":"Confirm Password"}}}');
+module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"},"register":{"firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password","register":"Register","already":"Already have an account?","sign-in":"Sign in"},"dashboard":{"nav":{"logout":"Logout","type":{"admin":"Admin Dashboard","eventadmin":"Event Admin Dashboard","responsable":"Organisation Responsable Dashboard","sessionadmin":"Session Admin Dashboard","user":"User Dashboard"},"events":"Events","eventadmins":"Event Admins","responsables":"Organization Responsables","sessions":"Sessions Admins","users":"Regular Users","messages":"Messages","settings":"Account","contact":"Contact Admin"},"events":{"item":{"update":"Update","delete":"Delete","show":"Show Event Details","update-event":"Update Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"},"list":{"create":"Create New Event","add-event":"Add Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"}},"userItem":{"firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","update":"Update","delete":"Delete","update-user":"Update User"},"eventadmin":{"create":"Create New Event Admin","add":"Add Event Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"responsable":{"create":"Create New Organisation Responsable","add":"Add Organisation Responsable","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"sessionadmin":{"create":"Create New Session Admin","add":"Add Session Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"regularuser":{"create":"Create New User","add":"Add User","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"messages":{"title":"Messages","from":"From","email":"Email","message":"Message","delete":"Delete"},"account":{"update":"Update Account","firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","password_confirmation":"Confirm Password"}}}');
 
 /***/ }),
 
@@ -82208,7 +84375,7 @@ module.exports = {};
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}},"events":{"filter":{"title":"Trouvez événement","conference":"Conférence","formation":"Formation","atelier":"Atelier"},"item":{"show":"Afficher Détails"},"counter":{"days":"jours","hours":"heures","minutes":"minutes"}},"contact":{"help":{"how":"Comment pouvons nous","help":"Aider","alt":"Alternativement, vous pouvez parcourir nos","events":"Événements"},"form":{"title":"Contactez un organisateur d\'événement","subtitle":"Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l\'organisateur de l\'événement.","submit":"Envoyer message"},"infos":{"title":"Nous Contacter","subtitle":"Si vous ne trouvez pas les réponses à vos questions, contactez-nous.","send":"Envoyez-nous un e-mail","call":"Appel ScienceEvents","line":"Écrivez-nous"}},"login":{"email":"E-mail","password":"Mot de passe","login":"Connexion","not":"Non enregistré?","create":"Créer un compte"},"register":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe","register":"S\'inscrire","already":"Vous avez déjà un compte?","sign-in":"S\'identifier"},"dashboard":{"nav":{"logout":"Déconnexion","type":{"admin":"Admin Tableau de bord","eventadmin":"Admin d\'Événements Tableau de bord","responsable":"Organisation Responsable Tableau de bord","sessionadmin":"Admin Session Tableau de bord","user":"Utilisateur Tableau de bord"},"events":"Événements","eventadmins":"Admins d\'événement","responsables":"Organization Responsables","sessions":"Admins de Sessions","users":"Utilisateurs","messages":"Messages","settings":"Paramètres"},"events":{"item":{"update":"Modifier","delete":"Supprimer","show":"Afficher détails","update-event":"Modifier Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"},"list":{"create":"Créer Nouvel Événement","add-event":"Ajouter Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"}},"userItem":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'utilisateur","password":"Mot de passe","update":"Modifier","delete":"Supprimer","update-user":"Modifier Utilisateur"},"eventadmin":{"create":"Créer Nouvel Administrateur d\'Événement","add":"Ajouter Administrateur d\'Événement","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"responsable":{"create":"Créer Nouvel Organisation Responsable","add":"Ajouter Organisation Responsable","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"sessionadmin":{"create":"Créer Nouvel Admin Session","add":"Ajouter Admin Session","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"regularuser":{"create":"Créer Nouvel Utilisateur","add":"Ajouter Utilisateur","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"messages":{"title":"Messages","from":"De","email":"E-mail","message":"Message","delete":"Supprimer"},"account":{"update":"Modifier Compte","firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'Utilisateur","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"}}}');
+module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}},"events":{"filter":{"title":"Trouvez événement","conference":"Conférence","formation":"Formation","atelier":"Atelier"},"item":{"show":"Afficher Détails"},"counter":{"days":"jours","hours":"heures","minutes":"minutes"}},"contact":{"help":{"how":"Comment pouvons nous","help":"Aider","alt":"Alternativement, vous pouvez parcourir nos","events":"Événements"},"form":{"title":"Contactez un organisateur d\'événement","subtitle":"Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l\'organisateur de l\'événement.","submit":"Envoyer message"},"infos":{"title":"Nous Contacter","subtitle":"Si vous ne trouvez pas les réponses à vos questions, contactez-nous.","send":"Envoyez-nous un e-mail","call":"Appel ScienceEvents","line":"Écrivez-nous"}},"login":{"email":"E-mail","password":"Mot de passe","login":"Connexion","not":"Non enregistré?","create":"Créer un compte"},"register":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe","register":"S\'inscrire","already":"Vous avez déjà un compte?","sign-in":"S\'identifier"},"dashboard":{"nav":{"logout":"Déconnexion","type":{"admin":"Admin Tableau de bord","eventadmin":"Admin d\'Événements Tableau de bord","responsable":"Organisation Responsable Tableau de bord","sessionadmin":"Admin Session Tableau de bord","user":"Utilisateur Tableau de bord"},"events":"Événements","eventadmins":"Admins d\'événement","responsables":"Organization Responsables","sessions":"Admins de Sessions","users":"Utilisateurs","messages":"Messages","settings":"Paramètres","contact":"Contacter Admin"},"events":{"item":{"update":"Modifier","delete":"Supprimer","show":"Afficher détails","update-event":"Modifier Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"},"list":{"create":"Créer Nouvel Événement","add-event":"Ajouter Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"}},"userItem":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'utilisateur","password":"Mot de passe","update":"Modifier","delete":"Supprimer","update-user":"Modifier Utilisateur"},"eventadmin":{"create":"Créer Nouvel Administrateur d\'Événement","add":"Ajouter Administrateur d\'Événement","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"responsable":{"create":"Créer Nouvel Organisation Responsable","add":"Ajouter Organisation Responsable","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"sessionadmin":{"create":"Créer Nouvel Admin Session","add":"Ajouter Admin Session","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"regularuser":{"create":"Créer Nouvel Utilisateur","add":"Ajouter Utilisateur","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"messages":{"title":"Messages","from":"De","email":"E-mail","message":"Message","delete":"Supprimer"},"account":{"update":"Modifier Compte","firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'Utilisateur","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"}}}');
 
 /***/ })
 

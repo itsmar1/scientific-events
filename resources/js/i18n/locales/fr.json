@@ -122,7 +122,8 @@
             "sessions": "Admins de Sessions",
             "users": "Utilisateurs",
             "messages": "Messages",
-            "settings": "Paramètres"
+            "settings": "Paramètres",
+            "contact": "Contacter Admin"
         },
         "events": {
             "item": {

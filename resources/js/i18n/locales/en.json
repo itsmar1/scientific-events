@@ -122,7 +122,8 @@
             "sessions": "Sessions Admins",
             "users": "Regular Users",
             "messages": "Messages",
-            "settings": "Account"
+            "settings": "Account",
+            "contact": "Contact Admin"
         },
         "events": {
             "item": {

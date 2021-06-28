@@ -1,0 +1,20 @@
+.contact-admin {
+    h2 {
+        color: $blue;
+        letter-spacing: .2rem;
+    }
+    .user-key {
+        font-weight: 700;
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: .2rem;
+        color: $red;
+    }
+    .user-value {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+}
