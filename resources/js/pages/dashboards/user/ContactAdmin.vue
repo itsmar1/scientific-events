@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <base-card>
-                        <h2>Contact an Event Organizer</h2>
+                        <h2>{{ $t('dashboard.contact-admin.title') }}</h2>
                     </base-card>
                 </div>
             </div>
@@ -14,18 +14,18 @@
                     <div class="card">
                         <ul v-for="user in users" :key="user" class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <span class="user-key">From: </span> <span class="user-value">{{ user.firstName + ' ' + user.lastName }}</span>
+                                <span class="user-key">{{ $t('dashboard.contact-admin.from') }}: </span> <span class="user-value">{{ user.firstName + ' ' + user.lastName }}</span>
                             </li>
                             <li class="list-group-item">
-                                <span class="user-key">Email: </span> <span class="user-value">{{ user.email }}</span>
+                                <span class="user-key">{{ $t('dashboard.contact-admin.email') }}: </span> <span class="user-value">{{ user.email }}</span>
                             </li>
                             <li class="list-group-item">
-                                <p class="user-key">Message: </p>
+                                <p class="user-key">{{ $t('dashboard.contact-admin.message') }}: </p>
                                 <div class="user-value">
                                     <form @submit.prevent="sendMessage">
                                         <div class="form-group">
                                             <textarea name="message" id="message" rows="10" v-model.trim="message" class="form-control"></textarea>
-                                            <button type="submit" class="btn btn-danger mt-3">Send Message</button>
+                                            <button type="submit" class="btn btn-danger mt-3">{{ $t('dashboard.contact-admin.action') }}</button>
                                         </div>
                                     </form>
                                 </div>

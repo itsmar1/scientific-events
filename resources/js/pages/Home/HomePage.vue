@@ -4,7 +4,7 @@
         <div class="container text-center">
             <p class="how">{{ $t('homepage.how-it-works.how') }}</p>
             <h2>{{ $t('homepage.how-it-works.title') }}</h2>
-            <p class="description">{{ $t('homepage.how-it-works.description.our') }} <span class="font-weight-bold">e{{ $t('homepage.how-it-works.description.event') }}</span> {{ $t('homepage.how-it-works.description.gives') }}<br> <span class="font-weight-bold">{{ $t('homepage.how-it-works.description.success') }}</span></p>
+            <p class="description">{{ $t('homepage.how-it-works.description.our') }} <span class="font-weight-bold">{{ $t('homepage.how-it-works.description.event') }}</span> {{ $t('homepage.how-it-works.description.gives') }}<br> <span class="font-weight-bold">{{ $t('homepage.how-it-works.description.success') }}</span></p>
             <div class="row features">
                 <div class="col-sm-6 col-md-3">
                     <img class="img-fluid" src="/images/homepage/Create_profile2x.jpg" alt="">

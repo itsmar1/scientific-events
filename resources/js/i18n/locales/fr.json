@@ -67,6 +67,23 @@
             "days": "jours",
             "hours": "heures",
             "minutes": "minutes"
+        },
+        "detail": {
+            "venue": {
+                "title": "Lieu",
+                "name": "Nom de la Place",
+                "address": "Adresse",
+                "email": "E-mail",
+                "phone": "Numéro Téléphone"
+            },
+            "sessions": {
+                "title": "Sessions",
+                "hour": "Heure",
+                "date": "Date",
+                "titre": "Titre",
+                "type": "Type"
+            },
+            "committees": "Comités"
         }
     },
     "contact": {
@@ -228,6 +245,13 @@
             "role": "Type d'Utilisateur",
             "password": "Mot de passe",
             "password_confirmation":"Confirmez Mot de passe"
+        },
+        "contact-admin": {
+            "title": "Contacter un Organisateur d'Événements",
+            "from": "De",
+            "email": "E-mail",
+            "message": "Message",
+            "action": "Envoyer Message"
         }
     }
 }

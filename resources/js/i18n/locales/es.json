@@ -1,3 +1,257 @@
 {
+    "header": {
+        "home": "Bienvenida",
+        "events": "Eventos",
+        "contact": "Contacto",
+        "login": "Acceso",
+        "register": "Registrarse"
+    },
+    "footer": {
 
+    },
+    "homepage": {
+        "how-it-works": {
+            "how": "CÓMO FUNCIONA",
+            "title": "Planeación y gestión de eventos virtuales. Simplificado.",
+            "description": {
+                "our": "Nuestra",
+                "event": "plataforma para eventos",
+                "gives": "te ofrece una gama completa de herramientas para planear y ejecutar eventos virtuales exitosos.",
+                "success": "Mira cómo funciona."
+            },
+            "sign-up": "Regístrate y crea tu perfil",
+            "fill": "Diligencia los datos",
+            "launch": "Lanza tu evento",
+            "let": "Deja que la magia suceda"
+        },
+        "types-events": {
+            "title": "Planifique muchos tipos de eventos en línea",
+            "description": "ScienceEvents puede ayudarlo a administrar diferentes tipos de eventos científicos",
+            "types": "TIPOS DE EVENTOS",
+            "sub-title": "ScienceEvents funciona con diferentes tipos de eventos",
+            "conference": "Conferencias",
+            "workshop": "Taller",
+            "training": "Formación"
+        },
+        "types-of-roles": {
+            "desc": "TIPOS DE ROL",
+            "title": "ScienceEvents potencia diferentes tipos de roles de gestión de eventos",
+            "admin": "Administradores superiores",
+            "event-admin": "Administradores de eventos",
+            "responsable": "responsables de la organización",
+            "session-admin": "administradores de sesiones"
+        },
+        "events-intro": {
+            "title": "plataforma para la gestión de eventos",
+            "subtitle": "para personas a las que les gusta trabajar de forma más inteligente",
+            "do-you": "Nuestro plataforma para la gestión de eventos te ofrece apoyo de principio a fin para tus eventos online e híbridos, acompañándote durante el ciclo entero del evento.",
+            "start": "Empezar"
+        },
+        "get-started": {
+            "ready": "¿Listo para empezar?",
+            "start": "Empezar"
+        }
+
+    },
+    "events": {
+        "filter": {
+            "title": "Encuentra tu evento",
+            "conference": "Conferencias",
+            "formation": "Formación",
+            "atelier": "Taller"
+        },
+        "item": {
+            "show": "Mostrar detalles"
+        },
+        "counter": {
+            "days": "dias",
+            "hours": "horas",
+            "minutes": "minutos"
+        },
+        "detail": {
+            "venue": {
+                "title": "Lugar de eventos",
+                "name": "Nombre del Lugar",
+                "address": "Habla a",
+                "email": "E-mail",
+                "phone": "Número de teléfono"
+            },
+            "sessions": {
+                "title": "Sesiones",
+                "hour": "Hora",
+                "date": "Fecha",
+                "titre": "Título",
+                "type": "Tipo"
+            },
+            "committees": "Comités"
+        }
+    },
+    "contact": {
+        "help": {
+            "how": "Cómo podemos",
+            "help": "Ayudar",
+            "alt": "Alternativamente, puede navegar por nuestros",
+            "events": "Eventos"
+        },
+        "form": {
+            "title": "Póngase en contacto con un organizador de eventos",
+            "subtitle": "Si tiene alguna pregunta sobre un evento, podemos enviar su solicitud directamente al organizador del evento.",
+            "submit": "Enviar mensaje"
+        },
+        "infos": {
+            "title": "Contacta con nosotros",
+            "subtitle": "Si no puede encontrar las respuestas a sus preguntas, comuníquese con nosotros.",
+            "send": "Envianos un email",
+            "call": "Llamada ScienceEvents",
+            "line": "Escríbanos"
+        }
+    },
+    "login": {
+        "email": "Email",
+        "password": "Contraseña",
+        "login": "Acceso",
+        "not": "¿No registrado?",
+        "create": "Crea una cuenta"
+    },
+    "register": {
+        "firstName": "Primer Nombre",
+        "lastName": "Apellido",
+        "email": "Email",
+        "password": "Contraseña",
+        "password_confirmation": "Confirmar Contraseña",
+        "register": "Registrarse",
+        "already": "¿Ya tienes una cuenta?",
+        "sign-in": "Acceso"
+    },
+    "dashboard": {
+        "nav": {
+            "logout": "Cerrar",
+            "type": {
+                "admin": "Panel de Admin",
+                "eventadmin": "Panel de Admin de Eventos",
+                "responsable": "Panel de Responsable de la Organización",
+                "sessionadmin": "Panel de Admin de la Sesión",
+                "user": "Panel de Usuario"
+            },
+            "events": "Eventos",
+            "eventadmins": "Admin de Eventos",
+            "responsables": "Responsables de la Organización",
+            "sessions": "Admins de la Sesiónes",
+            "users": "Usuarios",
+            "messages": "Mensajes",
+            "settings": "Perfil",
+            "contact": "Contacto Admin"
+        },
+        "events": {
+            "item": {
+                "update": "Editar",
+                "delete": "Borrar",
+                "show": "Mostrar detalles",
+                "update-event": "Editar Evento",
+                "title": "Título",
+                "description": "Descripción",
+                "image": "Elige una imagen",
+                "startDate": "Fecha de Inicio",
+                "endDate": "Fecha Final",
+                "type": "Tipo de Evento",
+                "type1": "Conferencias",
+                "type2": "Taller",
+                "type3": "Formación",
+                "country": "País",
+                "city": "Ciudad",
+                "address": "Habla a",
+                "venueName": "Nombre del Lugar",
+                "venuePhone": "Número de Teléfono del Lugar",
+                "venueEmail": "E-mail del Lugar"
+            },
+            "list": {
+                "create": "Crear Nuevo Evento",
+                "add-event": "Añadir Evento",
+                "title": "Título",
+                "description": "Descripción",
+                "image": "Elige una imagen",
+                "startDate": "Fecha de Inicio",
+                "endDate": "Fecha Final",
+                "type": "Tipo de Evento",
+                "type1": "Conferencias",
+                "type2": "Taller",
+                "type3": "Formación",
+                "country": "País",
+                "city": "Ciudad",
+                "address": "Habla a",
+                "venueName": "Nombre del Lugar",
+                "venuePhone": "Número de Teléfono del Lugar",
+                "venueEmail": "E-mail del Lugar"
+            }
+        },
+        "userItem": {
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "role": "Rol del Usuario",
+            "password": "Contraseña",
+            "update": "Editar",
+            "delete": "Borrar",
+            "update-user": "Editar Usuario"
+        },
+        "eventadmin": {
+            "create": "Crear Nuevo Admin de Eventos",
+            "add": "Añadir Admin de Evento",
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "password": "Contraseña",
+            "password_confirmation":"Confirmar Contraseña"
+        },
+        "responsable": {
+            "create": "Crear Nuevo Responsable de la Organización",
+            "add": "Añadir Responsable de la Organización",
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "password": "Contraseña",
+            "password_confirmation":"Confirmar Contraseña"
+        },
+        "sessionadmin": {
+            "create": "Crear Nuevo Admin de Sesión",
+            "add": "Añadir Admin de Sesión",
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "password": "Contraseña",
+            "password_confirmation":"Confirmar Contraseña"
+        },
+        "regularuser": {
+            "create": "Crear Nuevo Usuario",
+            "add": "Añadir Usuario",
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "password": "Contraseña",
+            "password_confirmation":"Confirmar Contraseña"
+        },
+        "messages": {
+            "title": "Mensajes",
+            "from": "De",
+            "email": "E-mail",
+            "message": "Mensaje",
+            "delete": "Borrar"
+        },
+        "account": {
+            "update": "Editar Perfil",
+            "firstName": "Primer Nombre",
+            "lastName": "Apellido",
+            "email": "E-mail",
+            "role": "Rol del Usuario",
+            "password": "Contraseña",
+            "password_confirmation":"Confirmar Contraseña"
+        },
+        "contact-admin": {
+            "title": "Contacto un Organizador de Eventos",
+            "from": "De",
+            "email": "Email",
+            "message": "Mensaje",
+            "action": "Enviar Mensaje"
+        }
+    }
 }

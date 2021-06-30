@@ -67,6 +67,23 @@
             "days": "days",
             "hours": "hours",
             "minutes": "minutes"
+        },
+        "detail": {
+            "venue": {
+                "title": "Venue",
+                "name": "Venue Name",
+                "address": "Address",
+                "email": "Email",
+                "phone": "Phone Number"
+            },
+            "sessions": {
+                "title": "Sessions",
+                "hour": "Hour",
+                "date": "Date",
+                "titre": "Title",
+                "type": "Type"
+            },
+            "committees": "Committees"
         }
     },
     "contact": {
@@ -228,6 +245,13 @@
             "role": "User Role",
             "password": "Password",
             "password_confirmation":"Confirm Password"
+        },
+        "contact-admin": {
+            "title": "Contact an Event Organizer",
+            "from": "From",
+            "email": "Email",
+            "message": "Message",
+            "action": "Send Message"
         }
     }
 }

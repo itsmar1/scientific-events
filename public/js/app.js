@@ -24820,7 +24820,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.our')) + " ", 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_5, "e" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.event')), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.event')), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('homepage.how-it-works.description.gives')), 1
   /* TEXT */
@@ -31225,100 +31225,90 @@ var _hoisted_4 = {
   "class": "col-sm-12"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Contact an Event Organizer", -1
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("hr", null, null, -1
-/* HOISTED */
-);
-
-var _hoisted_7 = {
+var _hoisted_6 = {
   "class": "row"
 };
-var _hoisted_8 = {
+var _hoisted_7 = {
   "class": "col-sm-12"
 };
-var _hoisted_9 = {
+var _hoisted_8 = {
   "class": "card"
 };
-var _hoisted_10 = {
+var _hoisted_9 = {
   "class": "list-group-item"
 };
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+var _hoisted_10 = {
   "class": "user-key"
-}, "From: ", -1
-/* HOISTED */
-);
+};
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_13 = {
+var _hoisted_12 = {
   "class": "user-value"
+};
+var _hoisted_13 = {
+  "class": "list-group-item"
 };
 var _hoisted_14 = {
-  "class": "list-group-item"
+  "class": "user-key"
 };
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "user-key"
-}, "Email: ", -1
-/* HOISTED */
-);
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_17 = {
+var _hoisted_16 = {
   "class": "user-value"
+};
+var _hoisted_17 = {
+  "class": "list-group-item"
 };
 var _hoisted_18 = {
-  "class": "list-group-item"
-};
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "user-key"
-}, "Message: ", -1
-/* HOISTED */
-);
-
-var _hoisted_20 = {
+};
+var _hoisted_19 = {
   "class": "user-value"
 };
-var _hoisted_21 = {
+var _hoisted_20 = {
   "class": "form-group"
 };
-
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_21 = {
   type: "submit",
   "class": "btn btn-danger mt-3"
-}, "Send Message", -1
-/* HOISTED */
-);
-
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_base_card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-card");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_5];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.contact-admin.title')), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })])]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.users, function (user) {
+  })])]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.users, function (user) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("ul", {
       key: user,
       "class": "list-group list-group-flush"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_10, [_hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.firstName + ' ' + user.lastName), 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.contact-admin.from')) + ": ", 1
     /* TEXT */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_14, [_hoisted_15, _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.email), 1
+    ), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.firstName + ' ' + user.lastName), 1
     /* TEXT */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.contact-admin.email')) + ": ", 1
+    /* TEXT */
+    ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.email), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.contact-admin.message')) + ": ", 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
       onSubmit: _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
         return $options.sendMessage && $options.sendMessage.apply($options, arguments);
       }, ["prevent"]))
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
       name: "message",
       id: "message",
       rows: "10",
@@ -31330,7 +31320,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* NEED_PATCH */
     ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.message, void 0, {
       trim: true
-    }]]), _hoisted_22])], 32
+    }]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('dashboard.contact-admin.action')), 1
+    /* TEXT */
+    )])], 32
     /* HYDRATE_EVENTS */
     )])])]);
   }), 128
@@ -31957,115 +31949,87 @@ var _hoisted_9 = {
 var _hoisted_10 = {
   "class": "col-sm-12"
 };
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Venue", -1
-/* HOISTED */
-);
-
-var _hoisted_12 = {
+var _hoisted_11 = {
   "class": "card"
 };
-var _hoisted_13 = {
+var _hoisted_12 = {
   "class": "list-group list-group-flush"
 };
-var _hoisted_14 = {
+var _hoisted_13 = {
   "class": "list-group-item"
 };
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+var _hoisted_14 = {
   "class": "venue-key"
-}, "Venue Name: ", -1
-/* HOISTED */
-);
+};
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_17 = {
+var _hoisted_16 = {
   "class": "venue-value"
+};
+var _hoisted_17 = {
+  "class": "list-group-item"
 };
 var _hoisted_18 = {
-  "class": "list-group-item"
+  "class": "venue-key"
 };
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "venue-key"
-}, "Address: ", -1
-/* HOISTED */
-);
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_21 = {
+var _hoisted_20 = {
   "class": "venue-value"
+};
+var _hoisted_21 = {
+  "class": "list-group-item"
 };
 var _hoisted_22 = {
-  "class": "list-group-item"
+  "class": "venue-key"
 };
 
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "venue-key"
-}, "Email: ", -1
-/* HOISTED */
-);
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_25 = {
+var _hoisted_24 = {
   "class": "venue-value"
+};
+var _hoisted_25 = {
+  "class": "list-group-item"
 };
 var _hoisted_26 = {
-  "class": "list-group-item"
+  "class": "venue-key"
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
-  "class": "venue-key"
-}, "Phone Number: ", -1
-/* HOISTED */
-);
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_29 = {
+var _hoisted_28 = {
   "class": "venue-value"
 };
-var _hoisted_30 = {
+var _hoisted_29 = {
   "class": "row"
+};
+var _hoisted_30 = {
+  "class": "col-sm-12"
 };
 var _hoisted_31 = {
-  "class": "col-sm-12"
-};
-
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Sessions", -1
-/* HOISTED */
-);
-
-var _hoisted_33 = {
   "class": "table table-striped"
 };
-
-var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", {
+var _hoisted_32 = {
   scope: "col"
-}, "Hour"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", {
+};
+var _hoisted_33 = {
   scope: "col"
-}, "Date"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", {
+};
+var _hoisted_34 = {
   scope: "col"
-}, "Title"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", {
-  scope: "col"
-}, "Type")])], -1
-/* HOISTED */
-);
-
+};
 var _hoisted_35 = {
-  "class": "row"
+  scope: "col"
 };
 var _hoisted_36 = {
+  "class": "row"
+};
+var _hoisted_37 = {
   "class": "col-sm-12"
 };
-
-var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Committees", -1
-/* HOISTED */
-);
-
 var _hoisted_38 = {
   "class": "card"
 };
@@ -32120,7 +32084,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_11];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.venue.title')), 1
+          /* TEXT */
+          )];
         }),
         _: 1
         /* STABLE */
@@ -32130,13 +32096,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.selectedEvent, function (event) {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
               key: event.id
-            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_14, [_hoisted_15, _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.venueName), 1
+            }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.venue.name')) + ": ", 1
             /* TEXT */
-            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_18, [_hoisted_19, _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.address), 1
+            ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.venueName), 1
             /* TEXT */
-            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_22, [_hoisted_23, _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.email), 1
+            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.venue.address')) + ": ", 1
             /* TEXT */
-            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_26, [_hoisted_27, _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.phone), 1
+            ), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.address), 1
+            /* TEXT */
+            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.venue.email')) + ": ", 1
+            /* TEXT */
+            ), _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.email), 1
+            /* TEXT */
+            )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.venue.phone')) + ": ", 1
+            /* TEXT */
+            ), _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(event.phone), 1
             /* TEXT */
             )])])])]);
           }), 128
@@ -32153,16 +32127,26 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_32];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.sessions.title')), 1
+          /* TEXT */
+          )];
         }),
         _: 1
         /* STABLE */
 
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.selectedSessions, function (session) {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.sessions.hour')), 1
+          /* TEXT */
+          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", _hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.sessions.date')), 1
+          /* TEXT */
+          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.sessions.titre')), 1
+          /* TEXT */
+          ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.sessions.type')), 1
+          /* TEXT */
+          )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.selectedSessions, function (session) {
             return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("tr", {
               key: session.id
             }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(session.hour) + ":00", 1
@@ -32188,9 +32172,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_card, null, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_37];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('events.detail.committees')), 1
+          /* TEXT */
+          )];
         }),
         _: 1
         /* STABLE */
@@ -84353,7 +84339,7 @@ var index = {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"},"register":{"firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password","register":"Register","already":"Already have an account?","sign-in":"Sign in"},"dashboard":{"nav":{"logout":"Logout","type":{"admin":"Admin Dashboard","eventadmin":"Event Admin Dashboard","responsable":"Organisation Responsable Dashboard","sessionadmin":"Session Admin Dashboard","user":"User Dashboard"},"events":"Events","eventadmins":"Event Admins","responsables":"Organization Responsables","sessions":"Sessions Admins","users":"Regular Users","messages":"Messages","settings":"Account","contact":"Contact Admin"},"events":{"item":{"update":"Update","delete":"Delete","show":"Show Event Details","update-event":"Update Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"},"list":{"create":"Create New Event","add-event":"Add Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"}},"userItem":{"firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","update":"Update","delete":"Delete","update-user":"Update User"},"eventadmin":{"create":"Create New Event Admin","add":"Add Event Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"responsable":{"create":"Create New Organisation Responsable","add":"Add Organisation Responsable","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"sessionadmin":{"create":"Create New Session Admin","add":"Add Session Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"regularuser":{"create":"Create New User","add":"Add User","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"messages":{"title":"Messages","from":"From","email":"Email","message":"Message","delete":"Delete"},"account":{"update":"Update Account","firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","password_confirmation":"Confirm Password"}}}');
+module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact":"Contact","login":"Login","register":"Register"},"footer":{},"homepage":{"how-it-works":{"how":"How It Works","title":"Online Event Planning and Management. Simplified.","description":{"our":"Our","event":"event planning platform","gives":"gives you the tools to design memorable experiences and run","success":"successful events."},"sign-up":"Sign up and create your profile","fill":"Fill in the event data","launch":"Launch the event","let":"Let the magic happen"},"types-events":{"title":"Plan Many Types of Events Online","description":"ScienceEvents can help you manage different kind of scientific events","types":"TYPES OF EVENTS","sub-title":"ScienceEvents works for several types of events","conference":"Conference","workshop":"Workshop","training":"Training"},"types-of-roles":{"desc":"types of roles","title":"ScienceEvents empowers different types of event management roles","admin":"senior administrators","event-admin":"event administrators","responsable":"organisation responsables","session-admin":"session administrators"},"events-intro":{"title":"scientific events management platform","subtitle":"for people who like to work smarter","do-you":"Do you want to plan an event without breaking a sweat? Our event management platform is the tool you’ll need. It is easy to use, and enables you to run impactful events.","start":"get started"},"get-started":{"ready":"Ready to get started?","start":"get started"}},"events":{"filter":{"title":"Find Your Event","conference":"Conference","formation":"Training","atelier":"Workshop"},"item":{"show":"Show Event Details"},"counter":{"days":"days","hours":"hours","minutes":"minutes"},"detail":{"venue":{"title":"Venue","name":"Venue Name","address":"Address","email":"Email","phone":"Phone Number"},"sessions":{"title":"Sessions","hour":"Hour","date":"Date","titre":"Title","type":"Type"},"committees":"Committees"}},"contact":{"help":{"how":"How can we","help":"Help","alt":"Alternatively, you can browse our","events":"Events"},"form":{"title":"Contact an event organiser","subtitle":"If you have a question about an event, we can send your request directly to the event organiser.","submit":"Send message"},"infos":{"title":"Contact Us","subtitle":"If you\'re unable to find the answers to your questions, please get in touch.","send":"Send us an email","call":"Call ScienceEvents","line":"Drop us a line"}},"login":{"email":"Email","password":"Password","login":"Login","not":"Not registered?","create":"Create an account"},"register":{"firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password","register":"Register","already":"Already have an account?","sign-in":"Sign in"},"dashboard":{"nav":{"logout":"Logout","type":{"admin":"Admin Dashboard","eventadmin":"Event Admin Dashboard","responsable":"Organisation Responsable Dashboard","sessionadmin":"Session Admin Dashboard","user":"User Dashboard"},"events":"Events","eventadmins":"Event Admins","responsables":"Organization Responsables","sessions":"Sessions Admins","users":"Regular Users","messages":"Messages","settings":"Account","contact":"Contact Admin"},"events":{"item":{"update":"Update","delete":"Delete","show":"Show Event Details","update-event":"Update Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"},"list":{"create":"Create New Event","add-event":"Add Event","title":"Title","description":"Description","image":"Choose an image","startDate":"Start Date","endDate":"End Date","type":"Event Type","type1":"Conference","type2":"Workshop","type3":"Training","country":"Country","city":"City","address":"Address","venueName":"Venue Name","venuePhone":"Venue Phone Number","venueEmail":"Venue Email"}},"userItem":{"firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","update":"Update","delete":"Delete","update-user":"Update User"},"eventadmin":{"create":"Create New Event Admin","add":"Add Event Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"responsable":{"create":"Create New Organisation Responsable","add":"Add Organisation Responsable","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"sessionadmin":{"create":"Create New Session Admin","add":"Add Session Admin","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"regularuser":{"create":"Create New User","add":"Add User","firstName":"First Name","lastName":"Last Name","email":"Email","password":"Password","password_confirmation":"Confirm Password"},"messages":{"title":"Messages","from":"From","email":"Email","message":"Message","delete":"Delete"},"account":{"update":"Update Account","firstName":"First Name","lastName":"Last Name","email":"Email","role":"User Role","password":"Password","password_confirmation":"Confirm Password"},"contact-admin":{"title":"Contact an Event Organizer","from":"From","email":"Email","message":"Message","action":"Send Message"}}}');
 
 /***/ }),
 
@@ -84364,7 +84350,7 @@ module.exports = JSON.parse('{"header":{"home":"Home","events":"Events","contact
 /***/ ((module) => {
 
 "use strict";
-module.exports = {};
+module.exports = JSON.parse('{"header":{"home":"Bienvenida","events":"Eventos","contact":"Contacto","login":"Acceso","register":"Registrarse"},"footer":{},"homepage":{"how-it-works":{"how":"CÓMO FUNCIONA","title":"Planeación y gestión de eventos virtuales. Simplificado.","description":{"our":"Nuestra","event":"plataforma para eventos","gives":"te ofrece una gama completa de herramientas para planear y ejecutar eventos virtuales exitosos.","success":"Mira cómo funciona."},"sign-up":"Regístrate y crea tu perfil","fill":"Diligencia los datos","launch":"Lanza tu evento","let":"Deja que la magia suceda"},"types-events":{"title":"Planifique muchos tipos de eventos en línea","description":"ScienceEvents puede ayudarlo a administrar diferentes tipos de eventos científicos","types":"TIPOS DE EVENTOS","sub-title":"ScienceEvents funciona con diferentes tipos de eventos","conference":"Conferencias","workshop":"Taller","training":"Formación"},"types-of-roles":{"desc":"TIPOS DE ROL","title":"ScienceEvents potencia diferentes tipos de roles de gestión de eventos","admin":"Administradores superiores","event-admin":"Administradores de eventos","responsable":"responsables de la organización","session-admin":"administradores de sesiones"},"events-intro":{"title":"plataforma para la gestión de eventos","subtitle":"para personas a las que les gusta trabajar de forma más inteligente","do-you":"Nuestro plataforma para la gestión de eventos te ofrece apoyo de principio a fin para tus eventos online e híbridos, acompañándote durante el ciclo entero del evento.","start":"Empezar"},"get-started":{"ready":"¿Listo para empezar?","start":"Empezar"}},"events":{"filter":{"title":"Encuentra tu evento","conference":"Conferencias","formation":"Formación","atelier":"Taller"},"item":{"show":"Mostrar detalles"},"counter":{"days":"dias","hours":"horas","minutes":"minutos"},"detail":{"venue":{"title":"Lugar de eventos","name":"Nombre del Lugar","address":"Habla a","email":"E-mail","phone":"Número de teléfono"},"sessions":{"title":"Sesiones","hour":"Hora","date":"Fecha","titre":"Título","type":"Tipo"},"committees":"Comités"}},"contact":{"help":{"how":"Cómo podemos","help":"Ayudar","alt":"Alternativamente, puede navegar por nuestros","events":"Eventos"},"form":{"title":"Póngase en contacto con un organizador de eventos","subtitle":"Si tiene alguna pregunta sobre un evento, podemos enviar su solicitud directamente al organizador del evento.","submit":"Enviar mensaje"},"infos":{"title":"Contacta con nosotros","subtitle":"Si no puede encontrar las respuestas a sus preguntas, comuníquese con nosotros.","send":"Envianos un email","call":"Llamada ScienceEvents","line":"Escríbanos"}},"login":{"email":"Email","password":"Contraseña","login":"Acceso","not":"¿No registrado?","create":"Crea una cuenta"},"register":{"firstName":"Primer Nombre","lastName":"Apellido","email":"Email","password":"Contraseña","password_confirmation":"Confirmar Contraseña","register":"Registrarse","already":"¿Ya tienes una cuenta?","sign-in":"Acceso"},"dashboard":{"nav":{"logout":"Cerrar","type":{"admin":"Panel de Admin","eventadmin":"Panel de Admin de Eventos","responsable":"Panel de Responsable de la Organización","sessionadmin":"Panel de Admin de la Sesión","user":"Panel de Usuario"},"events":"Eventos","eventadmins":"Admin de Eventos","responsables":"Responsables de la Organización","sessions":"Admins de la Sesiónes","users":"Usuarios","messages":"Mensajes","settings":"Perfil","contact":"Contacto Admin"},"events":{"item":{"update":"Editar","delete":"Borrar","show":"Mostrar detalles","update-event":"Editar Evento","title":"Título","description":"Descripción","image":"Elige una imagen","startDate":"Fecha de Inicio","endDate":"Fecha Final","type":"Tipo de Evento","type1":"Conferencias","type2":"Taller","type3":"Formación","country":"País","city":"Ciudad","address":"Habla a","venueName":"Nombre del Lugar","venuePhone":"Número de Teléfono del Lugar","venueEmail":"E-mail del Lugar"},"list":{"create":"Crear Nuevo Evento","add-event":"Añadir Evento","title":"Título","description":"Descripción","image":"Elige una imagen","startDate":"Fecha de Inicio","endDate":"Fecha Final","type":"Tipo de Evento","type1":"Conferencias","type2":"Taller","type3":"Formación","country":"País","city":"Ciudad","address":"Habla a","venueName":"Nombre del Lugar","venuePhone":"Número de Teléfono del Lugar","venueEmail":"E-mail del Lugar"}},"userItem":{"firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","role":"Rol del Usuario","password":"Contraseña","update":"Editar","delete":"Borrar","update-user":"Editar Usuario"},"eventadmin":{"create":"Crear Nuevo Admin de Eventos","add":"Añadir Admin de Evento","firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","password":"Contraseña","password_confirmation":"Confirmar Contraseña"},"responsable":{"create":"Crear Nuevo Responsable de la Organización","add":"Añadir Responsable de la Organización","firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","password":"Contraseña","password_confirmation":"Confirmar Contraseña"},"sessionadmin":{"create":"Crear Nuevo Admin de Sesión","add":"Añadir Admin de Sesión","firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","password":"Contraseña","password_confirmation":"Confirmar Contraseña"},"regularuser":{"create":"Crear Nuevo Usuario","add":"Añadir Usuario","firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","password":"Contraseña","password_confirmation":"Confirmar Contraseña"},"messages":{"title":"Mensajes","from":"De","email":"E-mail","message":"Mensaje","delete":"Borrar"},"account":{"update":"Editar Perfil","firstName":"Primer Nombre","lastName":"Apellido","email":"E-mail","role":"Rol del Usuario","password":"Contraseña","password_confirmation":"Confirmar Contraseña"},"contact-admin":{"title":"Contacto un Organizador de Eventos","from":"De","email":"Email","message":"Mensaje","action":"Enviar Mensaje"}}}');
 
 /***/ }),
 
@@ -84375,7 +84361,7 @@ module.exports = {};
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}},"events":{"filter":{"title":"Trouvez événement","conference":"Conférence","formation":"Formation","atelier":"Atelier"},"item":{"show":"Afficher Détails"},"counter":{"days":"jours","hours":"heures","minutes":"minutes"}},"contact":{"help":{"how":"Comment pouvons nous","help":"Aider","alt":"Alternativement, vous pouvez parcourir nos","events":"Événements"},"form":{"title":"Contactez un organisateur d\'événement","subtitle":"Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l\'organisateur de l\'événement.","submit":"Envoyer message"},"infos":{"title":"Nous Contacter","subtitle":"Si vous ne trouvez pas les réponses à vos questions, contactez-nous.","send":"Envoyez-nous un e-mail","call":"Appel ScienceEvents","line":"Écrivez-nous"}},"login":{"email":"E-mail","password":"Mot de passe","login":"Connexion","not":"Non enregistré?","create":"Créer un compte"},"register":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe","register":"S\'inscrire","already":"Vous avez déjà un compte?","sign-in":"S\'identifier"},"dashboard":{"nav":{"logout":"Déconnexion","type":{"admin":"Admin Tableau de bord","eventadmin":"Admin d\'Événements Tableau de bord","responsable":"Organisation Responsable Tableau de bord","sessionadmin":"Admin Session Tableau de bord","user":"Utilisateur Tableau de bord"},"events":"Événements","eventadmins":"Admins d\'événement","responsables":"Organization Responsables","sessions":"Admins de Sessions","users":"Utilisateurs","messages":"Messages","settings":"Paramètres","contact":"Contacter Admin"},"events":{"item":{"update":"Modifier","delete":"Supprimer","show":"Afficher détails","update-event":"Modifier Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"},"list":{"create":"Créer Nouvel Événement","add-event":"Ajouter Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"}},"userItem":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'utilisateur","password":"Mot de passe","update":"Modifier","delete":"Supprimer","update-user":"Modifier Utilisateur"},"eventadmin":{"create":"Créer Nouvel Administrateur d\'Événement","add":"Ajouter Administrateur d\'Événement","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"responsable":{"create":"Créer Nouvel Organisation Responsable","add":"Ajouter Organisation Responsable","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"sessionadmin":{"create":"Créer Nouvel Admin Session","add":"Ajouter Admin Session","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"regularuser":{"create":"Créer Nouvel Utilisateur","add":"Ajouter Utilisateur","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"messages":{"title":"Messages","from":"De","email":"E-mail","message":"Message","delete":"Supprimer"},"account":{"update":"Modifier Compte","firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'Utilisateur","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"}}}');
+module.exports = JSON.parse('{"header":{"home":"Accueil","events":"Événements","contact":"Contact","login":"Connexion","register":"S\'inscrire"},"footer":{},"homepage":{"how-it-works":{"how":"COMMENT ÇA MARCHE","title":"Planification et gestion d\'événements. Simplifiées.","description":{"our":"Notre","event":"plateforme de gestion d\'événements","gives":"vous offre une puissante série d\'outils pour réussir vor événements et générer un impact sur vos participants. Cela semble trop beau pour être vrai ?","success":"Voyez comment ça marche"},"sign-up":"Connectez-vous et créez votre profil","fill":"Complétez les données","launch":"Lancez l’événement","let":"Laissez la magie opérer"},"types-events":{"title":"Planifiez de Nombreux Types d\'Événements en Ligne","description":"ScienceEvents peut vous aider à gérer différents types d\'événements scientifiques","types":"TYPES D\'ÉVÉNEMENTS","sub-title":"ScienceEvents s\'adapte à différents types d\'événements","conference":"Conférence","workshop":"Atelier","training":"Formation"},"types-of-roles":{"desc":"types de roles","title":"ScienceEvents soutient different types de rôles professionnels","admin":"Superviseur","event-admin":"administrateurs d\'événements","responsable":"organisation responsables","session-admin":"administrateurs de session"},"events-intro":{"title":"Plateforme de gestion d\'événements scientifiques","subtitle":"pour travailler plus intelligemment","do-you":"Notre plateforme de gestion événementielle est l’unique outil dont vous ayez besoin pour planifier des événements sans le moindre effort.","start":"lancez-vous"},"get-started":{"ready":"Prêt à vous lancer?","start":"lancez-vous"}},"events":{"filter":{"title":"Trouvez événement","conference":"Conférence","formation":"Formation","atelier":"Atelier"},"item":{"show":"Afficher Détails"},"counter":{"days":"jours","hours":"heures","minutes":"minutes"},"detail":{"venue":{"title":"Lieu","name":"Nom de la Place","address":"Adresse","email":"E-mail","phone":"Numéro Téléphone"},"sessions":{"title":"Sessions","hour":"Heure","date":"Date","titre":"Titre","type":"Type"},"committees":"Comités"}},"contact":{"help":{"how":"Comment pouvons nous","help":"Aider","alt":"Alternativement, vous pouvez parcourir nos","events":"Événements"},"form":{"title":"Contactez un organisateur d\'événement","subtitle":"Si vous avez une question sur un événement, nous pouvons envoyer votre demande directement à l\'organisateur de l\'événement.","submit":"Envoyer message"},"infos":{"title":"Nous Contacter","subtitle":"Si vous ne trouvez pas les réponses à vos questions, contactez-nous.","send":"Envoyez-nous un e-mail","call":"Appel ScienceEvents","line":"Écrivez-nous"}},"login":{"email":"E-mail","password":"Mot de passe","login":"Connexion","not":"Non enregistré?","create":"Créer un compte"},"register":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe","register":"S\'inscrire","already":"Vous avez déjà un compte?","sign-in":"S\'identifier"},"dashboard":{"nav":{"logout":"Déconnexion","type":{"admin":"Admin Tableau de bord","eventadmin":"Admin d\'Événements Tableau de bord","responsable":"Organisation Responsable Tableau de bord","sessionadmin":"Admin Session Tableau de bord","user":"Utilisateur Tableau de bord"},"events":"Événements","eventadmins":"Admins d\'événement","responsables":"Organization Responsables","sessions":"Admins de Sessions","users":"Utilisateurs","messages":"Messages","settings":"Paramètres","contact":"Contacter Admin"},"events":{"item":{"update":"Modifier","delete":"Supprimer","show":"Afficher détails","update-event":"Modifier Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"},"list":{"create":"Créer Nouvel Événement","add-event":"Ajouter Événement","title":"Titre","description":"Description","image":"Choisissez une image","startDate":"Date de début","endDate":"Date de fin","type":"Type d\'événement","type1":"Conférence","type2":"Atelier","type3":"Formation","country":"Pays","city":"Ville","address":"Adresse","venueName":"Nom du lieu","venuePhone":"Numéro de téléphone du lieu","venueEmail":"Email du lieu"}},"userItem":{"firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'utilisateur","password":"Mot de passe","update":"Modifier","delete":"Supprimer","update-user":"Modifier Utilisateur"},"eventadmin":{"create":"Créer Nouvel Administrateur d\'Événement","add":"Ajouter Administrateur d\'Événement","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"responsable":{"create":"Créer Nouvel Organisation Responsable","add":"Ajouter Organisation Responsable","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"sessionadmin":{"create":"Créer Nouvel Admin Session","add":"Ajouter Admin Session","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"regularuser":{"create":"Créer Nouvel Utilisateur","add":"Ajouter Utilisateur","firstName":"Prénom","lastName":"Nom","email":"E-mail","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"messages":{"title":"Messages","from":"De","email":"E-mail","message":"Message","delete":"Supprimer"},"account":{"update":"Modifier Compte","firstName":"Prénom","lastName":"Nom","email":"E-mail","role":"Type d\'Utilisateur","password":"Mot de passe","password_confirmation":"Confirmez Mot de passe"},"contact-admin":{"title":"Contacter un Organisateur d\'Événements","from":"De","email":"E-mail","message":"Message","action":"Envoyer Message"}}}');
 
 /***/ })
 

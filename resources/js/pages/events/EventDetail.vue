@@ -20,16 +20,16 @@
             <div class="row">
                 <div class="col-sm-12">
                     <base-card>
-                        <h2>Venue</h2>
+                        <h2>{{ $t('events.detail.venue.title') }}</h2>
                     </base-card>
                     <base-card>
                         <div v-for="event in selectedEvent" :key="event.id">
                             <div class="card">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><span class="venue-key">Venue Name: </span> <span class="venue-value">{{ event.venueName }}</span></li>
-                                    <li class="list-group-item"><span class="venue-key">Address: </span> <span class="venue-value">{{ event.address }}</span></li>
-                                    <li class="list-group-item"><span class="venue-key">Email: </span> <span class="venue-value">{{ event.email }}</span></li>
-                                    <li class="list-group-item"><span class="venue-key">Phone Number: </span> <span class="venue-value">{{ event.phone }}</span></li>
+                                    <li class="list-group-item"><span class="venue-key">{{ $t('events.detail.venue.name') }}: </span> <span class="venue-value">{{ event.venueName }}</span></li>
+                                    <li class="list-group-item"><span class="venue-key">{{ $t('events.detail.venue.address') }}: </span> <span class="venue-value">{{ event.address }}</span></li>
+                                    <li class="list-group-item"><span class="venue-key">{{ $t('events.detail.venue.email') }}: </span> <span class="venue-value">{{ event.email }}</span></li>
+                                    <li class="list-group-item"><span class="venue-key">{{ $t('events.detail.venue.phone') }}: </span> <span class="venue-value">{{ event.phone }}</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -41,16 +41,16 @@
         <div class="row">
             <div class="col-sm-12">
                 <base-card>
-                    <h2>Sessions</h2>
+                    <h2>{{ $t('events.detail.sessions.title') }}</h2>
                 </base-card>
                 <base-card>
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">Hour</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Type</th>
+                                <th scope="col">{{ $t('events.detail.sessions.hour') }}</th>
+                                <th scope="col">{{ $t('events.detail.sessions.date') }}</th>
+                                <th scope="col">{{ $t('events.detail.sessions.titre') }}</th>
+                                <th scope="col">{{ $t('events.detail.sessions.type') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -70,7 +70,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <base-card>
-                    <h2>Committees</h2>
+                    <h2>{{ $t('events.detail.committees') }}</h2>
                 </base-card>
                 <base-card>
                     <div class="card">
