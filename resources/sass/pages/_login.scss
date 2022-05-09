@@ -1,41 +1,44 @@
 .form {
+    .login-container {
+        margin-bottom: 8rem;
+        .form-container {
 
-    .form-container {
+            border: 1px solid black;
+            box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+            background: #fff;
+            padding: 5rem 4rem;
 
-        border: 1px solid black;
-        box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
-        background: #fff;
-        padding: 5rem 4rem;
-
-        h5 {
-            text-align: center;
-            margin-bottom: 2rem;
-            user-select: none;
-            .science {
-                text-transform: capitalize;
-                color: $blue;
-                font-size: 1.8rem;
-                font-weight: 700;
+            h5 {
+                text-align: center;
+                margin-bottom: 2rem;
+                user-select: none;
+                .science {
+                    text-transform: capitalize;
+                    color: $blue;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+                .events {
+                    color: $red;
+                    font-size: 1.8rem;
+                }
             }
-            .events {
-                color: $red;
-                font-size: 1.8rem;
+
+            .form-group {
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+            }
+
+            .register {
+                text-align: center;
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-        }
-
-        .register {
-            text-align: center;
-            a {
-                color: $blue;
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
     }
 
 

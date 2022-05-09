@@ -17,7 +17,7 @@ export default {
     },
     async getEvent(context, id)
     {
-        await axios.get(`/api/admin/getEvent/${id}`, {
+        await axios.get(`/api/admin/getEventAdmins/${id}`, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }
@@ -28,7 +28,7 @@ export default {
     },
     async postEvent(_, payload)
     {
-        await axios.post('/api/admin/postEvent', payload, {
+        await axios.post('/api/admin/postEventAdmins', payload, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
             }

@@ -20745,6 +20745,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]); if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['id', 'image', 'name', 'description', 'city', 'country', 'type'],
   data: function data() {
@@ -20790,8 +20802,21 @@ __webpack_require__.r(__webpack_exports__);
         _this.imagepreview = e.target.result;
       };
     },
+    filterObject: function filterObject() {
+      var asArray = Object.entries(this.event);
+      var noNull = asArray.filter(function (_ref) {
+        var _ref2 = _slicedToArray(_ref, 2),
+            key = _ref2[0],
+            value = _ref2[1];
+
+        return value !== null;
+      });
+      var filledData = Object.fromEntries(noNull);
+      return filledData;
+    },
     submitForm: function submitForm() {
-      this.$emit('update-event', this.event);
+      var event = this.filterObject();
+      this.$emit('update-event', event);
     }
   }
 });
@@ -24940,7 +24965,7 @@ var _hoisted_2 = {
   "class": "row"
 };
 var _hoisted_3 = {
-  "class": "col-sm-5 mx-auto"
+  "class": "col-sm-5 mx-auto login-container"
 };
 var _hoisted_4 = {
   "class": "form-container"
@@ -25100,7 +25125,7 @@ var _hoisted_2 = {
   "class": "row"
 };
 var _hoisted_3 = {
-  "class": "col-sm-5 mx-auto"
+  "class": "col-sm-5 mx-auto login-container"
 };
 var _hoisted_4 = {
   "class": "form-container"
@@ -33233,7 +33258,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/admin/getEvent/".concat(id), {
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/admin/getEventAdmins/".concat(id), {
                 headers: {
                   Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -33256,7 +33281,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/admin/postEvent', payload, {
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/admin/postEventAdmins', payload, {
                 headers: {
                   Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

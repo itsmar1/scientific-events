@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-5 form">
         <div class="row">
-            <div class="col-sm-5 mx-auto">
+            <div class="col-sm-5 mx-auto login-container">
                 <div class="form-container">
                     <h5><span class="science">Science</span><span class="events">Events</span></h5>
                     <form @submit.prevent="submitForm">

@@ -16403,13 +16403,16 @@ readers do not read off random characters that represent icons */
   float: right;
 }
 
-.form .form-container {
+.form .login-container {
+  margin-bottom: 8rem;
+}
+.form .login-container .form-container {
   border: 1px solid black;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   background: #fff;
   padding: 5rem 4rem;
 }
-.form .form-container h5 {
+.form .login-container .form-container h5 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-user-select: none;
@@ -16417,24 +16420,24 @@ readers do not read off random characters that represent icons */
       -ms-user-select: none;
           user-select: none;
 }
-.form .form-container h5 .science {
+.form .login-container .form-container h5 .science {
   text-transform: capitalize;
   color: #08526D;
   font-size: 1.8rem;
   font-weight: 700;
 }
-.form .form-container h5 .events {
+.form .login-container .form-container h5 .events {
   color: #ec1c23;
   font-size: 1.8rem;
 }
-.form .form-container .form-group {
+.form .login-container .form-container .form-group {
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-.form .form-container .register {
+.form .login-container .form-container .register {
   text-align: center;
 }
-.form .form-container .register a {
+.form .login-container .form-container .register a {
   color: #08526D;
   text-decoration: none;
   cursor: pointer;
@@ -16479,8 +16482,7 @@ readers do not read off random characters that represent icons */
 }
 .contact-page .contact-us {
   background-color: #fff;
-  margin: 4.5rem 0;
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 .contact-page .contact-us i {
   color: #fff;

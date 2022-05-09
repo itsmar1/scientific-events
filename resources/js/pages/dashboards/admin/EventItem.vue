@@ -155,8 +155,15 @@ export default {
                 this.imagepreview = e.target.result;
             };
         },
+        filterObject() {
+            const asArray = Object.entries(this.event);
+            const noNull = asArray.filter(([key, value]) => value !== null);
+            const filledData = Object.fromEntries(noNull);
+            return filledData;
+        },
         submitForm() {
-            this.$emit('update-event', this.event);
+            const event = this.filterObject();
+            this.$emit('update-event', event);
         }
     }
 
